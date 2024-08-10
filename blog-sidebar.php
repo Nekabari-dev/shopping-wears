@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Blog Details</title>
+<title>Blog Side Bar</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,11 +26,11 @@
 
 <div class="mobil-sidebar d-sm-none">
 <ul class="mobil-sidebar-icons">
-<li class="category-icon"><a href="blog-details.html#"><i class="flaticon-menu"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-heart"></i></a></li>
+<li class="category-icon"><a href="blog-sidebar.php#"><i class="flaticon-menu"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
+<li><a href="blog-sidebar.php#"><i class="flaticon-heart"></i></a></li>
 <li class="cart-icon">
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 <div class="cart-count"><span>10</span></div>
 </li>
 </ul>
@@ -55,11 +55,11 @@
 <div id="categoryOne" class="accordion-collapse collapse" aria-labelledby="categoryHeading1" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -73,11 +73,11 @@
 <div id="categoryTwo" class="accordion-collapse collapse" aria-labelledby="categoryHeading2" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -91,11 +91,11 @@
 <div id="categoryThree" class="accordion-collapse collapse" aria-labelledby="categoryHeading3" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -109,11 +109,11 @@
 <div id="categoryFour" class="accordion-collapse collapse" aria-labelledby="categoryHeading4" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -127,11 +127,11 @@
 <div id="categoryFive" class="accordion-collapse collapse" aria-labelledby="categoryHeading5" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -145,11 +145,11 @@
 <div id="categorySix" class="accordion-collapse collapse" aria-labelledby="categoryHeading6" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -163,11 +163,11 @@
 <div id="categorySeven" class="accordion-collapse collapse" aria-labelledby="categoryHeading7" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -181,11 +181,11 @@
 <div id="categoryEight" class="accordion-collapse collapse" aria-labelledby="categoryHeading8" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -199,11 +199,11 @@
 <div id="categoryNine" class="accordion-collapse collapse" aria-labelledby="categoryHeading9" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -241,7 +241,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p1.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Men Casual Summer Sale</h5></a>
+<a href="product-details.php"><h5 class="product-title">Men Casual Summer Sale</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -261,7 +261,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p3.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Something Yellow Jens</h5></a>
+<a href="product-details.php"><h5 class="product-title">Something Yellow Jens</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -281,7 +281,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p2.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Woman Something Navy Top</h5></a>
+<a href="product-details.php"><h5 class="product-title">Woman Something Navy Top</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -305,8 +305,8 @@
 <span>$64.08</span>
 </div>
 <div class="cart-btns">
-<a href="checkout.html" class="cart-btn checkout">CHECKOUT</a>
-<a href="cart.html" class="cart-btn cart">VIEW CART</a>
+<a href="checkout.php" class="cart-btn checkout">CHECKOUT</a>
+<a href="cart.php" class="cart-btn cart">VIEW CART</a>
 </div>
 <p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to $64.08 and receive free
 shipping. stay with EG </p>
@@ -321,11 +321,11 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="logo d-flex justify-content-between align-items-center h-100">
-<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+<a href="index.php"><img src="assets/images/logo.png" alt="logo"></a>
 <div class="mobile-menu d-flex ">
 <ul class="d-flex mobil-nav-icons align-items-center">
 <li class="search-icon global-top"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
 <div class="has-count">12</div>
@@ -342,64 +342,64 @@ shipping. stay with EG </p>
 <div class="col-xl-7 col-lg-8 col-md-8 col-sm-6 col-xs-6">
 <nav class="main-nav">
 <div class="inner-logo d-xl-none">
-<a href="index.html">
+<a href="index.php">
 <img src="assets/images/logo.png" alt>
 </a>
 </div>
 <ul>
 <!-- <li class="has-child-menu"> -->
-<li><a href="index.html">Home</a></li>
+<li><a href="index.php">Home</a></li>
 <!-- <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v1/index.html">EG Shop Fashion 1</a></li>
-<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v2/index.html">EG Shop Fashion 2</a></li>
-<li><a href="index.html">EG Shop Fashion 3</a></li>
+<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v1/index.php">EG Shop Fashion 1</a></li>
+<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v2/index.php">EG Shop Fashion 2</a></li>
+<li><a href="index.php">EG Shop Fashion 3</a></li>
 </ul>
 </li> -->
-<li><a href="about.html">About Us</a></li>
+<li><a href="about.php">About Us</a></li>
 <li class="has-child-menu">
 <a href="javascript:void(0)">Shop</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="product.html">Shop</a></li>
-<li><a href="product-sidebar.html">Shop Sidebar</a></li>
-<li><a href="product-details.html">Shop Details</a></li>
+<li><a href="product.php">Shop</a></li>
+<li><a href="product-sidebar.php">Shop Sidebar</a></li>
+<li><a href="product-details.php">Shop Details</a></li>
 </ul>
 </li>
 <li class="has-child-menu">
 <a href="javascript:void(0)">Pages</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="cart.html">Cart</a></li>
-<li><a href="checkout.html">Checkout</a></li>
-<li><a href="login.html">Login</a></li>
-<li><a href="register.html">Register</a></li>
-<li><a href="dashboard.html">Dashboard</a></li>
-<li><a href="profile.html">Profile</a></li>
-<li><a href="order.html">Orders</a></li>
-<li><a href="setting.html">Setting</a></li>
-<li><a href="comming-soon.html">Comming Soon</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<!-- <li><a href="404.html">404</a></li> -->
+<li><a href="cart.php">Cart</a></li>
+<li><a href="checkout.php">Checkout</a></li>
+<li><a href="login.php">Login</a></li>
+<li><a href="register.php">Register</a></li>
+<li><a href="dashboard.php">Dashboard</a></li>
+<li><a href="profile.php">Profile</a></li>
+<li><a href="order.php">Orders</a></li>
+<li><a href="setting.php">Setting</a></li>
+<li><a href="comming-soon.php">Comming Soon</a></li>
+<li><a href="faq.php">FAQ</a></li>
+<!-- <li><a href="404.php">404</a></li> -->
 </ul>
 </li>
 <li class="has-child-menu">
 <a href="javascript:void(0)" class="active">Blog</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="blog.html">Blog Grid</a></li>
-<li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-<li><a href="blog-standard.html">Blog Standard</a></li>
-<li><a href="blog-details.html">Blog Details</a></li>
+<li><a href="blog.php">Blog Grid</a></li>
+<li><a href="blog-sidebar.php">Blog Sidebar</a></li>
+<li><a href="blog-standard.php">Blog Standard</a></li>
+<li><a href="blog-details.php">Blog Details</a></li>
 </ul>
 </li>
-<li><a href="contact.html">Contact Us</a></li>
+<li><a href="contact.php">Contact Us</a></li>
 </ul>
 <ul class="inner-social-icons d-xl-none d-flex flex-wrap">
-<li><a href="blog-details.html#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-twitter-1"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="blog-sidebar.php#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="blog-sidebar.php#"><i class="flaticon-twitter-1"></i></a></li>
+<li><a href="blog-sidebar.php#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="blog-sidebar.php#"><i class="flaticon-pinterest-1"></i></a></li>
 </ul>
 </nav>
 </div>
@@ -407,7 +407,7 @@ shipping. stay with EG </p>
 <div class="nav-right h-100 d-flex align-items-center justify-content-end">
 <ul class="d-flex nav-icons">
 <li class="search-icon"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
 <div class="has-count">0</div>
@@ -426,10 +426,10 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-lg-12">
 <div class="breadcrumb-wrap">
-<h3 class="page-title">Blog Details</h3>
+<h3 class="page-title">Blog Sidebar</h3>
 <ul class="page-switcher">
-<li><a href="index.html">Home <i class="bi bi-chevron-right"></i></a></li>
-<li>Blog Details</li>
+<li><a href="index.php">Home <i class="bi bi-chevron-right"></i></a></li>
+<li>Blog Grid Sidebar</li>
 </ul>
 </div>
 </div>
@@ -437,180 +437,203 @@ shipping. stay with EG </p>
 </div>
 </div> -->
 
-<div class="blog-details-wrapper mt-96">
+
+<div class="blog-sidebar-wrapper mt-96">
 <div class="container">
 <div class="row">
 <div class="col-lg-8">
-<div class="blog-details">
-<div class="blog-head">
-<ul class="blogl-top d-flex justify-content-center">
-<li><a href="blog-details.html#">Fashion</a></li>
-<li><a href="blog-details.html#">4th January 2021</a></li>
-</ul>
-<h3 class="blogl-title"><a href="blog-details.html">Friday Finest The Best of The Week?</a></h3>
-</div>
-<div class="blog-details-thumb">
-<img src="assets/images/blog/blog-d-thumb.png" alt>
-</div>
-<h5 class="blog-d-subtitle">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-officia deseru mollit anim id est laborum.</h5>
-<p>
-Gochujang ugh viral, butcher pabst put a bird on it meditation austin craft beer banh mi.
-Distillery ramps af, gochujang hell of VHS kitsch austin. Vegan air plant trust fund, poke
-sartorial ennui next level photo booth coloring book etsy green juice meditation austin
-craft beer.
-</p>
-<div class="blog-d-quote position-relative">
-<div class="qoute-shape position-absolute end-0 bottom-0">
-<img src="assets/images/shapes/corner-sm-bottom.png" alt>
-</div>
-<div class="qoute-shape position-absolute start-0 top-0">
-<img src="assets/images/shapes/corner-sm-top.png" alt>
-</div>
-<p>“Our task must be to free ourselves… by widening our circle of compassion to embrace all
-living creatures and the whole of nature and it’s beauty. The Best Street Style From EG
-Ecommerce”</p>
-<h5 class="quote-author">-Leslie Alexander-</h5>
-</div>
-<p>
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, quia
-consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-</p>
-<div class="blog-video-wrapper">
-<div class="blog-d-video">
-<img src="assets/images/blog/blog-d-video.png" alt>
-<div class="blog-d-video-icon">
-<div class="blog-video">
-<span style="--i:1;"></span>
-<span style="--i:5;"></span>
-<span style="--i:3;"></span>
-<a data-fancybox href="https://youtu.be/hT_nvWreIhg"><i class="bi bi-play-fill"></i></a>
-</div>
-</div>
-</div>
-<div class="video-details">
-<p>Nemo enim ipsam voluptatem quia voluptas sit is it aspernatur aut odit aut fugit,
-quia conse quuntur magni dolores eos qui ratione volupt atem sequi dda sds nesciunt.
-Neque porro quisquam est, ed quia non numquam eius modi tempora incidunt ut labore
-et dolore </p>
-<h5 class="blog-d-subtitle">Excepteur sint occaecat cupidatat non proident, sunt.</h5>
-</div>
-</div>
-<h4>How can have anything you ant in life if you ?</h4>
-<p>Fashion ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudan tium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione </p>
-<p>Fashion ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudan tium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione ed ut
-perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-</p>
-<div class="blog-d-bottom">
-<div class="blog-d-share-options d-flex align-items-center">
-<h5>Share :</h5>
-<ul class="d-flex">
-<li><a href="blog-details.html#"><i class="flaticon-instagram-1"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-facebook"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-twitter"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-pinterest"></i></a></li>
-</ul>
-</div>
-<div class="blog-page-switcher">
-<a href="blog-details.html#"> <i class="flaticon-arrow-pointing-to-left"></i> Previous Post</a>
-<a href="blog-details.html#"> Next Post <i class="flaticon-arrow-pointing-to-right"></i></a>
-</div>
-</div>
-<div class="blog-d-comment-area">
-<h5>Our 2 Comments </h5>
-<ul class="blog-d-comments">
-<li class="blog-d-single-comment">
-<div class="blog-d-comment">
-<div class="comment-head">
-<div class="client-img">
-<img src="assets/images/blog/reviewer1.png" alt>
-</div>
-<div class="client-info">
-<h5 class="client-name">Jenny Wilson <span class="review-date">- 8th Jan
-2021</span> </h5>
-</div>
-</div>
-<p class="comment-texts">
-Aenean dolor massa, rhoncus ut tortor in, pretium tempus neque. Vestibulum
-venenatis leo et dictum finibus. Nulla vulputate dolor sit amet tristique
-dapibus. ed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium.
-</p>
-<ul class="comment-actions d-flex align-items-center">
-<li><a href="blog-details.html#"><i class="flaticon-like"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-heart"></i></a></li>
-<li><a href="blog-details.html#">Reply</a></li>
-</ul>
-</div>
-</li>
-<li class="blog-d-single-comment">
-<div class="blog-d-comment">
-<div class="comment-head">
-<div class="client-img">
-<img src="assets/images/blog/reviewer1.png" alt>
-</div>
-<div class="client-info">
-<h5 class="client-name">John Smith <span class="review-date">- 8th Jan
-2021</span> </h5>
-</div>
-</div>
-<p class="comment-texts">
-Aenean dolor massa, rhoncus ut tortor in, pretium tempus neque. Vestibulum
-venenatis leo et dictum finibus. Nulla vulputate dolor sit amet tristique
-dapibus. ed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium.
-</p>
-<ul class="comment-actions d-flex align-items-center">
-<li><a href="blog-details.html#"><i class="flaticon-like"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-heart"></i></a></li>
-<li><a href="blog-details.html#">Reply</a></li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="blog-d-form">
-<h3>Leave A Comment</h3>
-<p>Your email address will not be published. Required fields are marked *</p>
-
-
-<form method="POST" class="blog-d-comment-form">
 <div class="row">
-<div class="col-lg-6">
-<div class="review-input-group">
-<label for="fname">First Name</label>
-<input required type="text" name="fname" id="fname" placeholder="Your first name">
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="blog-card">
+<div class="blog-thumb">
+<a href="blog-details.php"><img src="assets/images/blog/b-1.png" alt></a>
+<div class="blog-actions">
+<a href="blog-sidebar.php#"><i class="flaticon-share"></i></a>
 </div>
 </div>
-<div class="col-lg-6">
-<div class="review-input-group">
-<label for="lname">Last Name</label>
-<input required type="text" name="lname" id="lname" placeholder="Your last name ">
+<div class="blog-content">
+<div class="blog-top">
+<div class="blog-tags">
+<a href="blog-sidebar.php#">Fashion Style</a>
+</div>
+<div class="fav-icon"><i class="flaticon-heart"></i></div>
+</div>
+<h3 class="blog-title"><a href="blog-details.php">11 Outfit Trends we Spotted All over Street style</a></h3>
+<div class="blog-bottom">
+<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="blog-sidebar.php#">Johan Martin <span>-8th Jan 2021</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="blog-card">
+<div class="blog-thumb">
+<a href="blog-details.php"><img src="assets/images/blog/b-2.png" alt></a>
+<div class="blog-actions">
+<a href="blog-sidebar.php#"><i class="flaticon-share"></i></a>
+</div>
+</div>
+<div class="blog-content">
+<div class="blog-top">
+<div class="blog-tags">
+<a href="blog-sidebar.php#">Fashion Style</a>
+</div>
+<div class="fav-icon"><i class="flaticon-heart"></i></div>
+</div>
+<h3 class="blog-title"><a href="blog-details.php">Finding a catchy fashion blog name isn’t exactly an.</a></h3>
+<div class="blog-bottom">
+<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="blog-sidebar.php#">Johan Martin <span>-8th Jan 2021</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="blog-card">
+<div class="blog-thumb">
+<a href="blog-details.php"><img src="assets/images/blog/b-3.png" alt></a>
+<div class="blog-actions">
+<a href="blog-sidebar.php#"><i class="flaticon-share"></i></a>
+</div>
+</div>
+<div class="blog-content">
+<div class="blog-top">
+<div class="blog-tags">
+<a href="blog-sidebar.php#">Fashion Style</a>
+</div>
+<div class="fav-icon"><i class="flaticon-heart"></i></div>
+</div>
+<h3 class="blog-title"><a href="blog-details.php">Coming up with catchy blog name can be a challenge,</a></h3>
+<div class="blog-bottom">
+<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="blog-sidebar.php#">Johan Martin <span>-8th Jan 2021</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="blog-card">
+<div class="blog-thumb">
+<a href="blog-details.php"><img src="assets/images/blog/b-4.png" alt></a>
+<div class="blog-actions">
+<a href="blog-sidebar.php#"><i class="flaticon-share"></i></a>
+</div>
+</div>
+<div class="blog-content">
+<div class="blog-top">
+<div class="blog-tags">
+<a href="blog-sidebar.php#">Fashion Style</a>
+</div>
+<div class="fav-icon"><i class="flaticon-heart"></i></div>
+</div>
+<h3 class="blog-title"><a href="blog-details.php">Fashion has always been so tempora- ry and uncert.</a></h3>
+<div class="blog-bottom">
+<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="blog-sidebar.php#">Johan Martin <span>-8th Jan 2021</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="blog-card">
+<div class="blog-thumb">
+<a href="blog-details.php"><img src="assets/images/blog/b-5.png" alt></a>
+<div class="blog-actions">
+<a href="blog-sidebar.php#"><i class="flaticon-share"></i></a>
+</div>
+</div>
+<div class="blog-content">
+<div class="blog-top">
+<div class="blog-tags">
+<a href="blog-sidebar.php#">Fashion Style</a>
+</div>
+<div class="fav-icon"><i class="flaticon-heart"></i></div>
+</div>
+<h3 class="blog-title"><a href="blog-details.php">Risus nec feugiat in fermentum posuere urna.</a></h3>
+<div class="blog-bottom">
+<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="blog-sidebar.php#">Johan Martin <span>-8th Jan 2021</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="blog-card">
+<div class="blog-thumb">
+<a href="blog-details.php"><img src="assets/images/blog/b-6.png" alt></a>
+<div class="blog-actions">
+<a href="blog-sidebar.php#"><i class="flaticon-share"></i></a>
+</div>
+</div>
+<div class="blog-content">
+<div class="blog-top">
+<div class="blog-tags">
+<a href="blog-sidebar.php#">Fashion Style</a>
+</div>
+<div class="fav-icon"><i class="flaticon-heart"></i></div>
+</div>
+<h3 class="blog-title"><a href="blog-details.php">Fashion has always been so tempora- ry and uncert...</a></h3>
+<div class="blog-bottom">
+<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="blog-sidebar.php#">Johan Martin <span>-8th Jan 2021</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="blog-card">
+<div class="blog-thumb">
+<a href="blog-details.php"><img src="assets/images/blog/b-7.png" alt></a>
+<div class="blog-actions">
+<a href="blog-sidebar.php#"><i class="flaticon-share"></i></a>
+</div>
+</div>
+<div class="blog-content">
+<div class="blog-top">
+<div class="blog-tags">
+<a href="blog-sidebar.php#">Fashion Style</a>
+</div>
+<div class="fav-icon"><i class="flaticon-heart"></i></div>
+</div>
+<h3 class="blog-title"><a href="blog-details.php">11 Outfit Trends we Spotted All over Street style</a></h3>
+<div class="blog-bottom">
+<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="blog-sidebar.php#">Johan Martin <span>-8th Jan 2021</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="blog-card">
+<div class="blog-thumb">
+<a href="blog-details.php"><img src="assets/images/blog/b-8.png" alt></a>
+<div class="blog-actions">
+<a href="blog-sidebar.php#"><i class="flaticon-share"></i></a>
+</div>
+</div>
+<div class="blog-content">
+<div class="blog-top">
+<div class="blog-tags">
+<a href="blog-sidebar.php#">Fashion Style</a>
+</div>
+<div class="fav-icon"><i class="flaticon-heart"></i></div>
+</div>
+<h3 class="blog-title"><a href="blog-details.php">Our employees put in great efforts to make this...</a></h3>
+<div class="blog-bottom">
+<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="blog-sidebar.php#">Johan Martin <span>-8th Jan 2021</span></a></div>
+</div>
+</div>
 </div>
 </div>
 <div class="col-lg-12">
-<div class="review-input-group">
-<textarea required name="review-area" id="review-area" cols="30" rows="7" placeholder="Your message"></textarea>
+<div class="custom-pagination d-flex justify-content-center mt-70">
+<ul class="d-flex pagination-links">
+<li><a href="blog-sidebar.php#">01</a></li>
+<li><a href="blog-sidebar.php#" class="active">02</a></li>
+<li><a href="blog-sidebar.php#">03</a></li>
+<li class="has-dots">
+<span></span>
+<span></span>
+<span></span>
+</li>
+<li><a href="blog-sidebar.php#">09</a></li>
+<li><a href="blog-sidebar.php#">10</a></li>
+</ul>
 </div>
-</div>
-<div class="col-lg-12">
-<div class="submit-btn">
-<input type="submit" value="Post Comment" name="send_comment">
-</div>
-</div>
-</div>
-</form>
-
-
 </div>
 </div>
 </div>
@@ -627,23 +650,23 @@ CATEGORY
 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="blog-details.html#">
+<li><a href="blog-sidebar.php#">
 <h5><i class="flaticon-right-arrow-2"></i> Fashion</h5> <span>03</span>
 </a></li>
-<li><a href="blog-details.html#">
+<li><a href="blog-sidebar.php#">
 <h5><i class="flaticon-right-arrow-2"></i> Beauty</h5> <span>03</span>
 </a></li>
-<li><a href="blog-details.html#">
+<li><a href="blog-sidebar.php#">
 <h5><i class="flaticon-right-arrow-2"></i> Lifestyle</h5> <span>03</span>
 </a></li>
-<li><a href="blog-details.html#">
+<li><a href="blog-sidebar.php#">
 <h5><i class="flaticon-right-arrow-2"></i> Minimalism</h5> <span>03</span>
 </a></li>
-<li><a href="blog-details.html#">
+<li><a href="blog-sidebar.php#">
 <h5><i class="flaticon-right-arrow-2"></i> FashionPhotography</h5>
 <span>03</span>
 </a></li>
-<li><a href="blog-details.html#">
+<li><a href="blog-sidebar.php#">
 <h5><i class="flaticon-right-arrow-2"></i> Shopping</h5> <span>03</span>
 </a></li>
 </ul>
@@ -659,7 +682,7 @@ CATEGORY
 <img src="assets/images/blog/bp-1.png" alt>
 </div>
 <div class="post-details">
-<h4 class="post-title"><a href="blog-details.html">Men’s Fashion Ninja
+<h4 class="post-title"><a href="blog-details.php">Men’s Fashion Ninja
 Turtles Shoes Wohlbefinden</a></h4>
 <p class="post-date">4th Jan 2021</p>
 </div>
@@ -669,7 +692,7 @@ Turtles Shoes Wohlbefinden</a></h4>
 <img src="assets/images/blog/bp-2.png" alt>
 </div>
 <div class="post-details">
-<h4 class="post-title"><a href="blog-details.html">Are You Talking To
+<h4 class="post-title"><a href="blog-details.php">Are You Talking To
 Me?</a></h4>
 <p class="post-date">4th Jan 2021</p>
 </div>
@@ -679,7 +702,7 @@ Me?</a></h4>
 <img src="assets/images/blog/bp-3.png" alt>
 </div>
 <div class="post-details">
-<h4 class="post-title"><a href="blog-details.html">What's Your Favorite
+<h4 class="post-title"><a href="blog-details.php">What's Your Favorite
 Color?</a></h4>
 <p class="post-date">4th Jan 2021</p>
 </div>
@@ -689,7 +712,7 @@ Color?</a></h4>
 <img src="assets/images/blog/bp-4.png" alt>
 </div>
 <div class="post-details">
-<h4 class="post-title"><a href="blog-details.html">Fashion Haley Joel Osment
+<h4 class="post-title"><a href="blog-details.php">Fashion Haley Joel Osment
 von wairhouse LSF 15 - 50</a></h4>
 <p class="post-date">4th Jan 2021</p>
 </div>
@@ -699,29 +722,29 @@ von wairhouse LSF 15 - 50</a></h4>
 <div class="bs-tags">
 <h5 class="bs-title">PRODUCT TAG</h5>
 <ul class="bs-tag-list">
-<li><a href="blog-details.html#">Casual</a></li>
-<li><a href="blog-details.html#">Kurtas & Kurtis</a></li>
-<li><a href="blog-details.html#">Summer</a></li>
-<li><a href="blog-details.html#">Spring</a></li>
-<li><a href="blog-details.html#">Winter</a></li>
-<li><a href="blog-details.html#">Baby</a></li>
-<li><a href="blog-details.html#">Man</a></li>
-<li><a href="blog-details.html#">Coot</a></li>
+<li><a href="blog-sidebar.php#">Casual</a></li>
+<li><a href="blog-sidebar.php#">Kurtas & Kurtis</a></li>
+<li><a href="blog-sidebar.php#">Summer</a></li>
+<li><a href="blog-sidebar.php#">Spring</a></li>
+<li><a href="blog-sidebar.php#">Winter</a></li>
+<li><a href="blog-sidebar.php#">Baby</a></li>
+<li><a href="blog-sidebar.php#">Man</a></li>
+<li><a href="blog-sidebar.php#">Coot</a></li>
 </ul>
 </div>
 <div class="bs-social">
 <h5 class="bs-title">OUR FOLLOWER</h5>
 <ul class="bs-social-list">
-<li><a href="blog-details.html#">
+<li><a href="blog-sidebar.php#">
 <h5><i class="flaticon-instagram-1"></i> Instagram</h5> <span>50,520</span>
 </a></li>
-<li><a href="blog-details.html#">
+<li><a href="blog-sidebar.php#">
 <h5><i class="flaticon-facebook"></i> Facebook</h5> <span>50,520</span>
 </a></li>
-<li><a href="blog-details.html#">
+<li><a href="blog-sidebar.php#">
 <h5><i class="flaticon-twitter"></i> Twitter</h5> <span>50,520</span>
 </a></li>
-<li><a href="blog-details.html#">
+<li><a href="blog-sidebar.php#">
 <h5><i class="flaticon-pinterest"></i> Pinterest</h5> <span>50,520</span>
 </a></li>
 </ul>
@@ -729,16 +752,20 @@ von wairhouse LSF 15 - 50</a></h4>
 <div class="bs-archives">
 <h5 class="bs-title">ARCHIVES</h5>
 <ul class="archives-list">
-<li><a href="blog-details.html#">5th January 2021</a></li>
-<li><a href="blog-details.html#">5th January 2021</a></li>
+<li><a href="blog-sidebar.php#">5th January 2021</a></li>
+<li><a href="blog-sidebar.php#">5th January 2021</a></li>
 </ul>
 </div>
+<div class="bs-banner">
+<img src="assets/images/banner/bs-banner.png" alt class="img-fluid">
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
+</div>
+
 
 <div class="footer-area mt-120">
 <div class="container">
@@ -762,8 +789,8 @@ von wairhouse LSF 15 - 50</a></h4>
 <li>
 <div class="contact-icon"><i class="flaticon-envelope"></i></div>
 <div class="contact-list">
-<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#80e9eee6efc0e5f8e1edf0ece5aee3efed"><span class="__cf_email__" data-cfemail="41282f272e012439202c312d246f222e2c">[email&#160;protected]</span></a>
-<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#4a23242c250a393f3a3a25383e64292527"><span class="__cf_email__" data-cfemail="036a6d656c43707673736c71772d606c6e">[email&#160;protected]</span></a>
+<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#d4bdbab2bb94b1acb5b9a4b8b1fab7bbb9"><span class="__cf_email__" data-cfemail="432a2d252c03263b222e332f266d202c2e">[email&#160;protected]</span></a>
+<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#1a73747c755a696f6a6a75686e34797577"><span class="__cf_email__" data-cfemail="b9d0d7dfd6f9caccc9c9d6cbcd97dad6d4">[email&#160;protected]</span></a>
 </div>
 </li>
 </ul>
@@ -776,12 +803,12 @@ Important Links
 </h5>
 <div class="footer-links">
 <ul class="link-list">
-<li><a href="about.html">About Eg Store</a></li>
-<li><a href="blog-details.html#">Privacy Policy</a> </li>
-<li><a href="blog-details.html#">Terms & Conditions</a></li>
-<li><a href="blog-details.html#">Our Support</a></li>
-<li><a href="blog-details.html#">Terms & Service</a></li>
-<li><a href="blog-details.html#">Payment Policy</a></li>
+<li><a href="about.php">About Eg Store</a></li>
+<li><a href="blog-sidebar.php#">Privacy Policy</a> </li>
+<li><a href="blog-sidebar.php#">Terms & Conditions</a></li>
+<li><a href="blog-sidebar.php#">Our Support</a></li>
+<li><a href="blog-sidebar.php#">Terms & Service</a></li>
+<li><a href="blog-sidebar.php#">Payment Policy</a></li>
 </ul>
 </div>
 </div>
@@ -793,11 +820,11 @@ Category
 </h5>
 <div class="footer-links">
 <ul class="link-list">
-<li><a href="product.html">Woman</a></li>
-<li><a href="product.html">Men’s</a> </li>
-<li><a href="product.html">Winter Sale</a></li>
-<li><a href="product.html">Summer Sale</a></li>
-<li><a href="product.html">Other</a></li>
+<li><a href="product.php">Woman</a></li>
+<li><a href="product.php">Men’s</a> </li>
+<li><a href="product.php">Winter Sale</a></li>
+<li><a href="product.php">Summer Sale</a></li>
+<li><a href="product.php">Other</a></li>
 </ul>
 </div>
 </div>
@@ -819,18 +846,18 @@ Our Newsletter
 </form>
 </div>
 <ul class="footer-social-links d-flex">
-<li><a href="blog-details.html#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-pinterest-1"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-linkedin"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="blog-details.html#"><i class="flaticon-twitter-1"></i></a></li>
+<li><a href="blog-sidebar.php#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="blog-sidebar.php#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="blog-sidebar.php#"><i class="flaticon-linkedin"></i></a></li>
+<li><a href="blog-sidebar.php#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="blog-sidebar.php#"><i class="flaticon-twitter-1"></i></a></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="footer-bottom row align-items-center">
 <div class="col-lg-6 ">
-<div class="footer-copyring"> <p>Copyright 2021 EG Shop Fashion | Design By <a href="blog-details.html#">Egens Lab</a></p> </div>
+<div class="footer-copyring"> <p>Copyright 2021 EG Shop Fashion | Design By <a href="blog-sidebar.php#">Egens Lab</a></p> </div>
 </div>
 <div class="col-lg-6">
 <ul class="payment-cards d-flex justify-content-lg-end">

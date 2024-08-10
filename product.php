@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Product Sidebar</title>
+<title>Product</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,11 +26,11 @@
 
 <div class="mobil-sidebar d-sm-none">
 <ul class="mobil-sidebar-icons">
-<li class="category-icon"><a href="product-sidebar.html#"><i class="flaticon-menu"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
-<li><a href="product-sidebar.html#"><i class="flaticon-heart"></i></a></li>
+<li class="category-icon"><a href="product.php#"><i class="flaticon-menu"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
+<li><a href="product.php#"><i class="flaticon-heart"></i></a></li>
 <li class="cart-icon">
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 <div class="cart-count"><span>10</span></div>
 </li>
 </ul>
@@ -55,11 +55,11 @@
 <div id="categoryOne" class="accordion-collapse collapse" aria-labelledby="categoryHeading1" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -73,11 +73,11 @@
 <div id="categoryTwo" class="accordion-collapse collapse" aria-labelledby="categoryHeading2" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -91,11 +91,11 @@
 <div id="categoryThree" class="accordion-collapse collapse" aria-labelledby="categoryHeading3" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -109,11 +109,11 @@
 <div id="categoryFour" class="accordion-collapse collapse" aria-labelledby="categoryHeading4" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -127,11 +127,11 @@
 <div id="categoryFive" class="accordion-collapse collapse" aria-labelledby="categoryHeading5" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -145,11 +145,11 @@
 <div id="categorySix" class="accordion-collapse collapse" aria-labelledby="categoryHeading6" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -163,11 +163,11 @@
 <div id="categorySeven" class="accordion-collapse collapse" aria-labelledby="categoryHeading7" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -181,11 +181,11 @@
 <div id="categoryEight" class="accordion-collapse collapse" aria-labelledby="categoryHeading8" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -199,11 +199,11 @@
 <div id="categoryNine" class="accordion-collapse collapse" aria-labelledby="categoryHeading9" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -241,7 +241,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p1.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Men Casual Summer Sale</h5></a>
+<a href="product-details.php"><h5 class="product-title">Men Casual Summer Sale</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -261,7 +261,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p3.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Something Yellow Jens</h5></a>
+<a href="product-details.php"><h5 class="product-title">Something Yellow Jens</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -281,7 +281,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p2.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Woman Something Navy Top</h5></a>
+<a href="product-details.php"><h5 class="product-title">Woman Something Navy Top</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -305,8 +305,8 @@
 <span>$64.08</span>
 </div>
 <div class="cart-btns">
-<a href="checkout.html" class="cart-btn checkout">CHECKOUT</a>
-<a href="cart.html" class="cart-btn cart">VIEW CART</a>
+<a href="checkout.php" class="cart-btn checkout">CHECKOUT</a>
+<a href="cart.php" class="cart-btn cart">VIEW CART</a>
 </div>
 <p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to $64.08 and receive free
 shipping. stay with EG </p>
@@ -321,14 +321,14 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="logo d-flex justify-content-between align-items-center h-100">
-<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+<a href="index.php"><img src="assets/images/logo.png" alt="logo"></a>
 <div class="mobile-menu d-flex ">
 <ul class="d-flex mobil-nav-icons align-items-center">
 <li class="search-icon global-top"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
-<div class="has-count">12</div>
+<div class="has-count">0</div>
 </li>
 </ul>
 <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
@@ -342,64 +342,64 @@ shipping. stay with EG </p>
 <div class="col-xl-7 col-lg-8 col-md-8 col-sm-6 col-xs-6">
 <nav class="main-nav">
 <div class="inner-logo d-xl-none">
-<a href="index.html">
+<a href="index.php">
 <img src="assets/images/logo.png" alt>
 </a>
 </div>
 <ul>
 <!-- <li class="has-child-menu"> -->
-<li><a href="index.html">Home</a></li>
+<li><a href="index.php">Home</a></li>
 <!-- <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v1/index.html">EG Shop Fashion 1</a></li>
-<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v2/index.html">EG Shop Fashion 2</a></li>
-<li><a href="index.html">EG Shop Fashion 3</a></li>
+<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v1/index.php">EG Shop Fashion 1</a></li>
+<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v2/index.php">EG Shop Fashion 2</a></li>
+<li><a href="index.php">EG Shop Fashion 3</a></li>
 </ul>
 </li> -->
-<li><a href="about.html">About Us</a></li>
+<li><a href="about.php">About Us</a></li>
 <li class="has-child-menu">
 <a href="javascript:void(0)" class="active">Shop</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="product.html">Shop</a></li>
-<li><a href="product-sidebar.html">Shop Sidebar</a></li>
-<li><a href="product-details.html">Shop Details</a></li>
+<li><a href="product.php">Shop</a></li>
+<li><a href="product-sidebar.php">Shop Sidebar</a></li>
+<li><a href="product-details.php">Shop Details</a></li>
 </ul>
 </li>
 <li class="has-child-menu">
 <a href="javascript:void(0)">Pages</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="cart.html">Cart</a></li>
-<li><a href="checkout.html">Checkout</a></li>
-<li><a href="login.html">Login</a></li>
-<li><a href="register.html">Register</a></li>
-<li><a href="dashboard.html">Dashboard</a></li>
-<li><a href="profile.html">Profile</a></li>
-<li><a href="order.html">Orders</a></li>
-<li><a href="setting.html">Setting</a></li>
-<li><a href="comming-soon.html">Comming Soon</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<!-- <li><a href="404.html">404</a></li> -->
+<li><a href="cart.php">Cart</a></li>
+<li><a href="checkout.php">Checkout</a></li>
+<li><a href="login.php">Login</a></li>
+<li><a href="register.php">Register</a></li>
+<li><a href="dashboard.php">Dashboard</a></li>
+<li><a href="profile.php">Profile</a></li>
+<li><a href="order.php">Orders</a></li>
+<li><a href="setting.php">Setting</a></li>
+<li><a href="comming-soon.php">Comming Soon</a></li>
+<li><a href="faq.php">FAQ</a></li>
+<!-- <li><a href="404.php">404</a></li> -->
 </ul>
 </li>
 <li class="has-child-menu">
 <a href="javascript:void(0)">Blog</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="blog.html">Blog Grid</a></li>
-<li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-<li><a href="blog-standard.html">Blog Standard</a></li>
-<li><a href="blog-details.html">Blog Details</a></li>
+<li><a href="blog.php">Blog Grid</a></li>
+<li><a href="blog-sidebar.php">Blog Sidebar</a></li>
+<li><a href="blog-standard.php">Blog Standard</a></li>
+<li><a href="blog-details.php">Blog Details</a></li>
 </ul>
 </li>
-<li><a href="contact.html">Contact Us</a></li>
+<li><a href="contact.php">Contact Us</a></li>
 </ul>
 <ul class="inner-social-icons d-xl-none d-flex flex-wrap">
-<li><a href="product-sidebar.html#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="product-sidebar.html#"><i class="flaticon-twitter-1"></i></a></li>
-<li><a href="product-sidebar.html#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="product-sidebar.html#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="product.php#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="product.php#"><i class="flaticon-twitter-1"></i></a></li>
+<li><a href="product.php#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="product.php#"><i class="flaticon-pinterest-1"></i></a></li>
 </ul>
 </nav>
 </div>
@@ -407,7 +407,7 @@ shipping. stay with EG </p>
 <div class="nav-right h-100 d-flex align-items-center justify-content-end">
 <ul class="d-flex nav-icons">
 <li class="search-icon"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
 <div class="has-count">0</div>
@@ -426,10 +426,10 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-lg-12">
 <div class="breadcrumb-wrap">
-<h3 class="page-title">Shop Sidebar</h3>
+<h3 class="page-title">Shop</h3>
 <ul class="page-switcher">
-<li><a href="index.html">Home <i class="bi bi-chevron-right"></i></a></li>
-<li>Shop Sidebar</li>
+<li><a href="index.php">Home <i class="bi bi-chevron-right"></i></a></li>
+<li>Shop</li>
 </ul>
 </div>
 </div>
@@ -448,7 +448,7 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-lg-8 col-md-7 col-sm-6">
 <div class="product-searchbar">
-<form action="product-sidebar.html#" method="POST" class="product-searchbar-form">
+<form action="product.php#" method="POST" class="product-searchbar-form">
 <input type="text" name="sidebar-search-input" id="sidebar-search-input" placeholder="Search">
 <button type="submit"><i class="bi bi-search"></i></button>
 </form>
@@ -467,18 +467,16 @@ shipping. stay with EG </p>
 </div>
 </div>
 <div class="row">
-<div class="col-lg-9">
-<div class="row">
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md1.png" alt>
 </a>
 <div class="product-lavels">
 <span class="sale">sale</span>
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 <div class="color-option">
 <input type="radio" name="color" id="color1" value="red" checked>
 <label for="color1"><span class="c1 p-color"></span></label>
@@ -489,288 +487,388 @@ shipping. stay with EG </p>
 </div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Atom-SL-Hoody-Elysium-Front</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Atom-SL-Hoody-Elysium-Front</a> </h5>
 <div class="product-price">
 <del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md2.png" alt>
 </a>
 <div class="product-lavels">
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Alroy-Short-7-Women-s-Fortune</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Alroy-Short-7-Women-s-Fortune</a> </h5>
 <div class="product-price">
 <ins class="new-price">$20.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md3.png" alt>
 </a>
 <div class="product-lavels">
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 <div class="color-option">
 </div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Beta-LT-Jacket-Phantasm-Front</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Beta-LT-Jacket-Phantasm-Front</a> </h5>
 <div class="product-price">
 <ins class="new-price">$87.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md4.png" alt>
 </a>
 <div class="product-lavels">
 <span class="discount">-10%</span>
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 <div class="color-option">
 </div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Womens Vintage Straight Deni</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Womens Vintage Straight Deni</a> </h5>
 <div class="product-price">
 <ins class="new-price">$190.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md5.png" alt>
 </a>
 <div class="product-lavels">
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 <div class="color-option">
 </div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Konseal-Pant-Black-Back</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Konseal-Pant-Black-Back</a> </h5>
 <div class="product-price">
 <del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md6.png" alt>
 </a>
 <div class="product-lavels">
 <span class="sale">sale</span>
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Atom-SL-Hoody-Elysium-Front</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Atom-SL-Hoody-Elysium-Front</a> </h5>
 <div class="product-price">
 <ins class="new-price">$20.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md7.png" alt>
 </a>
 <div class="product-lavels">
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 <div class="color-option">
 </div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Motus-AR-Hoody-Women</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Motus-AR-Hoody-Women</a> </h5>
 <div class="product-price">
 <ins class="new-price">$87.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md8.png" alt>
 </a>
 <div class="product-lavels">
 <span class="discount">-15%</span>
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 <div class="color-option">
 </div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Remige-Shirt-LS-Cryptochrome</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Remige-Shirt-LS-Cryptochrome</a> </h5>
 <div class="product-price">
 <ins class="new-price">$190.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md1.png" alt>
 </a>
 <div class="product-lavels">
 <span class="sale">sale</span>
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 <div class="color-option">
 </div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Atom-SL-Hoody-Elysium-Front</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Atom-SL-Hoody-Elysium-Front</a> </h5>
 <div class="product-price">
 <del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md2.png" alt>
 </a>
 <div class="product-lavels">
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Alroy-Short-7-Women-s-Fortune</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Alroy-Short-7-Women-s-Fortune</a> </h5>
 <div class="product-price">
 <ins class="new-price">$20.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md3.png" alt>
 </a>
 <div class="product-lavels">
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 <div class="color-option">
 </div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Beta-LT-Jacket-Phantasm-Front</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Beta-LT-Jacket-Phantasm-Front</a> </h5>
 <div class="product-price">
 <ins class="new-price">$87.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6">
+<div class="col-lg-3 col-md-4 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
-<a href="product-details.html">
+<a href="product-details.php">
 <img src="assets/images/product/p-md4.png" alt>
 </a>
 <div class="product-lavels">
 <span class="discount">-10%</span>
 </div>
-<div class="add-product"><a href="product-details.html"><i class="flaticon-plus"></i></a></div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
 <div class="color-option">
 </div>
 </div>
 <div class="product-body">
-<h5 class="product-title"> <a href="product-details.html">Womens Vintage Straight Deni</a> </h5>
+<h5 class="product-title"> <a href="product-details.php">Womens Vintage Straight Deni</a> </h5>
 <div class="product-price">
 <ins class="new-price">$190.05</ins>
 </div>
 <div class="product-actions">
-<a href="product-sidebar.html#"><i class="flaticon-heart"></i></a>
-<a href="product-details.html"><i class="flaticon-search"></i></a>
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="product-card-m">
+<div class="product-thumb">
+<a href="product-details.php">
+<img src="assets/images/product/p-md5.png" alt>
+</a>
+<div class="product-lavels">
+</div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
+<div class="color-option">
+</div>
+</div>
+<div class="product-body">
+<h5 class="product-title"> <a href="product-details.php">Konseal-Pant-Black-Back</a> </h5>
+<div class="product-price">
+<del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
+</div>
+<div class="product-actions">
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="product-card-m">
+<div class="product-thumb">
+<a href="product-details.php">
+<img src="assets/images/product/p-md6.png" alt>
+</a>
+<div class="product-lavels">
+<span class="sale">sale</span>
+</div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
+</div>
+<div class="product-body">
+<h5 class="product-title"> <a href="product-details.php">Atom-SL-Hoody-Elysium-Front</a> </h5>
+<div class="product-price">
+<ins class="new-price">$20.05</ins>
+</div>
+<div class="product-actions">
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="product-card-m">
+<div class="product-thumb">
+<a href="product-details.php">
+<img src="assets/images/product/p-md7.png" alt>
+</a>
+<div class="product-lavels">
+</div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
+<div class="color-option">
+</div>
+</div>
+<div class="product-body">
+<h5 class="product-title"> <a href="product-details.php">Motus-AR-Hoody-Women</a> </h5>
+<div class="product-price">
+<ins class="new-price">$87.05</ins>
+</div>
+<div class="product-actions">
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="product-card-m">
+<div class="product-thumb">
+<a href="product-details.php">
+<img src="assets/images/product/p-md8.png" alt>
+</a>
+<div class="product-lavels">
+<span class="discount">-15%</span>
+</div>
+<div class="add-product"><a href="product-details.php"><i class="flaticon-plus"></i></a></div>
+<div class="color-option">
+</div>
+</div>
+<div class="product-body">
+<h5 class="product-title"> <a href="product-details.php">Remige-Shirt-LS-Cryptochrome</a> </h5>
+<div class="product-price">
+<ins class="new-price">$190.05</ins>
+</div>
+<div class="product-actions">
+<a href="product.php#"><i class="flaticon-heart"></i></a>
+<a href="product-details.php"><i class="flaticon-search"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 </div>
 </div>
 </div>
@@ -778,147 +876,17 @@ shipping. stay with EG </p>
 <div class="col-lg-12">
 <div class="custom-pagination d-flex justify-content-center mt-70">
 <ul class="d-flex pagination-links">
-<li><a href="product-sidebar.html#">01</a></li>
-<li><a href="product-sidebar.html#" class="active">02</a></li>
-<li><a href="product-sidebar.html#">03</a></li>
+<li><a href="product.php#">01</a></li>
+<li><a href="product.php#" class="active">02</a></li>
+<li><a href="product.php#">03</a></li>
 <li class="has-dots">
 <span></span>
 <span></span>
 <span></span>
 </li>
-<li><a href="product-sidebar.html#">09</a></li>
-<li><a href="product-sidebar.html#">10</a></li>
+<li><a href="product.php#">09</a></li>
+<li><a href="product.php#">10</a></li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3">
-<div class="product-sidebar">
-<div class="sidebar-category">
-<div class="accordion-item">
-<h2 class="accordion-header" id="headingOne">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-CATEGORY
-</button>
-</h2>
-<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product-sidebar.html#">T-Shirt</a> <span class="product-amount">(41)</span>
-</li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-<li><a href="product-sidebar.html#">Jacket Collection</a> <span class="product-amount">(15)</span></li>
-<li><a href="product-sidebar.html#">Men ‘s Sunglasses </a> <span class="product-amount">(15)</span></li>
-<li><a href="product-sidebar.html#">Bags </a> <span class="product-amount">(15)</span></li>
-<li><a href="product-sidebar.html#">Kdid’s</a> <span class="product-amount">(15)</span></li>
-<li><a href="product-sidebar.html#">Women’s Collection</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="pricing-range">
-<h5 class="sb-title">PRICE RANGE</h5>
-<form action="product-sidebar.html#" method="POST">
-<div class="price-range-slider">
-<div id="slider-range" class="range-bar"></div>
-<div class="pricing-value d-flex align-items-center">
-<span>Price : </span> <input type="text" id="amount" readonly>
-</div>
-</div>
-</form>
-</div>
-<div class="sidebar-color-option">
-<h5 class="sb-title">PRICE RANGE</h5>
-<ul class="color-option">
-<li>
-<span>Blue</span>
-<div class="color-input">
-<input type="radio" name="color2" id="color11" value="red" checked>
-<label for="color11"><span class="c1 p-color"></span></label>
-</div>
-</li>
-<li>
-<span>Rad</span>
-<div class="color-input">
-<input type="radio" name="color2" id="color22" value="red">
-<label for="color22"><span class="c2 p-color"></span></label>
-</div>
-</li>
-<li>
-<span>Black</span>
-<div class="color-input">
-<input type="radio" name="color2" id="color44" value="red">
-<label for="color44"><span class="c4 p-color"></span></label>
-</div>
-</li>
-<li>
-<span>Yellow</span>
-<div class="color-input">
-<input type="radio" name="color2" id="color33" value="red">
-<label for="color33"><span class="c3 p-color"></span></label>
-</div>
-</li>
-</ul>
-</div>
-<div class="top-sell-cards">
-<h5 class="sb-title">TOP SALE THIS WEEK</h5>
-<div class="product-card-m d-flex align-content-center">
-<div class="product-img-m">
-<a href="product-details.html"><img src="assets/images/product/pm-1.png" alt></a>
-<div class="product-cart-icon"><a href="cart.html"><i class="flaticon-shopping-cart"></i></a></div>
-</div>
-<div class="product-details-m">
-<a class="product-title-m" href="product-details.html">Men Casual
-Summer Sale</a>
-<div class="product-price">
-<del class="old-price">$302.74</del><ins class="new-price">$290.05</ins>
-</div>
-</div>
-</div>
-<div class="product-card-m d-flex align-items-center">
-<div class="product-img-m">
-<a href="product-details.html"><img src="assets/images/product/pm-2.png" alt></a>
-<div class="product-cart-icon"><a href="cart.html"><i class="flaticon-shopping-cart"></i></a></div>
-</div>
-<div class="product-details-m">
-<a class="product-title-m" href="product-details.html">Buy khaki polo neck jumper </a>
-<div class="product-price">
-<del class="old-price">$302.74</del><ins class="new-price">$290.05</ins>
-</div>
-</div>
-</div>
-<div class="product-card-m d-flex align-items-center">
-<div class="product-img-m">
-<a href="product-details.html"><img src="assets/images/product/pm-3.png" alt></a>
-<div class="product-cart-icon"><a href="cart.html"><i class="flaticon-shopping-cart"></i></a></div>
-</div>
-<div class="product-details-m">
-<a class="product-title-m" href="product-details.html">Men Casual
-Summer Sale</a>
-<div class="product-price">
-<del class="old-price">$302.74</del><ins class="new-price">$290.05</ins>
-</div>
-</div>
-</div>
-</div>
-<div class="sb-tags">
-<h5 class="sb-title">PRODUCT TAG</h5>
-<ul class="sb-tag-list">
-<li><a href="product-sidebar.html#">Man</a></li>
-<li><a href="product-sidebar.html#">Summer</a></li>
-<li><a href="product-sidebar.html#">Baby</a></li>
-<li><a href="product-sidebar.html#">Spring</a></li>
-<li><a href="product-sidebar.html#">Winter</a></li>
-<li><a href="product-sidebar.html#">Baby</a></li>
-<li><a href="product-sidebar.html#">Man</a></li>
-<li><a href="product-sidebar.html#">Coot</a></li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -947,8 +915,8 @@ Summer Sale</a>
 <li>
 <div class="contact-icon"><i class="flaticon-envelope"></i></div>
 <div class="contact-list">
-<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#c8a1a6aea788adb0a9a5b8a4ade6aba7a5"><span class="__cf_email__" data-cfemail="6b02050d042b0e130a061b070e45080406">[email&#160;protected]</span></a>
-<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#0c65626a634c7f797c7c637e78226f6361"><span class="__cf_email__" data-cfemail="50393e363f10232520203f22247e333f3d">[email&#160;protected]</span></a>
+<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#771e19111837120f161a071b125914181a"><span class="__cf_email__" data-cfemail="0960676f66496c71686479656c276a6664">[email&#160;protected]</span></a>
+<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#93fafdf5fcd3e0e6e3e3fce1e7bdf0fcfe"><span class="__cf_email__" data-cfemail="2940474f46695a5c5959465b5d074a4644">[email&#160;protected]</span></a>
 </div>
 </li>
 </ul>
@@ -961,12 +929,12 @@ Important Links
 </h5>
 <div class="footer-links">
 <ul class="link-list">
-<li><a href="about.html">About Eg Store</a></li>
-<li><a href="product-sidebar.html#">Privacy Policy</a> </li>
-<li><a href="product-sidebar.html#">Terms & Conditions</a></li>
-<li><a href="product-sidebar.html#">Our Support</a></li>
-<li><a href="product-sidebar.html#">Terms & Service</a></li>
-<li><a href="product-sidebar.html#">Payment Policy</a></li>
+<li><a href="about.php">About Eg Store</a></li>
+<li><a href="product.php#">Privacy Policy</a> </li>
+<li><a href="product.php#">Terms & Conditions</a></li>
+<li><a href="product.php#">Our Support</a></li>
+<li><a href="product.php#">Terms & Service</a></li>
+<li><a href="product.php#">Payment Policy</a></li>
 </ul>
 </div>
 </div>
@@ -978,11 +946,11 @@ Category
 </h5>
 <div class="footer-links">
 <ul class="link-list">
-<li><a href="product.html">Woman</a></li>
-<li><a href="product.html">Men’s</a> </li>
-<li><a href="product.html">Winter Sale</a></li>
-<li><a href="product.html">Summer Sale</a></li>
-<li><a href="product.html">Other</a></li>
+<li><a href="product.php">Woman</a></li>
+<li><a href="product.php">Men’s</a> </li>
+<li><a href="product.php">Winter Sale</a></li>
+<li><a href="product.php">Summer Sale</a></li>
+<li><a href="product.php">Other</a></li>
 </ul>
 </div>
 </div>
@@ -1004,18 +972,18 @@ Our Newsletter
 </form>
 </div>
 <ul class="footer-social-links d-flex">
-<li><a href="product-sidebar.html#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="product-sidebar.html#"><i class="flaticon-pinterest-1"></i></a></li>
-<li><a href="product-sidebar.html#"><i class="flaticon-linkedin"></i></a></li>
-<li><a href="product-sidebar.html#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="product-sidebar.html#"><i class="flaticon-twitter-1"></i></a></li>
+<li><a href="product.php#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="product.php#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="product.php#"><i class="flaticon-linkedin"></i></a></li>
+<li><a href="product.php#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="product.php#"><i class="flaticon-twitter-1"></i></a></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="footer-bottom row align-items-center">
 <div class="col-lg-6 ">
-<div class="footer-copyring"> <p>Copyright 2021 EG Shop Fashion | Design By <a href="product-sidebar.html#">Egens Lab</a></p> </div>
+<div class="footer-copyring"> <p>Copyright 2021 EG Shop Fashion | Design By <a href="product.php#">Egens Lab</a></p> </div>
 </div>
 <div class="col-lg-6">
 <ul class="payment-cards d-flex justify-content-lg-end">

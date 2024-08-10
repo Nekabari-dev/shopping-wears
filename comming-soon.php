@@ -74,9 +74,9 @@
 </div>
 <div class="cs-fixed-social-icons d-xl-block d-none">
 <ul>
-<li><a href="comming-soon.html#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="comming-soon.html#"><i class="flaticon-pinterest-1"></i></a></li>
-<li><a href="comming-soon.html#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="comming-soon.php#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="comming-soon.php#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="comming-soon.php#"><i class="flaticon-instagram-2"></i></a></li>
 </ul>
 <h5>Special Edition</h5>
 </div>

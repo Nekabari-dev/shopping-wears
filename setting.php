@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Order</title>
+<title>Settings</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,11 +26,11 @@
 
 <div class="mobil-sidebar d-sm-none">
 <ul class="mobil-sidebar-icons">
-<li class="category-icon"><a href="order.html#"><i class="flaticon-menu"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
-<li><a href="order.html#"><i class="flaticon-heart"></i></a></li>
+<li class="category-icon"><a href="setting.php#"><i class="flaticon-menu"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
+<li><a href="setting.php#"><i class="flaticon-heart"></i></a></li>
 <li class="cart-icon">
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 <div class="cart-count"><span>10</span></div>
 </li>
 </ul>
@@ -55,11 +55,11 @@
 <div id="categoryOne" class="accordion-collapse collapse" aria-labelledby="categoryHeading1" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -73,11 +73,11 @@
 <div id="categoryTwo" class="accordion-collapse collapse" aria-labelledby="categoryHeading2" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -91,11 +91,11 @@
 <div id="categoryThree" class="accordion-collapse collapse" aria-labelledby="categoryHeading3" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -109,11 +109,11 @@
 <div id="categoryFour" class="accordion-collapse collapse" aria-labelledby="categoryHeading4" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -127,11 +127,11 @@
 <div id="categoryFive" class="accordion-collapse collapse" aria-labelledby="categoryHeading5" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -145,11 +145,11 @@
 <div id="categorySix" class="accordion-collapse collapse" aria-labelledby="categoryHeading6" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -163,11 +163,11 @@
 <div id="categorySeven" class="accordion-collapse collapse" aria-labelledby="categoryHeading7" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -181,11 +181,11 @@
 <div id="categoryEight" class="accordion-collapse collapse" aria-labelledby="categoryHeading8" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -199,11 +199,11 @@
 <div id="categoryNine" class="accordion-collapse collapse" aria-labelledby="categoryHeading9" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -241,7 +241,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p1.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Men Casual Summer Sale</h5></a>
+<a href="product-details.php"><h5 class="product-title">Men Casual Summer Sale</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -261,7 +261,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p3.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Something Yellow Jens</h5></a>
+<a href="product-details.php"><h5 class="product-title">Something Yellow Jens</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -281,7 +281,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p2.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Woman Something Navy Top</h5></a>
+<a href="product-details.php"><h5 class="product-title">Woman Something Navy Top</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -305,8 +305,8 @@
 <span>$64.08</span>
 </div>
 <div class="cart-btns">
-<a href="checkout.html" class="cart-btn checkout">CHECKOUT</a>
-<a href="cart.html" class="cart-btn cart">VIEW CART</a>
+<a href="checkout.php" class="cart-btn checkout">CHECKOUT</a>
+<a href="cart.php" class="cart-btn cart">VIEW CART</a>
 </div>
 <p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to $64.08 and receive free
 shipping. stay with EG </p>
@@ -321,11 +321,11 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="logo d-flex justify-content-between align-items-center h-100">
-<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+<a href="index.php"><img src="assets/images/logo.png" alt="logo"></a>
 <div class="mobile-menu d-flex ">
 <ul class="d-flex mobil-nav-icons align-items-center">
 <li class="search-icon global-top"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
 <div class="has-count">12</div>
@@ -342,64 +342,64 @@ shipping. stay with EG </p>
 <div class="col-xl-7 col-lg-8 col-md-8 col-sm-6 col-xs-6">
 <nav class="main-nav">
 <div class="inner-logo d-xl-none">
-<a href="index.html">
+<a href="index.php">
 <img src="assets/images/logo.png" alt>
 </a>
 </div>
 <ul>
 <!-- <li class="has-child-menu"> -->
-<li><a href="javascript:void(0)">Home</a></li>
+<li><a href="index.php">Home</a></li>
 <!-- <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v1/index.html">EG Shop Fashion 1</a></li>
-<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v2/index.html">EG Shop Fashion 2</a></li>
-<li><a href="index.html">EG Shop Fashion 3</a></li>
+<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v1/index.php">EG Shop Fashion 1</a></li>
+<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v2/index.php">EG Shop Fashion 2</a></li>
+<li><a href="index.php">EG Shop Fashion 3</a></li>
 </ul>
 </li> -->
-<li><a href="about.html">About Us</a></li>
+<li><a href="about.php">About Us</a></li>
 <li class="has-child-menu">
 <a href="javascript:void(0)">Shop</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="product.html">Shop</a></li>
-<li><a href="product-sidebar.html">Shop Sidebar</a></li>
-<li><a href="product-details.html">Shop Details</a></li>
+<li><a href="product.php">Shop</a></li>
+<li><a href="product-sidebar.php">Shop Sidebar</a></li>
+<li><a href="product-details.php">Shop Details</a></li>
 </ul>
 </li>
 <li class="has-child-menu">
 <a href="javascript:void(0)" class="active">Pages</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="cart.html">Cart</a></li>
-<li><a href="checkout.html">Checkout</a></li>
-<li><a href="login.html">Login</a></li>
-<li><a href="register.html">Register</a></li>
-<li><a href="dashboard.html">Dashboard</a></li>
-<li><a href="profile.html">Profile</a></li>
-<li><a href="order.html">Orders</a></li>
-<li><a href="setting.html">Setting</a></li>
-<li><a href="comming-soon.html">Comming Soon</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<!-- <li><a href="404.html">404</a></li> -->
+<li><a href="cart.php">Cart</a></li>
+<li><a href="checkout.php">Checkout</a></li>
+<li><a href="login.php">Login</a></li>
+<li><a href="register.php">Register</a></li>
+<li><a href="dashboard.php">Dashboard</a></li>
+<li><a href="profile.php">Profile</a></li>
+<li><a href="order.php">Orders</a></li>
+<li><a href="setting.php">Setting</a></li>
+<li><a href="comming-soon.php">Comming Soon</a></li>
+<li><a href="faq.php">FAQ</a></li>
+<!-- <li><a href="404.php">404</a></li> -->
 </ul>
 </li>
 <li class="has-child-menu">
 <a href="javascript:void(0)">Blog</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="blog.html">Blog Grid</a></li>
-<li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-<li><a href="blog-standard.html">Blog Standard</a></li>
-<li><a href="blog-details.html">Blog Details</a></li>
+<li><a href="blog.php">Blog Grid</a></li>
+<li><a href="blog-sidebar.php">Blog Sidebar</a></li>
+<li><a href="blog-standard.php">Blog Standard</a></li>
+<li><a href="blog-details.php">Blog Details</a></li>
 </ul>
 </li>
-<li><a href="contact.html">Contact Us</a></li>
+<li><a href="contact.php">Contact Us</a></li>
 </ul>
 <ul class="inner-social-icons d-xl-none d-flex flex-wrap">
-<li><a href="order.html#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="order.html#"><i class="flaticon-twitter-1"></i></a></li>
-<li><a href="order.html#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="order.html#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="setting.php#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="setting.php#"><i class="flaticon-twitter-1"></i></a></li>
+<li><a href="setting.php#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="setting.php#"><i class="flaticon-pinterest-1"></i></a></li>
 </ul>
 </nav>
 </div>
@@ -407,7 +407,7 @@ shipping. stay with EG </p>
 <div class="nav-right h-100 d-flex align-items-center justify-content-end">
 <ul class="d-flex nav-icons">
 <li class="search-icon"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
 <div class="has-count">0</div>
@@ -428,7 +428,7 @@ shipping. stay with EG </p>
 <div class="breadcrumb-wrap">
 <h3 class="page-title">My Account</h3>
 <ul class="page-switcher">
-<li><a href="index.html">Home <i class="bi bi-chevron-right"></i></a></li>
+<li><a href="index.php">Home <i class="bi bi-chevron-right"></i></a></li>
 <li>My Account</li>
 </ul>
 </div>
@@ -443,49 +443,43 @@ shipping. stay with EG </p>
 <div class="row justify-content-center">
 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
 <div class="dashbord-switcher">
-<a href="dashboard.html"><i class="flaticon-dashboard"></i> Dashboard</a>
-<a href="profile.html"><i class="flaticon-user"></i> My Profile</a>
-<a href="order.html" class="active"><i class="flaticon-shopping-bag"></i> My Order</a>
-<a href="setting.html"><i class="flaticon-settings"></i> Account Setting</a>
-<a href="order.html#"><i class="flaticon-logout"></i> Logout</a>
+<a href="dashboard.php"><i class="flaticon-dashboard"></i> Dashboard</a>
+<a href="profile.php"><i class="flaticon-user"></i> My Profile</a>
+<a href="order.php"><i class="flaticon-shopping-bag"></i> My Order</a>
+<a href="setting.php" class="active"><i class="flaticon-settings"></i> Account Setting</a>
+<a href="setting.php#"><i class="flaticon-logout"></i> Logout</a>
 </div>
 </div>
 <div class="col-xl-8 col-lg-8">
-<div class="order-details">
-<table class="table order-table mb-0">
-<thead>
-<tr>
-<th scope="col" class="order-id">Order ID</th>
-<th scope="col" class="order-date">Order Date</th>
-<th scope="col" class="order-status">Status</th>
-<th scope="col" class="order-amount">Total</th>
-<th scope="col" class="order-active">Active</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="order-id">#56986</td>
-<td class="order-date">21 August 2021</td>
-<td class="order-status">Pending</td>
-<td class="order-amount">$ 985.23 for 85 Items</td>
-<td class="order-active"><a href="order.html#"><i class="flaticon-visibility"></i></a></td>
-</tr>
-<tr>
-<td class="order-id">#56987</td>
-<td class="order-date">25 April 2021</td>
-<td class="order-status"> Picked</td>
-<td class="order-amount"> $ 985.23 for 85 Items </td>
-<td class="order-active"> <a href="order.html#"><i class="flaticon-visibility"></i></a></td>
-</tr>
-<tr>
-<td class="order-id">#56988</td>
-<td class="order-date">3rd June 2021</td>
-<td class="order-status">Completed</td>
-<td class="order-amount">$ 985.23 for 85 Items</td>
-<td class="order-active"><a href="order.html#"><i class="flaticon-visibility"></i></a></td>
-</tr>
-</tbody>
-</table>
+<div class="account-sitting-wrapper">
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<div class="billing-card">
+<div class="edit-icon"><i class="flaticon-edit"></i></div>
+<h5 class="card-title">Billing Address</h5>
+<ul class="card-list">
+<li><span>First Name <small>:</small></span>Cameron </li>
+<li><span>Last Name <small>:</small></span>Williamson </li>
+<li><span>Address <small>:</small></span>Eight Avenue 487, London </li>
+<li><span>Post code <small>:</small></span> 096895 </li>
+<li><span>Country <small>:</small></span>London </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="shipping-card">
+<div class="edit-icon"><i class="flaticon-edit"></i></div>
+<h5 class="card-title">Shipping Address</h5>
+<ul class="card-list">
+<li><span>First Name <small>:</small></span>Cameron </li>
+<li><span>Last Name <small>:</small></span>Williamson </li>
+<li><span>Address <small>:</small></span>Eight Avenue 487, London </li>
+<li><span>Post code <small>:</small></span> 096895 </li>
+<li><span>Country <small>:</small></span>London </li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -515,8 +509,8 @@ shipping. stay with EG </p>
 <li>
 <div class="contact-icon"><i class="flaticon-envelope"></i></div>
 <div class="contact-list">
-<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#751c1b131a35100d14180519105b161a18"><span class="__cf_email__" data-cfemail="ea83848c85aa8f928b879a868fc4898587">[email&#160;protected]</span></a>
-<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#f49d9a929bb4878184849b8680da979b99"><span class="__cf_email__" data-cfemail="a4cdcac2cbe4d7d1d4d4cbd6d08ac7cbc9">[email&#160;protected]</span></a>
+<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#a2cbccc4cde2c7dac3cfd2cec78cc1cdcf"><span class="__cf_email__" data-cfemail="e980878f86a98c91888499858cc78a8684">[email&#160;protected]</span></a>
+<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#254c4b434a65565055554a57510b464a48"><span class="__cf_email__" data-cfemail="caa3a4aca58ab9bfbabaa5b8bee4a9a5a7">[email&#160;protected]</span></a>
 </div>
 </li>
 </ul>
@@ -529,12 +523,12 @@ Important Links
 </h5>
 <div class="footer-links">
 <ul class="link-list">
-<li><a href="about.html">About Eg Store</a></li>
-<li><a href="order.html#">Privacy Policy</a> </li>
-<li><a href="order.html#">Terms & Conditions</a></li>
-<li><a href="order.html#">Our Support</a></li>
-<li><a href="order.html#">Terms & Service</a></li>
-<li><a href="order.html#">Payment Policy</a></li>
+<li><a href="about.php">About Eg Store</a></li>
+<li><a href="setting.php#">Privacy Policy</a> </li>
+<li><a href="setting.php#">Terms & Conditions</a></li>
+<li><a href="setting.php#">Our Support</a></li>
+<li><a href="setting.php#">Terms & Service</a></li>
+<li><a href="setting.php#">Payment Policy</a></li>
 </ul>
 </div>
 </div>
@@ -546,11 +540,11 @@ Category
 </h5>
 <div class="footer-links">
 <ul class="link-list">
-<li><a href="product.html">Woman</a></li>
-<li><a href="product.html">Men’s</a> </li>
-<li><a href="product.html">Winter Sale</a></li>
-<li><a href="product.html">Summer Sale</a></li>
-<li><a href="product.html">Other</a></li>
+<li><a href="product.php">Woman</a></li>
+<li><a href="product.php">Men’s</a> </li>
+<li><a href="product.php">Winter Sale</a></li>
+<li><a href="product.php">Summer Sale</a></li>
+<li><a href="product.php">Other</a></li>
 </ul>
 </div>
 </div>
@@ -566,24 +560,24 @@ Our Newsletter
 <p>Get the latest discount & offers. Subscribe today. Don’t miss the deals!</p>
 <form method="POST" id="footer-newslatter">
 <div class="newslatter-wrap">
-<input name="email" required type="text" placeholder="Your Email">
+<input type="text" placeholder="Your Email" name="email" required>
 <button type="submit" name="send">Send</button>
 </div>
 </form>
 </div>
 <ul class="footer-social-links d-flex">
-<li><a href="order.html#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="order.html#"><i class="flaticon-pinterest-1"></i></a></li>
-<li><a href="order.html#"><i class="flaticon-linkedin"></i></a></li>
-<li><a href="order.html#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="order.html#"><i class="flaticon-twitter-1"></i></a></li>
+<li><a href="setting.php#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="setting.php#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="setting.php#"><i class="flaticon-linkedin"></i></a></li>
+<li><a href="setting.php#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="setting.php#"><i class="flaticon-twitter-1"></i></a></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="footer-bottom row align-items-center">
 <div class="col-lg-6 ">
-<div class="footer-copyring"> <p>Copyright 2021 EG Shop Fashion | Design By <a href="order.html#">Egens Lab</a></p> </div>
+<div class="footer-copyring"> <p>Copyright 2021 EG Shop Fashion | Design By <a href="setting.php#">Egens Lab</a></p> </div>
 </div>
 <div class="col-lg-6">
 <ul class="payment-cards d-flex justify-content-lg-end">

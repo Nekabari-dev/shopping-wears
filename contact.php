@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Checkout</title>
+<title>Contact Us</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,11 +26,11 @@
 
 <div class="mobil-sidebar d-sm-none">
 <ul class="mobil-sidebar-icons">
-<li class="category-icon"><a href="checkout.html#"><i class="flaticon-menu"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
-<li><a href="checkout.html#"><i class="flaticon-heart"></i></a></li>
+<li class="category-icon"><a href="contact.php#"><i class="flaticon-menu"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
+<li><a href="contact.php#"><i class="flaticon-heart"></i></a></li>
 <li class="cart-icon">
-<a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+<a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
 <div class="cart-count"><span>10</span></div>
 </li>
 </ul>
@@ -55,11 +55,11 @@
 <div id="categoryOne" class="accordion-collapse collapse" aria-labelledby="categoryHeading1" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -73,11 +73,11 @@
 <div id="categoryTwo" class="accordion-collapse collapse" aria-labelledby="categoryHeading2" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -91,11 +91,11 @@
 <div id="categoryThree" class="accordion-collapse collapse" aria-labelledby="categoryHeading3" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -109,11 +109,11 @@
 <div id="categoryFour" class="accordion-collapse collapse" aria-labelledby="categoryHeading4" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -127,11 +127,11 @@
 <div id="categoryFive" class="accordion-collapse collapse" aria-labelledby="categoryHeading5" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -145,11 +145,11 @@
 <div id="categorySix" class="accordion-collapse collapse" aria-labelledby="categoryHeading6" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -163,11 +163,11 @@
 <div id="categorySeven" class="accordion-collapse collapse" aria-labelledby="categoryHeading7" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -181,11 +181,11 @@
 <div id="categoryEight" class="accordion-collapse collapse" aria-labelledby="categoryHeading8" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -199,11 +199,11 @@
 <div id="categoryNine" class="accordion-collapse collapse" aria-labelledby="categoryHeading9" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.html">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.html">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.html">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.html">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.html">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
+<li><a href="product.php">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
+<li><a href="product.php">Party Dress</a> <span class="product-amount">(08)</span></li>
+<li><a href="product.php">T-Shirt</a> <span class="product-amount">(41)</span> </li>
+<li><a href="product.php">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
 </ul>
 </div>
 </div>
@@ -241,7 +241,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p1.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Men Casual Summer Sale</h5></a>
+<a href="product-details.php"><h5 class="product-title">Men Casual Summer Sale</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -261,7 +261,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p3.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Something Yellow Jens</h5></a>
+<a href="product-details.php"><h5 class="product-title">Something Yellow Jens</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -281,7 +281,7 @@
 <div class="cart-product-info d-flex align-items-center">
 <div class="product-img"><img src="assets/images/product/cart-p2.png" alt class="img-fluid"></div>
 <div class="product-info">
-<a href="product-details.html"><h5 class="product-title">Woman Something Navy Top</h5></a>
+<a href="product-details.php"><h5 class="product-title">Woman Something Navy Top</h5></a>
 <ul class="product-rating d-flex">
 <li><i class="bi bi-star-fill"></i></li>
 <li><i class="bi bi-star-fill"></i></li>
@@ -305,8 +305,8 @@
 <span>$64.08</span>
 </div>
 <div class="cart-btns">
-<a href="checkout.html" class="cart-btn checkout">CHECKOUT</a>
-<a href="cart.html" class="cart-btn cart">VIEW CART</a>
+<a href="checkout.php" class="cart-btn checkout">CHECKOUT</a>
+<a href="cart.php" class="cart-btn cart">VIEW CART</a>
 </div>
 <p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to $64.08 and receive free
 shipping. stay with EG </p>
@@ -321,11 +321,11 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="logo d-flex justify-content-between align-items-center h-100">
-<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+<a href="index.php"><img src="assets/images/logo.png" alt="logo"></a>
 <div class="mobile-menu d-flex ">
 <ul class="d-flex mobil-nav-icons align-items-center">
 <li class="search-icon global-top"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
 <div class="has-count">12</div>
@@ -342,64 +342,64 @@ shipping. stay with EG </p>
 <div class="col-xl-7 col-lg-8 col-md-8 col-sm-6 col-xs-6">
 <nav class="main-nav">
 <div class="inner-logo d-xl-none">
-<a href="index.html">
+<a href="index.php">
 <img src="assets/images/logo.png" alt>
 </a>
 </div>
 <ul>
 <!-- <li class="has-child-menu"> -->
-<li><a href="index.html">Home</a></li>
+<li><a href="index.php">Home</a></li>
 <!-- <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v1/index.html">EG Shop Fashion 1</a></li>
-<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v2/index.html">EG Shop Fashion 2</a></li>
-<li><a href="index.html">EG Shop Fashion 3</a></li>
+<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v1/index.php">EG Shop Fashion 1</a></li>
+<li><a href="https://demo-egenslab.b-cdn.net/html/eg-shop-fashion/v2/index.php">EG Shop Fashion 2</a></li>
+<li><a href="index.php">EG Shop Fashion 3</a></li>
 </ul>
 </li> -->
-<li><a href="about.html">About Us</a></li>
+<li><a href="about.php">About Us</a></li>
 <li class="has-child-menu">
 <a href="javascript:void(0)">Shop</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="product.html">Shop</a></li>
-<li><a href="product-sidebar.html">Shop Sidebar</a></li>
-<li><a href="product-details.html">Shop Details</a></li>
+<li><a href="product.php">Shop</a></li>
+<li><a href="product-sidebar.php">Shop Sidebar</a></li>
+<li><a href="product-details.php">Shop Details</a></li>
 </ul>
 </li>
 <li class="has-child-menu">
-<a href="javascript:void(0)" class="active">Pages</a>
+<a href="javascript:void(0)">Pages</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="cart.html">Cart</a></li>
-<li><a href="checkout.html">Checkout</a></li>
-<li><a href="login.html">Login</a></li>
-<li><a href="register.html">Register</a></li>
-<li><a href="dashboard.html">Dashboard</a></li>
-<li><a href="profile.html">Profile</a></li>
-<li><a href="order.html">Orders</a></li>
-<li><a href="setting.html">Setting</a></li>
-<li><a href="comming-soon.html">Comming Soon</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<!-- <li><a href="404.html">404</a></li> -->
+<li><a href="cart.php">Cart</a></li>
+<li><a href="checkout.php">Checkout</a></li>
+<li><a href="login.php">Login</a></li>
+<li><a href="register.php">Register</a></li>
+<li><a href="dashboard.php">Dashboard</a></li>
+<li><a href="profile.php">Profile</a></li>
+<li><a href="order.php">Orders</a></li>
+<li><a href="setting.php">Setting</a></li>
+<li><a href="comming-soon.php">Comming Soon</a></li>
+<li><a href="faq.php">FAQ</a></li>
+<!-- <li><a href="404.php">404</a></li> -->
 </ul>
 </li>
 <li class="has-child-menu">
 <a href="javascript:void(0)">Blog</a>
 <i class="fl flaticon-plus">+</i>
 <ul class="sub-menu">
-<li><a href="blog.html">Blog Grid</a></li>
-<li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-<li><a href="blog-standard.html">Blog Standard</a></li>
-<li><a href="blog-details.html">Blog Details</a></li>
+<li><a href="blog.php">Blog Grid</a></li>
+<li><a href="blog-sidebar.php">Blog Sidebar</a></li>
+<li><a href="blog-standard.php">Blog Standard</a></li>
+<li><a href="blog-details.php">Blog Details</a></li>
 </ul>
 </li>
-<li><a href="contact.html">Contact Us</a></li>
+<li><a href="contact.php" class="active">Contact Us</a></li>
 </ul>
 <ul class="inner-social-icons d-xl-none d-flex flex-wrap">
-<li><a href="checkout.html#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="checkout.html#"><i class="flaticon-twitter-1"></i></a></li>
-<li><a href="checkout.html#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="checkout.html#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="contact.php#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="contact.php#"><i class="flaticon-twitter-1"></i></a></li>
+<li><a href="contact.php#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="contact.php#"><i class="flaticon-pinterest-1"></i></a></li>
 </ul>
 </nav>
 </div>
@@ -407,10 +407,10 @@ shipping. stay with EG </p>
 <div class="nav-right h-100 d-flex align-items-center justify-content-end">
 <ul class="d-flex nav-icons">
 <li class="search-icon"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.html"><i class="flaticon-user"></i></a></li>
+<li><a href="dashboard.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
-<div class="has-count">12</div>
+<div class="has-count">0</div>
 </li>
 </ul>
 </div>
@@ -426,10 +426,10 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-lg-12">
 <div class="breadcrumb-wrap">
-<h3 class="page-title">Checkout</h3>
+<h3 class="page-title">Contact Us</h3>
 <ul class="page-switcher">
-<li><a href="index.html">Home <i class="bi bi-chevron-right"></i></a></li>
-<li>Checkout</li>
+<li><a href="index.php">Home <i class="bi bi-chevron-right"></i></a></li>
+<li>Contact Us</li>
 </ul>
 </div>
 </div>
@@ -437,207 +437,96 @@ shipping. stay with EG </p>
 </div>
 </div> -->
 
-<div class="checkout-area mt-90">
+
+<div class="contact-wrapper mt-110">
 <div class="container">
 <div class="row">
-<div class="col-lg-7">
-
-
-<form method="POST" class="billing-from">
-<h5 class="checkout-title">
-Billing Details
-</h5>
+<div class="col-lg-12">
+<div class="section-header">
+<h2>Nice Project? Get in touch! will contact you soon</h2>
+</div>
+</div>
+</div>
 <div class="row">
-<div class="col-lg-6 col-md-6">
-<div class="eg-input-group">
-<label for="first-name1">First Name</label>
-<input type="text" id="first-name1" name="fname" placeholder="Your first name" required>
-</div>
-</div>
-<div class="col-lg-6 col-md-6">
-<div class="eg-input-group">
-<label for="last-name">Last Name</label>
-<input type="text" id="last-name" placeholder="Your last name" name="lname" required>
-</div>
-</div>
-<div class="col-lg-12">
-<div class="eg-input-group">
-<label for="country">Country / Region</label>
-<input type="text" id="country" placeholder="Your country name" name="country" required>
-</div>
-</div>
-<div class="col-lg-12">
-<div class="eg-input-group">
-<label>Street Address</label>
-<input type="text" placeholder="House and street name" name="address" required>
-</div>
-<div class="eg-input-group">
-<select name="city-select" id="category-sort">
-<option selected>Town / City</option>
-<option value="1">Cumilla</option>
-<option value="2">Dhaka</option>
-<option value="3">Khulna</option>
-</select>
-</div>
-<div class="eg-input-group">
-<input type="text" placeholder="Post Code" name="post_code" required>
-</div>
-</div>
-<div class="col-lg-12">
-<div class="eg-input-group">
-<label>Additional Information</label>
-<input type="text" placeholder="Your Phone Number" name="contact" required>
-</div>
-<div class="eg-input-group">
-<input type="text" placeholder="Your Email Address" name="email" required>
-</div>
-<div class="eg-input-group mb-0">
-<textarea cols="30" rows="7" placeholder="Order Notes (Optional)" name="notes"></textarea>
-</div>
-</div>
-</div>
-</form>
+<div class="col-xxl-12 col-lg-12">
+<div class="contact-form-wrapper">
+<h3>Get In Touch</h3>
+<p>Your email address will not be published. Required fields are marked *</p>
 
 
-<form class="different-address-form" method="POST">
-<h5 class="checkout-title">
-Ship to a Different Address?
-</h5>
+<form method="POST" class="contact-form" id="contact-form">
 <div class="row">
 <div class="col-lg-6">
-<div class="eg-input-group">
-<label for="first-name-d">First Name</label>
-<input type="text" id="first-name-d" placeholder="Your first name" name="alt_fname" required>
+<div class="review-input-group">
+<label for="fname">Your Full Name</label>
+<input required type="text" name="fname" id="fname" placeholder="Your full name">
 </div>
 </div>
 <div class="col-lg-6">
-<div class="eg-input-group">
-<label for="last-name-d">Last Name</label>
-<input type="text" id="last-name-d" placeholder="Your last name" name="alt_lname" required>
+<div class="review-input-group">
+<label for="email">Email</label>
+<input required type="email" name="email" id="email" placeholder="Your email">
 </div>
 </div>
 <div class="col-lg-12">
-<div class="eg-input-group mb-0">
-<label for="last-name-d">Last Name</label>
-<textarea cols="30" rows="6" placeholder="Order Notes (Optional)" name="alt_notes"></textarea>
+<div class="review-input-group">
+<textarea required name="review-area" id="review-area" cols="30" rows="7" placeholder="Your message"></textarea>
+</div>
+</div>
+<div class="col-lg-12">
+<div class="submit-btn">
+<input type="submit" value="Send Message" name="send_messg">
 </div>
 </div>
 </div>
+<p class="form-message"></p>
 </form>
 
 
-
-</div>
-<div class="col-lg-5">
-<div class="order-summary">
-<div class="added-product-summary">
-<h5 class="checkout-title">
-Order Summary
-</h5>
-<ul class="added-products">
-<li class="single-product">
-<div class="product-img">
-<img src="assets/images/product/added-p1.png" alt>
-</div>
-<div class="product-info">
-<h5 class="product-title"><a href="checkout.html#">Something Yellow Party Dress</a></h5>
-<div class="product-total">
-<div class="quantity">
-<input type="number" min="1" max="90" step="10" value="1">
-</div>
-<strong> <i class="bi bi-x-lg"></i> <span class="product-price">$22.36</span></strong>
 </div>
 </div>
-</li>
-<li class="single-product">
-<div class="product-img">
-<img src="assets/images/product/added-p2.png" alt>
 </div>
-<div class="product-info">
-<h5 class="product-title"><a href="checkout.html#">Men Casual Summer Sale</a></h5>
-<div class="product-total">
-<div class="quantity">
-<input type="number" min="1" max="90" step="10" value="1">
+<div class="contact-cards row">
+<div class="col-lg-4">
+<div class="contact-card">
+<div class="card-batch">
+<h5>Branch No 01</h5>
 </div>
-<strong> <i class="bi bi-x-lg"></i> <span class="product-price">$22.36</span></strong>
-</div>
-</div>
-</li>
-<li class="single-product">
-<div class="product-img">
-<img src="assets/images/product/added-p3.png" alt>
-</div>
-<div class="product-info">
-<h5 class="product-title"><a href="checkout.html#">Woamn Something Navy Jens</a></h5>
-<div class="product-total">
-<div class="quantity">
-<input type="number" min="1" max="90" step="10" value="1">
-</div>
-<strong> <i class="bi bi-x-lg"></i> <span class="product-price">$22.36</span></strong>
-</div>
-</div>
-</li>
+<ul class="contact-card-list">
+<li><strong>Address:</strong> 168/170, Ave 01, Mirpur DOHS, Bangladesh</li>
+<li><strong>Email:</strong> <a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ee87808881ae8b968f839e828bc08d8183">[email&#160;protected]</a></li>
+<li><strong>Phone:</strong> +02 1234 567 88</li>
 </ul>
 </div>
-<div class="total-cost-summary">
-<ul>
-<li class="subtotal">Subtotal <span>$128.70</span></li>
-<li>Tax <span>$5</span></li>
-<li>Total ( tax excl.) <span>$15</span></li>
-<li>Total ( tax incl.) <span>$15</span></li>
+</div>
+<div class="col-lg-4">
+<div class="contact-card">
+<div class="card-batch">
+<h5>Branch No 02</h5>
+</div>
+<ul class="contact-card-list">
+<li><strong>Address:</strong> 168/170, Ave 01, Mirpur DOHS, Bangladesh</li>
+<li><strong>Email:</strong> <a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a2cbccc4cde2c7dac3cfd2cec78cc1cdcf">[email&#160;protected]</a></li>
+<li><strong>Phone:</strong> +02 1234 567 88</li>
 </ul>
 </div>
-<div class="total-cost">
-<ul>
-<li class="d-flex justify-content-between">Subtotal <span>$128.70</span></li>
+</div>
+<div class="col-lg-4">
+<div class="contact-card">
+<div class="card-batch">
+<h5>Branch No 03</h5>
+</div>
+<ul class="contact-card-list">
+<li><strong>Address:</strong> 168/170, Ave 01, Mirpur DOHS, Bangladesh</li>
+<li><strong>Email:</strong> <a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="630a0d050c23061b020e130f064d000c0e">[email&#160;protected]</a></li>
+<li><strong>Phone:</strong> +02 1234 567 88</li>
 </ul>
 </div>
+</div>
+</div>
+</div>
+</div>
 
-
-<form method="POST" class="payment-form">
-<div class="payment-methods">
-<div class="form-check payment-check">
-<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-<label class="form-check-label" for="flexRadioDefault1">
-Check payments
-</label>
-<p>Please send a check to Store Name, Store Street, Store Town, Store State /
-County, Store Postcode.</p>
-</div>
-<div class="form-check payment-check">
-<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-<label class="form-check-label" for="flexRadioDefault2">
-Cash on delivery
-</label>
-<p>Pay with cash upon delivery.</p>
-</div>
-<div class="form-check payment-check paypal">
-<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-<label class="form-check-label" for="flexRadioDefault3">
-PayPal
-</label>
-<img src="assets/images/payment/payment-cards.png" alt>
-<a href="checkout.html#" class="about-paypal">What is PayPal</a>
-</div>
-<div class="payment-form-bottom d-flex align-items-center">
-<input type="checkbox" id="terms">
-<label for="terms">I have read and agree to the website <a href="checkout.html#">Terms and
-conditions</a></label>
-</div>
-</div>
-<div class="place-order-btn">
-<button type="submit" name="order">Place Order</button>
-</div>
-</form>
-
-
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <div class="footer-area mt-120">
 <div class="container">
@@ -661,8 +550,8 @@ conditions</a></label>
 <li>
 <div class="contact-icon"><i class="flaticon-envelope"></i></div>
 <div class="contact-list">
-<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#670e09010827021f060a170b024904080a"><span class="__cf_email__" data-cfemail="721b1c141d32170a131f021e175c111d1f">[email&#160;protected]</span></a>
-<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#d5bcbbb3ba95a6a0a5a5baa7a1fbb6bab8"><span class="__cf_email__" data-cfemail="660f08000926151316160914124805090b">[email&#160;protected]</span></a>
+<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#0c65626a634c69746d617c6069226f6361"><span class="__cf_email__" data-cfemail="b1d8dfd7def1d4c9d0dcc1ddd49fd2dedc">[email&#160;protected]</span></a>
+<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#1871767e77586b6d6868776a6c367b7775"><span class="__cf_email__" data-cfemail="1f767179705f6c6a6f6f706d6b317c7072">[email&#160;protected]</span></a>
 </div>
 </li>
 </ul>
@@ -675,12 +564,12 @@ Important Links
 </h5>
 <div class="footer-links">
 <ul class="link-list">
-<li><a href="about.html">About Eg Store</a></li>
-<li><a href="checkout.html#">Privacy Policy</a> </li>
-<li><a href="checkout.html#">Terms & Conditions</a></li>
-<li><a href="checkout.html#">Our Support</a></li>
-<li><a href="checkout.html#">Terms & Service</a></li>
-<li><a href="checkout.html#">Payment Policy</a></li>
+<li><a href="about.php">About Eg Store</a></li>
+<li><a href="contact.php#">Privacy Policy</a> </li>
+<li><a href="contact.php#">Terms & Conditions</a></li>
+<li><a href="contact.php#">Our Support</a></li>
+<li><a href="contact.php#">Terms & Service</a></li>
+<li><a href="contact.php#">Payment Policy</a></li>
 </ul>
 </div>
 </div>
@@ -692,11 +581,11 @@ Category
 </h5>
 <div class="footer-links">
 <ul class="link-list">
-<li><a href="product.html">Woman</a></li>
-<li><a href="product.html">Men’s</a> </li>
-<li><a href="product.html">Winter Sale</a></li>
-<li><a href="product.html">Summer Sale</a></li>
-<li><a href="product.html">Other</a></li>
+<li><a href="product.php">Woman</a></li>
+<li><a href="product.php">Men’s</a> </li>
+<li><a href="product.php">Winter Sale</a></li>
+<li><a href="product.php">Summer Sale</a></li>
+<li><a href="product.php">Other</a></li>
 </ul>
 </div>
 </div>
@@ -710,27 +599,26 @@ Our Newsletter
 </h5>
 <div class="footer-newslatter">
 <p>Get the latest discount & offers. Subscribe today. Don’t miss the deals!</p>
-
 <form method="POST" id="footer-newslatter">
 <div class="newslatter-wrap">
-<input required type="text" placeholder="Your Email" name="email">
+<input name="newletter_email" required type="text" placeholder="Your Email">
 <button type="submit" name="send">Send</button>
 </div>
 </form>
 </div>
 <ul class="footer-social-links d-flex">
-<li><a href="checkout.html#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="checkout.html#"><i class="flaticon-pinterest-1"></i></a></li>
-<li><a href="checkout.html#"><i class="flaticon-linkedin"></i></a></li>
-<li><a href="checkout.html#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="checkout.html#"><i class="flaticon-twitter-1"></i></a></li>
+<li><a href="contact.php#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="contact.php#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="contact.php#"><i class="flaticon-linkedin"></i></a></li>
+<li><a href="contact.php#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="contact.php#"><i class="flaticon-twitter-1"></i></a></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="footer-bottom row align-items-center">
 <div class="col-lg-6 ">
-<div class="footer-copyring"> <p>Copyright 2021 EG Shop Fashion | Design By <a href="checkout.html#">Egens Lab</a></p> </div>
+<div class="footer-copyring"> <p>Copyright 2021 EG Shop Fashion | Design By <a href="contact.php#">Egens Lab</a></p> </div>
 </div>
 <div class="col-lg-6">
 <ul class="payment-cards d-flex justify-content-lg-end">
