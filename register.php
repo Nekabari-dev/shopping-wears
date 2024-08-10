@@ -24,6 +24,10 @@
 </head>
 <body>
 
+<!-- include statement -->
+<?php include 'register_code.php'; ?>
+
+
 <div class="mobil-sidebar d-sm-none">
 <ul class="mobil-sidebar-icons">
 <li class="category-icon"><a href="register.php#"><i class="flaticon-menu"></i></a></li>
@@ -483,6 +487,9 @@ Register Your Account
 <input name="register" type="submit" id="submite-btn" value="CREATE AN ACCOUNT">
 </div>
 </form>
+<!-- success or error message -->
+<?php if(isset($reg_messg)) echo $reg_messg; ?>
+<!-- end of message -->
 <div class="reg-social-login">
 <h5>or Signup WITH</h5>
 <ul class="social-login-options">
