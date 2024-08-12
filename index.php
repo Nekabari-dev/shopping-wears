@@ -368,42 +368,7 @@ shipping. stay with EG </p>
 <!-- </ul> -->
 <!-- </li> -->
 <li><a href="about.php?id=<?php if(isset($id)) echo $id; ?>">About Us</a></li>
-<li class="has-child-menu">
-<a href="javascript:void(0)">Shop</a>
-<i class="fl flaticon-plus">+</i>
-<ul class="sub-menu">
 <li><a href="product.php?id=<?php if(isset($id)) echo $id; ?>">Shop</a></li>
-<li><a href="product-sidebar.php?id=<?php if(isset($id)) echo $id; ?>">Shop Sidebar</a></li>
-<li><a href="product-details.php?id=<?php if(isset($id)) echo $id; ?>">Shop Details</a></li>
-</ul>
-</li>
-<li class="has-child-menu">
-<a href="javascript:void(0)">Pages</a>
-<i class="fl flaticon-plus">+</i>
-<ul class="sub-menu">
-<li><a href="cart.php?id=<?php if(isset($id)) echo $id; ?>">Cart</a></li>
-<li><a href="checkout.php?id=<?php if(isset($id)) echo $id; ?>">Checkout</a></li>
-<li><a href="login.php?id=<?php if(isset($id)) echo $id; ?>">Login</a></li>
-<li><a href="register.php?id=<?php if(isset($id)) echo $id; ?>">Register</a></li>
-<li><a href="dashboard.php?id=<?php if(isset($id)) echo $id; ?>">Dashboard</a></li>
-<li><a href="profile.php?id=<?php if(isset($id)) echo $id; ?>">Profile</a></li>
-<li><a href="order.php?id=<?php if(isset($id)) echo $id; ?>">Orders</a></li>
-<li><a href="setting.php?id=<?php if(isset($id)) echo $id; ?>">Setting</a></li>
-<li><a href="comming-soon.php?id=<?php if(isset($id)) echo $id; ?>">Comming Soon</a></li>
-<li><a href="faq.php?id=<?php if(isset($id)) echo $id; ?>">FAQ</a></li>
-<!-- <li><a href="404.php">404</a></li> -->
-</ul>
-</li>
-<li class="has-child-menu">
-<a href="javascript:void(0)">Blog</a>
-<i class="fl flaticon-plus">+</i>
-<ul class="sub-menu">
-<li><a href="blog.php?id=<?php if(isset($id)) echo $id; ?>">Blog Grid</a></li>
-<li><a href="blog-sidebar.php?id=<?php if(isset($id)) echo $id; ?>">Blog Sidebar</a></li>
-<li><a href="blog-standard.php?id=<?php if(isset($id)) echo $id; ?>">Blog Standard</a></li>
-<li><a href="blog-details.php?id=<?php if(isset($id)) echo $id; ?>">Blog Details</a></li>
-</ul>
-</li>
 <li><a href="contact.php?id=<?php if(isset($id)) echo $id; ?>">Contact Us</a></li>
 </ul>
 <ul class="inner-social-icons d-xl-none d-flex flex-wrap">
@@ -1309,74 +1274,6 @@ shipping. stay with EG </p>
 <div class="blog-writer-link"><i class="flaticon-user"></i> <a href="index.php?id=<?php if(isset($id)) echo $id; ?>#">Johan Martin <span>-8th Jan 2021</span></a></div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="sponsor-logo-area mt-120">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-symbols-3"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-massachusetts-institute-of-technology-logotype"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-my-life-social-logo"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-stanford-university-logo"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-club-dante-social-logotype"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-funny-or-die-logo"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-tuenti-social-logo"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-ning-social-logo"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-gather-logo"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-inside-the-hotel-logotype"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-virus-total-text-logo"></i></a>
-</div>
-</div>
-<div class="col-lg-2 col-md-2 col-sm-3 col-6">
-<div class="single-logo">
-<a href="index.php?id=<?php if(isset($id)) echo $id; ?>#"><i class="flaticon-blogbus-logo"></i></a>
 </div>
 </div>
 </div>
