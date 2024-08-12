@@ -372,6 +372,9 @@ shipping. stay with EG </p>
 <!-- <li><a href="index.php">Home</a></li> -->
 <!-- </ul> -->
 <!-- </li> -->
+<li><a href="about.php?id=<?php if(isset($id)) echo $id; ?>">About Us</a></li>
+<li><a href="product.php?id=<?php if(isset($id)) echo $id; ?>">Shop</a></li>
+<li><a href="contact.php?id=<?php if(isset($id)) echo $id; ?>">Contact Us</a></li>
 <li><a href="about.php?id=<?php echo $id; ?>">About Us</a></li>
 <li class="has-child-menu">
 <a href="javascript:void(0)">Shop</a>
@@ -1325,7 +1328,6 @@ shipping. stay with EG </p>
 </div>
 </div>
 </div>
-
 
 
 <div class="banner-grid mt-70">
