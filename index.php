@@ -329,6 +329,8 @@ shipping. stay with EG </p>
 </div>
 
 
+
+
 <header>
 <div class="header-area">
 <div class="container">
@@ -581,15 +583,20 @@ shipping. stay with EG </p>
 <div class="tab-content product-tab" id="pills-tabContent">
 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 <div class="row">
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" style="border:1px solid red;">
+<div class="product-card-m" >
+<div class="product-thumb" >
 <a href="product-details.php?id=<?php echo $id; ?>">
 <img src="assets/images/product/p-md1.png" alt>
 </a>
 <div class="product-lavels">
 <span class="sale">sale</span>
 </div>
+
 <div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
 <div class="color-option">
 <input type="radio" name="color" id="color1" value="red" checked>
@@ -605,6 +612,7 @@ shipping. stay with EG </p>
 <div class="product-price">
 <del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
 </div>
+
 <div class="product-actions">
 <a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
 <a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
