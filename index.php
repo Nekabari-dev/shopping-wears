@@ -373,50 +373,6 @@ shipping. stay with EG </p>
 <li><a href="about.php?id=<?php if(isset($id)) echo $id; ?>">About Us</a></li>
 <li><a href="product.php?id=<?php if(isset($id)) echo $id; ?>">Shop</a></li>
 <li><a href="contact.php?id=<?php if(isset($id)) echo $id; ?>">Contact Us</a></li>
-<li><a href="about.php?id=<?php echo $id; ?>">About Us</a></li>
-<li class="has-child-menu">
-<a href="javascript:void(0)">Shop</a>
-<i class="fl flaticon-plus">+</i>
-<ul class="sub-menu">
-<li><a href="product.php?id=<?php echo $id; ?>">Shop</a></li>
-<li><a href="product-sidebar.php?id=<?php echo $id; ?>">Shop Sidebar</a></li>
-<li><a href="product-details.php?id=<?php echo $id; ?>">Shop Details</a></li>
-</ul>
-</li>
-<li class="has-child-menu">
-<a href="javascript:void(0)">Pages</a>
-<i class="fl flaticon-plus">+</i>
-<ul class="sub-menu">
-<li><a href="cart.php?id=<?php echo $id; ?>">Cart</a></li>
-<li><a href="checkout.php?id=<?php echo $id; ?>">Checkout</a></li>
-<li><a href="login.php?id=<?php echo $id; ?>">Login</a></li>
-<li><a href="register.php?id=<?php echo $id; ?>">Register</a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>">Dashboard</a></li>
-<li><a href="profile.php?id=<?php echo $id; ?>">Profile</a></li>
-<li><a href="order.php?id=<?php echo $id; ?>">Orders</a></li>
-<li><a href="setting.php?id=<?php echo $id; ?>">Setting</a></li>
-<li><a href="comming-soon.php?id=<?php echo $id; ?>">Comming Soon</a></li>
-<li><a href="faq.php?id=<?php echo $id; ?>">FAQ</a></li>
-<!-- <li><a href="404.php">404</a></li> -->
-</ul>
-</li>
-<li class="has-child-menu">
-<a href="javascript:void(0)">Blog</a>
-<i class="fl flaticon-plus">+</i>
-<ul class="sub-menu">
-<li><a href="blog.php?id=<?php echo $id; ?>">Blog Grid</a></li>
-<li><a href="blog-sidebar.php?id=<?php echo $id; ?>">Blog Sidebar</a></li>
-<li><a href="blog-standard.php?id=<?php echo $id; ?>">Blog Standard</a></li>
-<li><a href="blog-details.php?id=<?php echo $id; ?>">Blog Details</a></li>
-</ul>
-</li>
-<li><a href="contact.php?id=<?php echo $id; ?>">Contact Us</a></li>
-</ul>
-<ul class="inner-social-icons d-xl-none d-flex flex-wrap">
-<li><a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-twitter-1"></i></a></li>
-<li><a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-pinterest-1"></i></a></li>
 </ul>
 </nav>
 </div>
