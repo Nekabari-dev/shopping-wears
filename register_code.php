@@ -32,7 +32,12 @@ function register() {
             $fetch_id = mysqli_fetch_assoc($select_id);
             $id = $fetch_id['id'];
         }
-        header("Location: index.php?id='$id'");
+        $sensitiveData = $id;
+		$encodedData = base64_encode($sensitiveData);
+
+		$url = urlencode($encodedData);
+		$redirectURL = "index.php?id=" . $url;
+        header("Location:" . $redirectURL);
         exit();
     }
 }
