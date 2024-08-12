@@ -29,9 +29,6 @@
  
     if(isset($_GET['id'])) {
         $id = $_GET['id'];
-    } else {
-        // echo "ID not found in the URL";
-    }
     $sensitiveData = $id;
     $encodedData = base64_encode($sensitiveData);
     $id = $encodedData;
