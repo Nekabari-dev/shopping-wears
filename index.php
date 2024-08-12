@@ -372,9 +372,6 @@ shipping. stay with EG </p>
 <!-- <li><a href="index.php">Home</a></li> -->
 <!-- </ul> -->
 <!-- </li> -->
-<li><a href="about.php?id=<?php if(isset($id)) echo $id; ?>">About Us</a></li>
-<li><a href="product.php?id=<?php if(isset($id)) echo $id; ?>">Shop</a></li>
-<li><a href="contact.php?id=<?php if(isset($id)) echo $id; ?>">Contact Us</a></li>
 <li><a href="about.php?id=<?php echo $id; ?>">About Us</a></li>
 <li class="has-child-menu">
 <a href="javascript:void(0)">Shop</a>
@@ -422,15 +419,19 @@ shipping. stay with EG </p>
 </ul>
 </nav>
 </div>
+
+<form method="POST">
 <div class="col-xl-3 col-2 d-none d-xl-block">
 <div class="nav-right h-100 d-flex align-items-center justify-content-end">
 <ul class="d-flex nav-icons">
 <li class="search-icon"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
 <li><a href="dashboard.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
+
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
-<div class="has-count">0</div>
+<div class="has-count"><button style="border:none; background-color:transparent;"></button></div>
 </li>
+
 </ul>
 </div>
 </div>
@@ -629,11 +630,11 @@ shipping. stay with EG </p>
 <div class="row">
 
 
-
-
+<!-- working -->
 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" style="border:1px solid red;">
-<div class="product-card-m" >
-<div class="product-thumb" >
+<div class="product-card-m" onclick="cart()">
+<input type="hidden" name="cart">
+<div class="product-thumb">
 <a href="product-details.php?id=<?php echo $id; ?>">
 <img src="assets/images/product/p-md1.png" alt>
 </a>
@@ -665,6 +666,10 @@ shipping. stay with EG </p>
 </div>
 </div>
 </div>
+
+</form>
+
+
 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
@@ -688,6 +693,10 @@ shipping. stay with EG </p>
 </div>
 </div>
 </div>
+
+
+
+
 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
@@ -713,6 +722,10 @@ shipping. stay with EG </p>
 </div>
 </div>
 </div>
+
+
+
+
 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
@@ -1328,6 +1341,7 @@ shipping. stay with EG </p>
 </div>
 </div>
 </div>
+
 
 
 <div class="banner-grid mt-70">
