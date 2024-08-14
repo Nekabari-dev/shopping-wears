@@ -3,6 +3,4 @@
 include_once 'conn.php';
 
 
-
-
 ?>

@@ -23,6 +23,21 @@
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
+
+<!-- include statemant -->
+<?php 
+include 'conn.php';
+ if(isset($_GET['id'])) {
+     $id = $_GET['id'];
+ } else {
+     // echo "ID not found in the URL";
+ }
+
+ $GLOBALS['id'] = $id;
+
+?>
+
+
 <div class="comming-soon-area position-relative">
 <div class="container">
 <div class="row justify-content-center">
@@ -74,9 +89,9 @@
 </div>
 <div class="cs-fixed-social-icons d-xl-block d-none">
 <ul>
-<li><a href="comming-soon.php#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="comming-soon.php#"><i class="flaticon-pinterest-1"></i></a></li>
-<li><a href="comming-soon.php#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="comming-soon.php?id=<?php echo $id; ?>#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="comming-soon.php?id=<?php echo $id; ?>#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="comming-soon.php?id=<?php echo $id; ?>#"><i class="flaticon-instagram-2"></i></a></li>
 </ul>
 <h5>Special Edition</h5>
 </div>
