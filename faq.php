@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Dashboard</title>
+<title>FAQ</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
 
 <!-- include statemant -->
 <?php 
-include 'dashboard_code.php';
+include 'faq_code.php';
 include 'adding.php';
 
  if(isset($_GET['id'])) {
@@ -39,11 +39,12 @@ include 'adding.php';
 
 ?>
 
+
 <div class="mobil-sidebar d-sm-none">
 <ul class="mobil-sidebar-icons">
-<li class="category-icon"><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-menu"></i></a></li>
+<li class="category-icon"><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-menu"></i></a></li>
 <li><a href="dashboard.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a></li>
 <li class="cart-icon">
 <a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
 <div class="cart-count"><span>10</span></div>
@@ -411,10 +412,10 @@ shipping. stay with EG </p>
 <li><a href="contact.php?id=<?php echo $id; ?>">Contact Us</a></li>
 </ul>
 <ul class="inner-social-icons d-xl-none d-flex flex-wrap">
-<li><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-twitter-1"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-twitter-1"></i></a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-pinterest-1"></i></a></li>
 </ul>
 </nav>
 </div>
@@ -441,10 +442,10 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-lg-12">
 <div class="breadcrumb-wrap">
-<h3 class="page-title">My Account</h3>
+<h3 class="page-title">FAQ</h3>
 <ul class="page-switcher">
-<li><a href="index.php?id=<?php echo $id; ?>">Home <i class="bi bi-chevron-right"></i></a></li>
-<li>My Account</li>
+<li><a href="index.php?id=<?php echo $id; ?>">FAQ <i class="bi bi-chevron-right"></i></a></li>
+<li>FAQ</li>
 </ul>
 </div>
 </div>
@@ -453,44 +454,192 @@ shipping. stay with EG </p>
 </div> -->
 
 
-<div class="dashbord-wrapper mt-120">
+<div class="faq-wrapper">
 <div class="container">
-<div class="row justify-content-center">
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-<div class="dashbord-switcher">
-<a href="dashboard.php?id=<?php echo $id; ?>" class="active"><i class="flaticon-dashboard"></i> Dashboard</a>
-<a href="profile.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i> My Profile</a>
-<a href="order.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-bag"></i> My Order</a>
-<a href="setting.php?id=<?php echo $id; ?>"><i class="flaticon-settings"></i> Account Setting</a>
-<a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-logout"></i> Logout</a>
-</div>
-</div>
-<div class="col-xl-8 col-lg-8">
-<div class="dashbord-product-status text-center">
-<h5 class="dashbord-title">Hi Cameron Williamson</h5>
 <div class="row">
-<div class="col-lg-3  col-md-3 col-sm-6 ">
-<div class="product-status-single">
-<h3>03</h3>
-<h5>Pending</h5>
+<div class="col-lg-4">
+<div class="faq-sidebar">
+<div class="faq-sidebar-top">
+<h4>CUSTOMER SERVICE</h4>
+<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna qua tellus erat.</p>
+<div class="faq-contact">
+<h5>Contact us, with any help ?</h5>
+<ul>
+<li><a href="tel:269333050108">(269) 333-05-0108</a></li>
+<li><a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#20494e464f535550504f5254604558414d504c450e434f4d"><span class="__cf_email__" data-cfemail="01686f676e727471716e7375416479606c716d642f626e6c">[email&#160;protected]</span></a></li>
+</ul>
 </div>
 </div>
-<div class="col-lg-3 col-md-3 col-sm-6 ">
-<div class="product-status-single">
-<h3>02</h3>
-<h5>Processign</h5>
+<div class="faq-form-wrap">
+<form method="POST" id="faq-form">
+<h5>Ask any Question?</h5>
+<p>Your email address will not be published. Required fields are marked *</p>
+<div class="review-input-group">
+<label for="fname">First Name</label>
+<input type="text" name="fname" id="fname" placeholder="Your first name" required>
+</div>
+<div class="review-input-group">
+<textarea name="review-area" id="faq-area" cols="30" rows="7" placeholder="Your message" required></textarea>
+</div>
+<div class="submit-btn">
+<input type="submit" value="Send Now" name="faq_btn">
+</div>
+</form>
 </div>
 </div>
-<div class="col-lg-3 col-md-3 col-sm-6 ">
-<div class="product-status-single">
-<h3>01</h3>
-<h5>Picked</h5>
+</div>
+<div class="col-lg-8">
+<div class="faq-accordions">
+<h5>General FAQ</h5>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-headingOne">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+How to remove the impurities of Graphene oxide?
+</button>
+</h2>
+<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system.There
+are a variety of different technologies</div>
 </div>
 </div>
-<div class="col-lg-3 col-md-3 col-sm-6 ">
-<div class="product-status-single">
-<h3>10</h3>
-<h5>Complete</h5>
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-headingTwo">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+How long will delivery take?
+</button>
+</h2>
+<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system. here
+are a variety of different technologies</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-headingThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+MRI compatible touch tablet?
+</button>
+</h2>
+<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system. There
+are a variety of different technologies</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-headingfour">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+Questionnaire on online shopping behavior during COVID-19.
+</button>
+</h2>
+<div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system.There
+are a variety of different technologies</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-headingsix">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+Tellus ridicdiam eleifend id ullamcorper?
+</button>
+</h2>
+<div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system. There
+are a variety of different technologies</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-headingfive">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+Questionnaire on online shopping behavior during COVID-19.
+</button>
+</h2>
+<div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system. There
+are a variety of different technologies</div>
+</div>
+</div>
+</div>
+</div>
+<div class="faq-accordions">
+<h5>Payment FAQ’s</h5>
+<div class="accordion accordion-flush" id="accordionFlushExample2">
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-heading1">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+How to remove the impurities of Graphene oxide?
+</button>
+</h2>
+<div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample2">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system.There
+are a variety of different technologies</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-heading2">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+How long will delivery take?
+</button>
+</h2>
+<div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample2">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system. here
+are a variety of different technologies</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-heading3">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+MRI compatible touch tablet?
+</button>
+</h2>
+<div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample2">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system. There
+are a variety of different technologies</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-heading4">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+Questionnaire on online shopping behavior during COVID-19.
+</button>
+</h2>
+<div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample2">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system.There
+are a variety of different technologies</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-heading6">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+Tellus ridicdiam eleifend id ullamcorper?
+</button>
+</h2>
+<div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample2">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system. There
+are a variety of different technologies</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="flush-heading9">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+Questionnaire on online shopping behavior during COVID-19.
+</button>
+</h2>
+<div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample2">
+<div class="accordion-body">Any payment gateway that a subscription business chooses
+will need to be integrated with their checkout pages and billing system. There
+are a variety of different technologies</div>
 </div>
 </div>
 </div>
@@ -523,8 +672,8 @@ shipping. stay with EG </p>
 <li>
 <div class="contact-icon"><i class="flaticon-envelope"></i></div>
 <div class="contact-list">
-<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#b1d8dfd7def1d4c9d0dcc1ddd49fd2dedc"><span class="__cf_email__" data-cfemail="066f68606946637e676b766a632865696b">[email&#160;protected]</span></a>
-<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#2c45424a436c5f595c5c435e58024f4341"><span class="__cf_email__" data-cfemail="5930373f36192a2c2929362b2d773a3634">[email&#160;protected]</span></a>
+<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#30595e565f705548515d405c551e535f5d"><span class="__cf_email__" data-cfemail="d6bfb8b0b996b3aeb7bba6bab3f8b5b9bb">[email&#160;protected]</span></a>
+<a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#2f464149406f5c5a5f5f405d5b014c4042"><span class="__cf_email__" data-cfemail="6f060109002f1c1a1f1f001d1b410c0002">[email&#160;protected]</span></a>
 </div>
 </li>
 </ul>
@@ -538,11 +687,11 @@ Important Links
 <div class="footer-links">
 <ul class="link-list">
 <li><a href="about.php?id=<?php echo $id; ?>">About Eg Store</a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#">Privacy Policy</a> </li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#">Terms & Conditions</a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#">Our Support</a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#">Terms & Service</a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#">Payment Policy</a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#">Privacy Policy</a> </li>
+<li><a href="faq.php?id=<?php echo $id; ?>#">Terms & Conditions</a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#">Our Support</a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#">Terms & Service</a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#">Payment Policy</a></li>
 </ul>
 </div>
 </div>
@@ -574,24 +723,24 @@ Our Newsletter
 <p>Get the latest discount & offers. Subscribe today. Don’t miss the deals!</p>
 <form method="POST" id="footer-newslatter">
 <div class="newslatter-wrap">
-<input name="email" type="text" placeholder="Your Email" required>
+<input name="email" required type="text" placeholder="Your Email">
 <button type="submit" name="send">Send</button>
 </div>
 </form>
 </div>
 <ul class="footer-social-links d-flex">
-<li><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-facebook-app-symbol"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-pinterest-1"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-linkedin"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-instagram-2"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>#"><i class="flaticon-twitter-1"></i></a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-facebook-app-symbol"></i></a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-pinterest-1"></i></a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-linkedin"></i></a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-instagram-2"></i></a></li>
+<li><a href="faq.php?id=<?php echo $id; ?>#"><i class="flaticon-twitter-1"></i></a></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="footer-bottom row align-items-center">
 <div class="col-lg-6 ">
-<div class="footer-copyring"> <p>Copyright 2021 EG Shop Fashion | Design By <a href="dashboard.php?id=<?php echo $id; ?>#">Egens Lab</a></p> </div>
+<div class="footer-copyring"> <p>Copyright 2021 EG Shop Fashion | Design By <a href="faq.php?id=<?php echo $id; ?>#">Egens Lab</a></p> </div>
 </div>
 <div class="col-lg-6">
 <ul class="payment-cards d-flex justify-content-lg-end">

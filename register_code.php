@@ -22,8 +22,15 @@ function register() {
     }elseif($pword !== $conf_pword) {
         $GLOBALS['reg_messg'] = "<p style='color:red; text-align:center;'><b>Passwords Do Not Match</b></p>";
     }else{
-        $insert = "INSERT INTO registration (first_name, last_name, email, pword) VALUES ('$fname', '$lname', '$email', '$pword') ";
+        $insert = "INSERT INTO registration (user_id, first_name, last_name, email, pword) VALUES (LAST_INSERT_ID(), '$fname', '$lname', '$email', '$pword') ";
         $insert = mysqli_query($conn, $insert);
+
+        $last_id = mysqli_insert_id($conn);
+
+        // Update the record with the last inserted ID
+        $update = "UPDATE registration SET user_id = '$last_id' WHERE id = $last_id";
+        $update = mysqli_query($conn, $update);
+
         $GLOBALS['reg_messg'] = "<p style='color:#00b300; text-align:center;'><b>&#10004; Your Account Has Been Created Successfully</b></p>";
 
         $select_id = "SELECT id FROM registration WHERE email = '$email' ";
@@ -39,9 +46,11 @@ function register() {
 		$redirectURL = "index.php?id=" . $url;
         header("Location:" . $redirectURL);
         exit();
-    }
+    }        
+
 }
 
+    
 
 
 

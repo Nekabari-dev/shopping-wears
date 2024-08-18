@@ -25,16 +25,17 @@
 <body>
 
 <!-- include statemant -->
- <?php include 'index_code.php';
- 
-    if(isset($_GET['id'])) {
-        $id = $_GET['id'];
-        $sensitiveData = $id;
-    $encodedData = base64_encode($sensitiveData);
-    $id = $encodedData;
-    } else {
-        // echo "ID not found in the URL";
-    }
+ <?php 
+ include 'index_code.php';
+ include 'adding.php';
+
+if(isset($_GET['id'])) {
+    $id = $_GET['id'];
+} else {
+    // echo "ID not found in the URL";
+}
+
+$GLOBALS['id'] = $id;
 
 ?>
 
@@ -378,15 +379,19 @@ shipping. stay with EG </p>
 </ul>
 </nav>
 </div>
+
+
 <div class="col-xl-3 col-2 d-none d-xl-block">
 <div class="nav-right h-100 d-flex align-items-center justify-content-end">
 <ul class="d-flex nav-icons">
 <li class="search-icon"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
 <li><a href="dashboard.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
+
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
-<div class="has-count">0</div>
+<div class="has-count"><?php if(isset($added_to_cart)) echo $added_to_cart; ?></div>
 </li>
+
 </ul>
 </div>
 </div>
@@ -587,9 +592,10 @@ shipping. stay with EG </p>
 
 
 
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" style="border:1px solid red;">
-<div class="product-card-m" >
-<div class="product-thumb" >
+<!-- working -->
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+<div class="product-card-m" id="clickableDiv">
+<div class="product-thumb">
 <a href="product-details.php?id=<?php echo $id; ?>">
 <img src="assets/images/product/p-md1.png" alt>
 </a>
@@ -621,6 +627,8 @@ shipping. stay with EG </p>
 </div>
 </div>
 </div>
+
+
 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
@@ -644,6 +652,10 @@ shipping. stay with EG </p>
 </div>
 </div>
 </div>
+
+
+
+
 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
@@ -669,6 +681,10 @@ shipping. stay with EG </p>
 </div>
 </div>
 </div>
+
+
+
+
 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
 <div class="product-card-m">
 <div class="product-thumb">
@@ -1284,6 +1300,7 @@ shipping. stay with EG </p>
 </div>
 </div>
 </div>
+
 
 
 <div class="banner-grid mt-70">
