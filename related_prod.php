@@ -2,22 +2,25 @@
 
 include_once 'conn.php';
 
+if(isset($_GET['prod_id'])) {
+    $prod_id = $_GET['prod_id'];
+    $url_decoded_data = urldecode($prod_id);
+    $prod_id = base64_decode($url_decoded_data);
+    $prod_id = $prod_id;
+    $GLOBALS['prod_id'] = $prod_id;
+} else {
+    $GLOBALS['prod_id'] = "0";
+    // error message
+}
+
+
 
 // select id details from products
-function select_det() {
+function select_det($id) {
 
     global $conn; 
 
-    if(isset($_GET['prod_id'])) {
-        $prod_id = $_GET['prod_id'];
-        $url_decoded_data = urldecode($prod_id);
-        $prod_id = base64_decode($url_decoded_data);
-        $GLOBALS['prod_id'] = $prod_id;
-    } else {
-        // error message
-    }
-
-    $select_details = "SELECT * FROM products WHERE prod_id = '$prod_id' ";
+    $select_details = "SELECT * FROM products WHERE prod_id = '$id' ";
     $select_details = mysqli_query($conn, $select_details);
     if (mysqli_num_rows($select_details) > 0) {
         $details = mysqli_fetch_assoc($select_details);
@@ -27,7 +30,7 @@ function select_det() {
     }
     
 }
-select_det();
+select_det($prod_id);
 
 
 // select related products

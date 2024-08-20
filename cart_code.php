@@ -71,20 +71,36 @@ function sum_details($sum_id) {
     // sum cart details up
     global $conn;
 
-    $select = "SELECT SUM(prod_price) AS total_price FROM cart WHERE user_id = '$sum_id' ";
-    $select = mysqli_query($conn, $select);
+    // check of the user has orders
+    $check_order = "SELECT * FROM cart WHERE user_id = '$sum_id' ";
+    $check_order = mysqli_query($conn, $check_order);
+    if(mysqli_num_rows($check_order) > 0) {
 
-    if ($select) {
-        while($fetch = mysqli_fetch_assoc($select)) {    
-            $total_price = $fetch['total_price'];
+        $select = "SELECT SUM(prod_price) AS total_price FROM cart WHERE user_id = '$sum_id' ";
+        $select = mysqli_query($conn, $select);
+
+        if ($select) {
+            while($fetch = mysqli_fetch_assoc($select)) {    
+                $total_price = $fetch['total_price'];
+            }
             $GLOBALS['total_price'] = '₦'.$total_price;
+        } else {
+            // $GLOBALS['total_price'] = '₦0';
         }
-    } else {
-
+    }else{
+        $GLOBALS['total_price'] = '₦0';
     }
-    $sub_total = $total_price + 15 +15 +5;
-    $sub_total = $sub_total;
-    $GLOBALS['sub_total'] = $sub_total;
+    
+    // check of the user has orders
+    $check_cart = "SELECT * FROM cart WHERE user_id = '$sum_id' ";
+    $check_cart = mysqli_query($conn, $check_cart);
+    if(mysqli_num_rows($check_cart) > 0) {
+        $sub_total = $total_price + 15 +15 +5;
+        $sub_total = $sub_total;
+        $GLOBALS['sub_total'] = '₦'.$sub_total;
+    }else{
+        $GLOBALS['sub_total'] = "₦0";
+    }
 }
 sum_details($new_id);
 
