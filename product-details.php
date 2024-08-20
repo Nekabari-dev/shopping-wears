@@ -252,78 +252,21 @@ $GLOBALS['id'] = $id;
 <i class="flaticon-letter-x"></i>
 </div>
 <ul class="cart-product-grid">
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p1.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Men Casual Summer Sale</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p3.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Something Yellow Jens</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p2.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Woman Something Navy Top</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
+
+<?php include 'sidebar_cart.php'; ?>
+
 </ul>
 </div>
 <div class="cart-bottom">
 <div class="cart-total d-flex justify-content-between">
 <label>Subtotal :</label>
-<span>$64.08</span>
+<span><?php if(isset($total_sum)) echo $total_sum; ?></span>
 </div>
 <div class="cart-btns">
 <a href="checkout.php?id=<?php echo $id; ?>" class="cart-btn checkout">CHECKOUT</a>
 <a href="cart.php?id=<?php echo $id; ?>" class="cart-btn cart">VIEW CART</a>
 </div>
-<p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to $64.08 and receive free
+<p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to <?php if(isset($total_sum)) echo $total_sum; ?> and receive free
 shipping. stay with EG </p>
 </div>
 </div>
@@ -447,7 +390,7 @@ shipping. stay with EG </p>
 <div class="breadcrumb-wrap">
 <h3 class="page-title">Shop Details</h3>
 <ul class="page-switcher">
-<li><a href="product.php?id=<?php echo $id; ?>">Shop <i class="bi bi-chevron-right"></i></a></li>
+<li><a href="product">Shop <i class="bi bi-chevron-right"></i></a></li>
 <li>Shop Details</li>
 </ul>
 </div>
@@ -466,46 +409,44 @@ shipping. stay with EG </p>
 <div class="product-switcher-wrap flex-column">
 <div class="tab-content" id="v-pills-tabContent">
 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-<div class="pd-preview-img">
-<img src="assets/images/product/pd-details.png" alt>
+<div class="pd-preview-img" style="height:370px;">
+<img style="height:100%; object-fit:cover;" src="uploads/<?php if(isset($img1)) echo $img1; ?>" alt>
 </div>
 </div>
 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-<div class="pd-preview-img">
-<img src="assets/images/product/pd-details2.png" alt>
+<div class="pd-preview-img" style="height:370px;">
+<img style="height:100%; object-fit:cover;" src="uploads/<?php if(isset($img2)) echo $img2; ?>" alt>
 </div>
 </div>
 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-<div class="pd-preview-img">
-<img src="assets/images/product/pd-details3.png" alt>
+<div class="pd-preview-img" style="height:370px;">
+<img style="height:100%; object-fit:cover;" src="uploads/<?php if(isset($img3)) echo $img3; ?>" alt>
 </div>
 </div>
 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-<div class="pd-preview-img">
-<img src="assets/images/product/pd-details4.png" alt>
-</div>
+
 </div>
 </div>
 <div class="nav product-tab d-flex justify-content-between" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 <div class="product-variation active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home">
 <div class="pd-showcase-img">
-<img src="assets/images/product/pd-sm1.png" alt>
+<img style="height:100px; object-fit:cover;" src="uploads/<?php if(isset($img1)) echo $img1; ?>" alt>
 </div>
 </div>
 <div class="product-variation" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" role="tab" aria-controls="v-pills-profile">
 <div class="pd-showcase-img">
-<img src="assets/images/product/pd-sm2.png" alt>
+<img style="height:100px; object-fit:cover;" src="uploads/<?php if(isset($img2)) echo $img2; ?>" alt>
 </div>
 </div>
 <div class="product-variation" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" role="tab" aria-controls="v-pills-messages">
 <div class="pd-showcase-img">
-<img src="assets/images/product/pd-sm3.png" alt>
+<img style="height:100px; object-fit:cover;" src="uploads/<?php if(isset($img3)) echo $img3; ?>" alt>
 </div>
 </div>
 <div class="product-variation" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" role="tab" aria-controls="v-pills-settings">
-<div class="pd-showcase-img">
+<!-- <div class="pd-showcase-img">
 <img src="assets/images/product/pd-sm4.png" alt>
-</div>
+</div> -->
 </div>
 </div>
 </div>
@@ -524,13 +465,13 @@ shipping. stay with EG </p>
 <li><i class="bi bi-star"></i></li>
 <li class="count-review">(<span>23</span> Review)</li>
 </ul>
-<h3 class="pd-title">Ghost Mannequin Winter Dress</h3>
-<h5 class="pd-price">$41.36</h5>
-<p class="pd-small-info"><strong>RIBCAGE STR ANK RAINBOW -</strong> B lue
-High-rise
-straight-leg jeans Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<h3 class="pd-title"><?php if(isset($product_name)) echo $product_name; ?></h3>
+
+<h5 class="pd-price"><?php if(isset($product_price)) echo '₦'.$product_price; ?></h5>
+<p class="pd-small-info"><strong><?php if(isset($product_name)) echo $product_name; ?> -</strong>
+<?php if(isset($product_det)) echo $product_det; ?>
+</p>
 </div>
 <div class="pd-quick-discription">
 <ul>
@@ -539,30 +480,32 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 <form method="POST">    
 <select name="color" Required>
-    <option value="purple">Choose Color</option>
-    <option value="purple">Purple</option>
-    <option value="green">Green</option>
-    <option value="red">Red</option>
+    <option value="">Choose Color</option>
+    <option value="Black">Black</option>
+    <option value="White">White</option>
+    <option value="Red">Red</option>
+    <option value="Blue">Blue</option>
+    <option value="Others">Others</option>
 </select>
 </li>
 <li class="d-flex align-items-center">
 <span>Size :</span>
 <div class="size-option d-flex align-items-center">
-<input type="radio" name="size" id="size1" value="M" Required>
+<input type="radio" name="size" id="size1" value="L" Required>
 <label for="size1">
-<span class="p-size">M</span>
-</label>
-<input type="radio" name="size" id="size2" value="L" Required>
-<label for="size2">
 <span class="p-size">L</span>
 </label>
-<input type="radio" name="size" id="size3" value="XL" Required>
-<label for="size3">
+<input type="radio" name="size" id="size2" value="XL" Required>
+<label for="size2">
 <span class="p-size">XL</span>
 </label>
-<input type="radio" name="size" id="size4" value="XXL" Required>
-<label for="size4">
+<input type="radio" name="size" id="size3" value="XXL" Required>
+<label for="size3">
 <span class="p-size">XXL</span>
+</label>
+<input type="radio" name="size" id="size4" value="2XL" Required>
+<label for="size4">
+<span class="p-size">2XL</span>
 </label>
 </div>
 </li>
@@ -576,10 +519,9 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <button name="order" type="submit" class="pd-add-cart">Buy Now</button>
 </form>
 </li>
-<li class="pd-type">Product Type: <span>Woman Winter Dress</span></li>
-<li class="pd-type">Catagories: <span> Clothing, Hoodies</span></li>
-<li class="pd-type">Availabile: <span>89</span> </li>
-<li class="pd-type">Material : <span>100% Cotton, Jens</span> </li>
+<li class="pd-type">Catagories: <span><?php if(isset($product_type)) echo $product_type; ?></span></li>
+<li class="pd-type">Availabile: <span><?php if(isset($quantity)) echo $quantity; ?></span> </li>
+
 </ul>
 </div>
 </div>
@@ -607,18 +549,9 @@ Information</button>
 <div class="tab-content discribtion-tab-content" id="v-pills-tabContent2">
 <div class="tab-pane fade show active" id="pd-discription-pill3" role="tabpanel" aria-labelledby="pd-discription3">
 <div class="discription-texts">
-<p>Aenean dolor massa, rhoncus ut tortor in, pretium tempus neque. Vestibulum
-venenatis leo et dictum finibus. Nulla vulputate dolor sit amet tristique
-dapibus. Maecenas posuere luctus leo, non consequat felis ullamcorper non.
-Aliquam erat volutpat. Donec vitae porta enim. Cras eu volutpat dolor, vitae
-accumsan tellus. Donec pulvinar auctor nunc, et gravida elit porta non. Aliquam
-erat volutpat. Proin facilisis interdum felis, sit amet pretium purus feugiat
-ac. Donec in leo metus. Sed quis dui nec justo ullamcorper molestie. Mauris
-consequat lacinia est, eget tincidunt leo ornare sed
+<p>
+<?php if(isset($product_det)) echo $product_det; ?>
 </p>
-<p>Aenean dolor massa, rhoncus ut tortor in, pretium tempus neque. Vestibulum
-venenatis leo et dictum finibus.dapibus. Maecenas posuere luctus leo, non
-consequat felis ullamcorper non.</p>
 </div>
 </div>
 <div class="tab-pane fade" id="pd-discription-pill2" role="tabpanel" aria-labelledby="pd-discription2">
@@ -630,13 +563,10 @@ consequat felis ullamcorper non.</p>
 pink, </div>
 </li>
 <li>
-<h5 class="additition-name">Size</h5>
-<div class="additition-variant"><span>:</span>S, M, L, Xl, XXL</div>
+<h5 class="additition-name">Availaible Sizes</h5>
+<div class="additition-variant"><span>:</span><?php if(isset($aval_sizes)) echo $aval_sizes; ?></div>
 </li>
-<li>
-<h5 class="additition-name">Material</h5>
-<div class="additition-variant"><span>:</span>100% Cotton, Jens </div>
-</li>
+
 </ul>
 </div>
 </div>
@@ -753,117 +683,12 @@ it meditation austin.
 </div>
 </div>
 </div>
-<div class="related-product-wrapper mt-120">
-<h3 class="details-title">Related Product</h3>
-<div class="row">
-<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md1.png" alt>
-</a>
-<div class="product-lavels">
-<span class="sale">sale</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-<input type="radio" name="color" id="color1" value="red" checked>
-<label for="color1"><span class="c1 p-color"></span></label>
-<input type="radio" name="color" id="color2" value="red">
-<label for="color2"><span class="c2 p-color"></span></label>
-<input type="radio" name="color" id="color3" value="red">
-<label for="color3"><span class="c4 p-color"></span></label>
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Atom-SL-Hoody-Elysium-Front</a> </h5>
-<div class="product-price">
-<del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
-</div>
-<div class="product-actions">
-<a href="product-details.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md2.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Alroy-Short-7-Women-s-Fortune</a> </h5>
-<div class="product-price">
-<ins class="new-price">$20.05</ins>
-</div>
-<div class="product-actions">
-<a href="product-details.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md3.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Beta-LT-Jacket-Phantasm-Front</a> </h5>
-<div class="product-price">
-<ins class="new-price">$87.05</ins>
-</div>
-<div class="product-actions">
-<a href="product-details.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md4.png" alt>
-</a>
-<div class="product-lavels">
-<span class="discount">-10%</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Womens Vintage Straight Deni</a> </h5>
-<div class="product-price">
-<ins class="new-price">$190.05</ins>
-</div>
-<div class="product-actions">
-<a href="product-details.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class="related-box mt-120">
+<h3 class="details-title">Related Products</h3>
+
+<?php include 'related_prod.php'; ?>
+<?php if(isset($unmatched_err)) echo $unmatched_err; ?>
+
 </div>
 </div>
 
@@ -981,3 +806,13 @@ Our Newsletter
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+<style>
+    .related-box{
+        /* border: 2px solid red; */
+        height: auto;
+        overflow: hidden;
+    }
+</style>

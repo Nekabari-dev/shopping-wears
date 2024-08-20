@@ -26,16 +26,16 @@
 
 <!-- include statemant -->
  <?php 
- include 'index_code.php';
  include 'adding.php';
 
 if(isset($_GET['id'])) {
     $id = $_GET['id'];
+    $GLOBALS['id'] = $id;
 } else {
     // echo "ID not found in the URL";
 }
 
-$GLOBALS['id'] = $id;
+
 
 ?>
 
@@ -55,16 +55,25 @@ $GLOBALS['id'] = $id;
 <div class="category-sidebar">
 <div class="category-sidebar-wrapper ">
 <div class="category-seidebar-top">
+
+
+
+
+
+<!-- categories start here   -->
 <h4>All category</h4>
 <div class="category-close">
 <i class="flaticon-arrow-pointing-to-left"></i>
 </div>
 </div>
+
+
+
 <div class="accordion" id="categoryExample">
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading1">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryOne" aria-expanded="false" aria-controls="categoryOne">
-<i class="flaticon-woman"></i> Woman Collection
+<i class="flaticon-woman"></i> Women Collection
 </button>
 </h2>
 <div id="categoryOne" class="accordion-collapse collapse" aria-labelledby="categoryHeading1" data-bs-parent="#categoryExample" style>
@@ -79,10 +88,12 @@ $GLOBALS['id'] = $id;
 </div>
 </div>
 </div>
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading2">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryTwo" aria-expanded="false" aria-controls="categoryTwo">
-<i class="flaticon-children"></i> Kid’s Collection
+<i class="flaticon-children"></i> Men Collection
 </button>
 </h2>
 <div id="categoryTwo" class="accordion-collapse collapse" aria-labelledby="categoryHeading2" data-bs-parent="#categoryExample" style>
@@ -97,10 +108,14 @@ $GLOBALS['id'] = $id;
 </div>
 </div>
 </div>
+
+
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading3">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryThree" aria-expanded="false" aria-controls="categoryThree">
-<i class="flaticon-cosmetics"></i> Health & Beauty
+<i class="flaticon-cosmetics"></i> Kid’s Collection
 </button>
 </h2>
 <div id="categoryThree" class="accordion-collapse collapse" aria-labelledby="categoryHeading3" data-bs-parent="#categoryExample" style>
@@ -115,10 +130,13 @@ $GLOBALS['id'] = $id;
 </div>
 </div>
 </div>
+
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading4">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryFour" aria-expanded="false" aria-controls="categoryFour">
-<i class="flaticon-man"></i> Mens’s Collection
+<i class="flaticon-man"></i> Mens’s Accessories
 </button>
 </h2>
 <div id="categoryFour" class="accordion-collapse collapse" aria-labelledby="categoryHeading4" data-bs-parent="#categoryExample" style>
@@ -133,10 +151,13 @@ $GLOBALS['id'] = $id;
 </div>
 </div>
 </div>
+
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading5">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryFive" aria-expanded="false" aria-controls="categoryFive">
-<i class="flaticon-necklace"></i> Women’s Jewellerty
+<i class="flaticon-necklace"></i> Women’s Accessories
 </button>
 </h2>
 <div id="categoryFive" class="accordion-collapse collapse" aria-labelledby="categoryHeading5" data-bs-parent="#categoryExample" style>
@@ -151,6 +172,10 @@ $GLOBALS['id'] = $id;
 </div>
 </div>
 </div>
+
+
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading6">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categorySix" aria-expanded="false" aria-controls="categorySix">
@@ -169,10 +194,14 @@ $GLOBALS['id'] = $id;
 </div>
 </div>
 </div>
+
+
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading7">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categorySeven" aria-expanded="false" aria-controls="categorySeven">
-<i class="flaticon-watch"></i> Men’s & Woman’s Watches
+<i class="flaticon-watch"></i> Appliances
 </button>
 </h2>
 <div id="categorySeven" class="accordion-collapse collapse" aria-labelledby="categoryHeading7" data-bs-parent="#categoryExample" style>
@@ -187,10 +216,14 @@ $GLOBALS['id'] = $id;
 </div>
 </div>
 </div>
+
+
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading8">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryEight" aria-expanded="false" aria-controls="categoryEight">
-<i class="flaticon-sports"></i> Seasonal Wear
+<i class="flaticon-sports"></i> Furnitures
 </button>
 </h2>
 <div id="categoryEight" class="accordion-collapse collapse" aria-labelledby="categoryHeading8" data-bs-parent="#categoryExample" style>
@@ -205,10 +238,15 @@ $GLOBALS['id'] = $id;
 </div>
 </div>
 </div>
+
+
+
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading9">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryNine" aria-expanded="false" aria-controls="categoryNine">
-<i class="flaticon-diamond"></i> Daimond
+<i class="flaticon-diamond"></i> Bags
 </button>
 </h2>
 <div id="categoryNine" class="accordion-collapse collapse" aria-labelledby="categoryHeading9" data-bs-parent="#categoryExample" style>
@@ -223,6 +261,10 @@ $GLOBALS['id'] = $id;
 </div>
 </div>
 </div>
+
+
+
+
 </div>
 </div>
 </div>
@@ -252,78 +294,22 @@ $GLOBALS['id'] = $id;
 <i class="flaticon-letter-x"></i>
 </div>
 <ul class="cart-product-grid">
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p1.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Men Casual Summer Sale</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p3.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Something Yellow Jens</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p2.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Woman Something Navy Top</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
+
+<!-- include statement here -->
+<?php include 'sidebar_cart.php'; ?>
+
 </ul>
 </div>
 <div class="cart-bottom">
 <div class="cart-total d-flex justify-content-between">
 <label>Subtotal :</label>
-<span>$64.08</span>
+<span><?php if(isset($total_sum)) echo $total_sum; ?></span>
 </div>
 <div class="cart-btns">
 <a href="checkout.php?id=<?php echo $id; ?>" class="cart-btn checkout">CHECKOUT</a>
 <a href="cart.php?id=<?php echo $id; ?>" class="cart-btn cart">VIEW CART</a>
 </div>
-<p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to $64.08 and receive free
+<p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to <?php if(isset($total_sum)) echo $total_sum; ?> and receive free
 shipping. stay with EG </p>
 </div>
 </div>
@@ -584,565 +570,18 @@ shipping. stay with EG </p>
 </ul>
 </div>
 </div>
+
+
+
 <div class="col-lg-12">
 <div class="tab-content product-tab" id="pills-tabContent">
 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 <div class="row">
 
 
+<?php include 'index_code.php'; ?>
 
 
-<!-- working -->
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m" id="clickableDiv">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md1.png" alt>
-</a>
-<div class="product-lavels">
-<span class="sale">sale</span>
-</div>
-
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-<input type="radio" name="color" id="color1" value="red" checked>
-<label for="color1"><span class="c1 p-color"></span></label>
-<input type="radio" name="color" id="color2" value="red">
-<label for="color2"><span class="c2 p-color"></span></label>
-<input type="radio" name="color" id="color4" value="red">
-<label for="color4"><span class="c4 p-color"></span></label>
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Atom-SL-Hoody-Elysium-Front</a> </h5>
-<div class="product-price">
-<del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
-</div>
-
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md2.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Alroy-Short-7-Women-s-Fortune</a> </h5>
-<div class="product-price">
-<ins class="new-price">$20.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md3.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Beta-LT-Jacket-Phantasm-Front</a> </h5>
-<div class="product-price">
-<ins class="new-price">$87.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md4.png" alt>
-</a>
-<div class="product-lavels">
-<span class="discount">-10%</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Womens Vintage Straight Deni</a> </h5>
-<div class="product-price">
-<ins class="new-price">$190.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md5.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Konseal-Pant-Black-Back</a> </h5>
-<div class="product-price">
-<del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md6.png" alt>
-</a>
-<div class="product-lavels">
-<span class="sale">sale</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Atom-SL-Hoody-Elysium-Front</a> </h5>
-<div class="product-price">
-<ins class="new-price">$20.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md7.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Motus-AR-Hoody-Women</a> </h5>
-<div class="product-price">
-<ins class="new-price">$87.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md8.png" alt>
-</a>
-<div class="product-lavels">
-<span class="discount">-15%</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Remige-Shirt-LS-Cryptochrome</a> </h5>
-<div class="product-price">
-<ins class="new-price">$190.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-<div class="row">
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md1.png" alt>
-</a>
-<div class="product-lavels">
-<span class="sale">sale</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Atom-SL-Hoody-Elysium-Front</a> </h5>
-<div class="product-price">
-<del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md2.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Alroy-Short-7-Women-s-Fortune</a> </h5>
-<div class="product-price">
-<ins class="new-price">$20.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md3.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Beta-LT-Jacket-Phantasm-Front</a> </h5>
-<div class="product-price">
-<ins class="new-price">$87.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md4.png" alt>
-</a>
-<div class="product-lavels">
-<span class="discount">-10%</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Womens Vintage Straight Deni</a> </h5>
-<div class="product-price">
-<ins class="new-price">$190.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md5.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Konseal-Pant-Black-Back</a> </h5>
-<div class="product-price">
-<del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md6.png" alt>
-</a>
-<div class="product-lavels">
-<span class="sale">sale</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Atom-SL-Hoody-Elysium-Front</a> </h5>
-<div class="product-price">
-<ins class="new-price">$20.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-<div class="row">
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md1.png" alt>
-</a>
-<div class="product-lavels">
-<span class="sale">sale</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Atom-SL-Hoody-Elysium-Front</a> </h5>
-<div class="product-price">
-<del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md2.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Alroy-Short-7-Women-s-Fortune</a> </h5>
-<div class="product-price">
-<ins class="new-price">$20.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md3.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Beta-LT-Jacket-Phantasm-Front</a> </h5>
-<div class="product-price">
-<ins class="new-price">$87.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md4.png" alt>
-</a>
-<div class="product-lavels">
-<span class="discount">-10%</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Womens Vintage Straight Deni</a> </h5>
-<div class="product-price">
-<ins class="new-price">$190.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md5.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Konseal-Pant-Black-Back</a> </h5>
-<div class="product-price">
-<del class="old-price">$32.74</del><ins class="new-price">$29.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md6.png" alt>
-</a>
-<div class="product-lavels">
-<span class="sale">sale</span>
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Atom-SL-Hoody-Elysium-Front</a> </h5>
-<div class="product-price">
-<ins class="new-price">$20.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-<div class="product-card-m">
-<div class="product-thumb">
-<a href="product-details.php?id=<?php echo $id; ?>">
-<img src="assets/images/product/p-md7.png" alt>
-</a>
-<div class="product-lavels">
-</div>
-<div class="add-product"><a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-plus"></i></a></div>
-<div class="color-option">
-</div>
-</div>
-<div class="product-body">
-<h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>">Motus-AR-Hoody-Women</a> </h5>
-<div class="product-price">
-<ins class="new-price">$87.05</ins>
-</div>
-<div class="product-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a>
-<a href="product-details.php?id=<?php echo $id; ?>"><i class="flaticon-search"></i></a>
-<a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>

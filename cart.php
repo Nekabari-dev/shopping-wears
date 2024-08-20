@@ -26,7 +26,7 @@
 
 <!-- include statemant -->
 <?php 
-include 'cart_code.php';
+
 include 'adding.php';
 
  if(isset($_GET['id'])) {
@@ -252,78 +252,21 @@ include 'adding.php';
 <i class="flaticon-letter-x"></i>
 </div>
 <ul class="cart-product-grid">
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p1.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Men Casual Summer Sale</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p3.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Something Yellow Jens</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p2.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Woman Something Navy Top</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
+
+<?php include 'sidebar_cart.php'; ?>
+
 </ul>
 </div>
 <div class="cart-bottom">
 <div class="cart-total d-flex justify-content-between">
 <label>Subtotal :</label>
-<span>$64.08</span>
+<span><?php if(isset($total_sum)) echo $total_sum; ?></span>
 </div>
 <div class="cart-btns">
 <a href="checkout.php?id=<?php echo $id; ?>" class="cart-btn checkout">CHECKOUT</a>
 <a href="cart.php?id=<?php echo $id; ?>" class="cart-btn cart">VIEW CART</a>
 </div>
-<p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to $64.08 and receive free
+<p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to <?php if(isset($total_sum)) echo $total_sum; ?> and receive free
 shipping. stay with EG </p>
 </div>
 </div>
@@ -456,81 +399,28 @@ shipping. stay with EG </p>
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-lg-12 col-md-12 col-sm-8">
+
 <table class="table cart-table">
+
 <thead>
 <tr>
 <th scope="col">Image</th>
 <th scope="col">Product Title</th>
-<th scope="col">Unite Price</th>
-<th scope="col">Discount Price</th>
+<th scope="col">Price</th>
 <th scope="col">Quantity</th>
 <th scope="col">Subtotal</th>
 <th scope="col">Delete</th>
 </tr>
 </thead>
+
 <tbody>
-<tr>
-<td class="image-col">
-<img src="assets/images/product/cart-p4.png" alt>
-</td>
-<td class="product-col"><a href="product-details.php?id=<?php echo $id; ?>" class="product-title">Something
-Yellow Party Dress</a></td>
-<td class="unite-col"><del><span class="unite-price-del">$32.36</span></del> <span class="unite-price"></span></td>
-<td class="discount-col"><span class="discount-price">$22.36</span></td>
-<td class="quantity-col">
-<div class="quantity">
-<input type="number" min="1" max="90" step="10" value="1">
-</div>
-</td>
-<td class="total-col">$22.36</td>
-<td class="delete-col">
-<div class="delete-icon">
-<a href="cart.php?id=<?php echo $id; ?>#"><i class="flaticon-letter-x"></i></a>
-</div>
-</td>
-</tr>
-<tr>
-<td class="image-col">
-<img src="assets/images/product/cart-p6.png" alt>
-</td>
-<td class="product-col"><a href="product-details.php?id=<?php echo $id; ?>" class="product-title">Woamn
-Something Navy Jens</a></td>
-<td class="unite-col"><del><span class="unite-price-del">$32.36</span></del> <span class="unite-price"></span></td>
-<td class="discount-col"><span class="discount-price">$22.36</span></td>
-<td class="quantity-col">
-<div class="quantity">
-<input type="number" min="1" max="90" step="10" value="1">
-</div>
-</td>
-<td class="total-col">$22.36</td>
-<td class="delete-col">
-<div class="delete-icon">
-<a href="cart.php?id=<?php echo $id; ?>#"><i class="flaticon-letter-x"></i></a>
-</div>
-</td>
-</tr>
-<tr>
-<td class="image-col">
-<img src="assets/images/product/cart-p5.png" alt>
-</td>
-<td class="product-col"><a href="product-details.php?id=<?php echo $id; ?>" class="product-title">Men Casual
-Summer Sale</a></td>
-<td class="unite-col"><del><span class="unite-price-del"></span></del> <span class="unite-price">$32.36</span></td>
-<td class="discount-col"><span class="discount-price"></span></td>
-<td class="quantity-col">
-<div class="quantity">
-<input type="number" min="1" max="90" step="10" value="1">
-</div>
-</td>
-<td class="total-col">$22.36</td>
-<td class="delete-col">
-<div class="delete-icon">
-<a href="cart.php?id=<?php echo $id; ?>#"><i class="flaticon-letter-x"></i></a>
-</div>
-</td>
-</tr>
+
+<?php include 'cart_code.php'; ?>
+
+
 </tbody>
 </table>
+<?php if(isset($cart_error)) echo $cart_error; ?>
 </div>
 </div>
 <div class="row mt-60">
@@ -549,7 +439,9 @@ Summer Sale</a></td>
 <tr>
 <td class="tt-left">Cart Totals</td>
 <td></td>
-<td class="tt-right">$128.70</td>
+
+<td class="tt-right"><?php if(isset($total_price)) echo $total_price; ?></td>
+
 </tr>
 <tr>
 <td class="tt-left">Shipping</td>
@@ -567,9 +459,9 @@ shipping</a>
 <td class="tt-right cost-info-td">
 <ul class="cart-cost">
 <li>Free</li>
-<li>$15</li>
-<li>$15</li>
-<li>$5</li>
+<li>₦15</li>
+<li>₦15</li>
+<li>₦5</li>
 <li></li>
 </ul>
 </td>
@@ -578,7 +470,7 @@ shipping</a>
 <td class="tt-left">Subtotal</td>
 <td>
 </td>
-<td class="tt-right">$162.70</td>
+<td class="tt-right"><?php if(isset($sub_total)) echo $sub_total; ?></td>
 </tr>
 </tbody>
 </table>

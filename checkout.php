@@ -26,7 +26,7 @@
 
 <!-- include statemant -->
 <?php 
-include 'checkout_code.php';
+
 include 'adding.php';
  if(isset($_GET['id'])) {
      $id = $_GET['id'];
@@ -251,78 +251,21 @@ include 'adding.php';
 <i class="flaticon-letter-x"></i>
 </div>
 <ul class="cart-product-grid">
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p1.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Men Casual Summer Sale</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p3.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Something Yellow Jens</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
-<li class="single-cart-product">
-<div class="cart-product-info d-flex align-items-center">
-<div class="product-img"><img src="assets/images/product/cart-p2.png" alt class="img-fluid"></div>
-<div class="product-info">
-<a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title">Woman Something Navy Top</h5></a>
-<ul class="product-rating d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-</ul>
-<p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
-</p>
-</div>
-</div>
-<div class="cart-product-delete-btn">
-<a href="javascript:void(0)"><i class="flaticon-letter-x"></i></a>
-</div>
-</li>
+
+<?php include 'sidebar_cart.php'; ?>
+
 </ul>
 </div>
 <div class="cart-bottom">
 <div class="cart-total d-flex justify-content-between">
 <label>Subtotal :</label>
-<span>$64.08</span>
+<span><?php if(isset($total_sum)) echo $total_sum; ?></span>
 </div>
 <div class="cart-btns">
 <a href="checkout.php?id=<?php echo $id; ?>" class="cart-btn checkout">CHECKOUT</a>
 <a href="cart.php?id=<?php echo $id; ?>" class="cart-btn cart">VIEW CART</a>
 </div>
-<p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to $64.08 and receive free
+<p class="cart-shipping-text"><strong>SHIPPING:</strong> Continue shopping up to <?php if(isset($total_sum)) echo $total_sum; ?> and receive free
 shipping. stay with EG </p>
 </div>
 </div>
@@ -456,6 +399,7 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-lg-7">
 
+<?php include 'styles.php'; ?>
 
 <form method="POST" class="billing-from">
 <h5 class="checkout-title">
@@ -482,23 +426,7 @@ Billing Details
 </div>
 <div class="col-lg-12">
 <div class="eg-input-group">
-<label>Street Address</label>
-<input type="text" placeholder="House and street name" name="address" required>
-</div>
-<div class="eg-input-group">
-<select name="city-select" id="category-sort">
-<option selected>Town / City</option>
-<option value="1">Cumilla</option>
-<option value="2">Dhaka</option>
-<option value="3">Khulna</option>
-</select>
-</div>
-<div class="eg-input-group">
-<input type="text" placeholder="Post Code" name="post_code" required>
-</div>
-</div>
-<div class="col-lg-12">
-<div class="eg-input-group">
+
 <label>Additional Information</label>
 <input type="text" placeholder="Your Phone Number" name="contact" required>
 </div>
@@ -510,7 +438,9 @@ Billing Details
 </div>
 </div>
 </div>
+<button type="submit" name="order" style="<?php if(isset($style)) echo $style; ?>">Add</button>
 </form>
+
 
 
 <form class="different-address-form" method="POST">
@@ -533,10 +463,30 @@ Ship to a Different Address?
 <div class="col-lg-12">
 <div class="eg-input-group mb-0">
 <label for="last-name-d">Last Name</label>
+
+<label>Street Address</label>
+<input type="text" placeholder="House and street name" name="address" required>
+</div>
+<div class="eg-input-group">
+<select name="city-select" id="category-sort">
+<option selected>Town / City</option>
+<option value="1">Cumilla</option>
+<option value="2">Dhaka</option>
+<option value="3">Khulna</option>
+</select>
+</div>
+<div class="eg-input-group">
+<input type="text" placeholder="Post Code" name="post_code" required>
+</div>
+</div>
+<div class="col-lg-12">
+<div class="eg-input-group">
+
 <textarea cols="30" rows="6" placeholder="Order Notes (Optional)" name="alt_notes"></textarea>
 </div>
 </div>
 </div>
+<button type="submit" name="order" style="<?php if(isset($style)) echo $style; ?>">Add</button>
 </form>
 
 
@@ -549,61 +499,22 @@ Ship to a Different Address?
 Order Summary
 </h5>
 <ul class="added-products">
-<li class="single-product">
-<div class="product-img">
-<img src="assets/images/product/added-p1.png" alt>
-</div>
-<div class="product-info">
-<h5 class="product-title"><a href="checkout.php?id=<?php echo $id; ?>#">Something Yellow Party Dress</a></h5>
-<div class="product-total">
-<div class="quantity">
-<input type="number" min="1" max="90" step="10" value="1">
-</div>
-<strong> <i class="bi bi-x-lg"></i> <span class="product-price">$22.36</span></strong>
-</div>
-</div>
-</li>
-<li class="single-product">
-<div class="product-img">
-<img src="assets/images/product/added-p2.png" alt>
-</div>
-<div class="product-info">
-<h5 class="product-title"><a href="checkout.php?id=<?php echo $id; ?>#">Men Casual Summer Sale</a></h5>
-<div class="product-total">
-<div class="quantity">
-<input type="number" min="1" max="90" step="10" value="1">
-</div>
-<strong> <i class="bi bi-x-lg"></i> <span class="product-price">$22.36</span></strong>
-</div>
-</div>
-</li>
-<li class="single-product">
-<div class="product-img">
-<img src="assets/images/product/added-p3.png" alt>
-</div>
-<div class="product-info">
-<h5 class="product-title"><a href="checkout.php?id=<?php echo $id; ?>#">Woamn Something Navy Jens</a></h5>
-<div class="product-total">
-<div class="quantity">
-<input type="number" min="1" max="90" step="10" value="1">
-</div>
-<strong> <i class="bi bi-x-lg"></i> <span class="product-price">$22.36</span></strong>
-</div>
-</div>
-</li>
+
+<?php include 'checkout_code.php'; ?>
+
 </ul>
 </div>
 <div class="total-cost-summary">
 <ul>
-<li class="subtotal">Subtotal <span>$128.70</span></li>
-<li>Tax <span>$5</span></li>
-<li>Total ( tax excl.) <span>$15</span></li>
-<li>Total ( tax incl.) <span>$15</span></li>
+<li class="subtotal">Subtotal <span><?php if(isset($total_price)) echo $total_price; ?></span></li>
+<li>Tax <span>₦5</span></li>
+<li>Total ( tax excl.) <span>₦15</span></li>
+<li>Total ( tax incl.) <span>₦15</span></li>
 </ul>
 </div>
 <div class="total-cost">
 <ul>
-<li class="d-flex justify-content-between">Subtotal <span>$128.70</span></li>
+<li class="d-flex justify-content-between">Subtotal <span><?php if(isset($sub_total)) echo $sub_total; ?></span></li>
 </ul>
 </div>
 
