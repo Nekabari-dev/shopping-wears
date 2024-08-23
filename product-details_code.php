@@ -89,17 +89,19 @@ function Add_to_cart($value_id, $access_id) {
         $cart_price = str_replace(' ', '', $cart_price);
 
         $cart_img = $fetch_cart_order['image1'];
+        $prod_id = $fetch_cart_order['prod_id'];
     
         $GLOBALS['cart_name'] = $cart_name;
         $GLOBALS['cart_price'] = $cart_price;
         $GLOBALS['cart_img'] = $cart_img;
+        $GLOBALS['prod_id'] = $prod_id;
     
         $color = $_POST['color'];
         $size = $_POST['size'];
         $quantity = $_POST['quantity'];
 
-        $insert_into_cart = "INSERT INTO cart (user_id, color, cloth_size, quantity, prod_name, prod_price, prod_img) 
-        VALUES ('$new_user_id', '$color', '$size', '$quantity', '$cart_name', '$cart_price', '$cart_img')";
+        $insert_into_cart = "INSERT INTO cart (user_id, color, cloth_size, quantity, prod_id, prod_name, prod_price, prod_img) 
+        VALUES ('$new_user_id', '$color', '$size', '$quantity', '$prod_id', '$cart_name', '$cart_price', '$cart_img')";
         $insert_into_cart = mysqli_query($conn, $insert_into_cart);
 
     }else{
@@ -112,6 +114,7 @@ function Add_to_cart($value_id, $access_id) {
 }
 
 }
+
 
     $user_cart = "SELECT user_id FROM registration WHERE id = '$new_id' ";
     $user_cart = mysqli_query($conn, $user_cart);

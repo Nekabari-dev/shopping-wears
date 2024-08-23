@@ -27,7 +27,9 @@ function select_cart_det($cart_id) {
             $prod_price = $fetch_from_cart['prod_price'];
             $quantity = $fetch_from_cart['quantity'];
             $user_id = $fetch_from_cart['id'];
+            $prod_id = $fetch_from_cart['prod_id'];
             $GLOBALS['user_id'] = $user_id;
+            $GLOBALS['prod_id'] = $prod_id;
 
             ?>
 
@@ -46,7 +48,7 @@ function select_cart_det($cart_id) {
                 <td class="delete-col">
                 <div class="delete-icon">
                 <form method="POST">
-                <a href="delete.php?my_id=<?php echo $GLOBALS['type_id'] = $user_id; ?>">
+                <a href="delete.php?my_id=<?php echo $GLOBALS['type_id'] = $user_id; ?>&prod_id=<?php echo $GLOBALS['prod_id'] = $prod_id; ?>">
                 <button name="delete" style="border:none; background-color:transparent;"><i class="flaticon-letter-x"></i></button>
                 </a>
                 </form>
@@ -64,6 +66,34 @@ function select_cart_det($cart_id) {
 }
 select_cart_det($new_id);
 
+
+
+
+// delete item from cart
+if (isset($_POST['delete'])) {
+    delete_from_cart($new_id);
+}
+
+function delete_from_cart($delete_id) {
+    
+    global $conn;
+
+    $select_id = "SELECT * FROM cart WHERE user_id = '$delete_id' ";
+    $select_id = mysqli_query($conn, $select_id);
+    
+    if (mysqli_num_rows($select_id) > 0) {
+        while($fetch_cart_id = mysqli_fetch_assoc($select_id)) {
+            $my_id = $fetch_cart_id['id'];
+            $my_prod_id = $fetch_cart_id['prod_id'];
+
+            $delete = "DELETE FROM cart WHERE id = '$my_id' AND prod_id = '$my_prod_id' ";
+            $delete = mysqli_query($conn, $delete);
+        }
+    }else{
+        $GLOBALS['my_id'] = "0";
+    }
+    
+}
 
 
 
