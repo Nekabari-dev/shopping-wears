@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 12, 2024 at 07:54 PM
+-- Generation Time: Aug 23, 2024 at 12:48 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -24,46 +24,42 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `registration`
+-- Table structure for table `admin_login`
 --
 
-CREATE TABLE `registration` (
+CREATE TABLE `admin_login` (
   `id` int(100) NOT NULL,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `pword` varchar(20) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `registration`
+-- Dumping data for table `admin_login`
 --
 
-INSERT INTO `registration` (`id`, `first_name`, `last_name`, `email`, `pword`, `date`) VALUES
-(5, 'Monday', 'Bright', 'emmy.neka@gmail.com', 'neka123', '2024-08-10 20:32:50'),
-(8, 'Monday', 'Bright', 'bryn035@gmail.com', 'aaa', '2024-08-10 20:42:52');
+INSERT INTO `admin_login` (`id`, `username`, `password`, `date`) VALUES
+(5, 'admin', '12345', '2024-08-15 23:26:03');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `registration`
+-- Indexes for table `admin_login`
 --
-ALTER TABLE `registration`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`);
+ALTER TABLE `admin_login`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `registration`
+-- AUTO_INCREMENT for table `admin_login`
 --
-ALTER TABLE `registration`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+ALTER TABLE `admin_login`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 20, 2024 at 09:30 PM
+-- Generation Time: Aug 23, 2024 at 12:47 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -24,31 +24,37 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin_login`
+-- Table structure for table `cart`
 --
 
-CREATE TABLE `admin_login` (
+CREATE TABLE `cart` (
   `id` int(100) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `date` timestamp NOT NULL DEFAULT current_timestamp()
+  `user_id` int(50) NOT NULL,
+  `color` varchar(50) NOT NULL,
+  `cloth_size` varchar(11) NOT NULL,
+  `quantity` varchar(50) NOT NULL,
+  `prod_id` varchar(50) NOT NULL,
+  `prod_name` varchar(50) NOT NULL,
+  `prod_price` varchar(50) NOT NULL,
+  `prod_img` longblob NOT NULL,
+  `added_date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `admin_login`
+-- Dumping data for table `cart`
 --
 
-INSERT INTO `admin_login` (`id`, `username`, `password`, `date`) VALUES
-(5, 'admin', '12345', '2024-08-15 23:26:03');
+INSERT INTO `cart` (`id`, `user_id`, `color`, `cloth_size`, `quantity`, `prod_id`, `prod_name`, `prod_price`, `prod_img`, `added_date`) VALUES
+(78, 15, 'Black', 'XL', '1', '28', 'women gown', '41500', 0x70696331322e6a706567, '2024-08-22 16:27:18');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `admin_login`
+-- Indexes for table `cart`
 --
-ALTER TABLE `admin_login`
+ALTER TABLE `cart`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -56,10 +62,10 @@ ALTER TABLE `admin_login`
 --
 
 --
--- AUTO_INCREMENT for table `admin_login`
+-- AUTO_INCREMENT for table `cart`
 --
-ALTER TABLE `admin_login`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+ALTER TABLE `cart`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
