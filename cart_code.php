@@ -10,7 +10,7 @@ if(isset($_GET['id'])) {
     $new_id = implode('', $matches[0]);
     $GLOBALS['new_id'] = $new_id;    
 } else {
-    // error message
+    $GLOBALS['new_id'] = "0";
 }
 
 
@@ -24,34 +24,39 @@ function select_cart_det($cart_id) {
         while($fetch_from_cart = mysqli_fetch_assoc($select_from_cart)) {
             $image = $fetch_from_cart['prod_img'];
             $prod_name = $fetch_from_cart['prod_name'];
-            $prod_price = $fetch_from_cart['prod_price'];
+            $prod_price = $fetch_from_cart['main_price'];
+            $subtotal_price = $fetch_from_cart['prod_price'];
             $quantity = $fetch_from_cart['quantity'];
-            $user_id = $fetch_from_cart['id'];
-            $prod_id = $fetch_from_cart['prod_id'];
-            $GLOBALS['user_id'] = $user_id;
-            $GLOBALS['prod_id'] = $prod_id;
 
             ?>
 
                 <tr>
                 <td class="image-col">
-                <img src="uploads/<?php echo $image; ?>" alt>
+                <img style="width:100px;height:60px;object-fit:cover;" src="temp/admin/uploads/<?php echo $image; ?>" alt>
                 </td>
                 <td class="product-col"><a href="product-details.php?id=<?php echo $id; ?>" class="product-title"><?php echo $prod_name; ?></a></td>
-                <td class="discount-col"><span class="discount-price"><?php echo $prod_price; ?></span></td>
+                <td class="discount-col"><span class="discount-price"><?php echo '₦'.$prod_price; ?></span></td>
                 <td class="quantity-col">
                 <div class="quantity">
                 <div><?php echo $quantity; ?></div>
                 </div>
                 </td>
-                <td class="total-col"><?php echo '₦'.$prod_price; ?></td>
+                <td class="total-col"><?php echo '₦'.$subtotal_price; ?></td>
                 <td class="delete-col">
                 <div class="delete-icon">
                 <form method="POST">
-                <a href="delete.php?my_id=<?php echo $GLOBALS['type_id'] = $user_id; ?>&prod_id=<?php echo $GLOBALS['prod_id'] = $prod_id; ?>">
+                <input type="hidden" name="prod_id" value="<?php echo $fetch_from_cart['prod_id']; ?>">
                 <button name="delete" style="border:none; background-color:transparent;"><i class="flaticon-letter-x"></i></button>
-                </a>
                 </form>
+
+                <?php
+                    if (isset($_POST['delete'])) {
+                        $prod_id = $_POST['prod_id'];
+                        $delete_item = "DELETE FROM cart WHERE prod_id = '$prod_id' AND user_id = '$cart_id'";
+                        mysqli_query($conn, $delete_item);
+                    }
+                    
+                ?>
                 </div>
                 </td>
                 </tr>
@@ -66,34 +71,6 @@ function select_cart_det($cart_id) {
 }
 select_cart_det($new_id);
 
-
-
-
-// delete item from cart
-if (isset($_POST['delete'])) {
-    delete_from_cart($new_id);
-}
-
-function delete_from_cart($delete_id) {
-    
-    global $conn;
-
-    $select_id = "SELECT * FROM cart WHERE user_id = '$delete_id' ";
-    $select_id = mysqli_query($conn, $select_id);
-    
-    if (mysqli_num_rows($select_id) > 0) {
-        while($fetch_cart_id = mysqli_fetch_assoc($select_id)) {
-            $my_id = $fetch_cart_id['id'];
-            $my_prod_id = $fetch_cart_id['prod_id'];
-
-            $delete = "DELETE FROM cart WHERE id = '$my_id' AND prod_id = '$my_prod_id' ";
-            $delete = mysqli_query($conn, $delete);
-        }
-    }else{
-        $GLOBALS['my_id'] = "0";
-    }
-    
-}
 
 
 
@@ -125,6 +102,7 @@ function sum_details($sum_id) {
     $check_cart = "SELECT * FROM cart WHERE user_id = '$sum_id' ";
     $check_cart = mysqli_query($conn, $check_cart);
     if(mysqli_num_rows($check_cart) > 0) {
+
         $sub_total = $total_price + 15 +15 +5;
         $sub_total = $sub_total;
         $GLOBALS['sub_total'] = '₦'.$sub_total;

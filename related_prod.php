@@ -74,7 +74,7 @@ function related_products($type_id, $categ) {
                 <div class="product-card-m">
                 <div class="product-thumb">
                 <a href="product-details.php?id=<?php echo $id; ?>&prod_id=<?php echo $encrypted_id; ?>">
-                <img style="height:220px; width:100%; object-fit:cover;" src="uploads/<?php echo $rel_img1; ?>" alt>
+                <img style="height:220px; width:100%; object-fit:cover;" src="temp/admin/uploads/<?php echo $rel_img1; ?>" alt>
                 </a>
                 <div class="product-lavels">
                 </div>
@@ -83,7 +83,7 @@ function related_products($type_id, $categ) {
                 <div class="product-body" style="height:130px;">
                 <h5 class="product-title"> <a href="product-details.php?id=<?php echo $id; ?>&prod_id=<?php echo $encrypted_id; ?>"><?php echo $rel_name; ?></a> </h5>
                 <div class="product-price">
-                <ins class="new-price"><?php echo $rel_price; ?></ins>
+                <ins class="new-price"><?php echo '₦'.$rel_price; ?></ins>
                 </div>
                 <div class="product-actions">
                 <a href="product-details.php?id=<?php echo $id; ?>&prod_id=<?php echo $encrypted_id; ?>"><i class="flaticon-search"></i></a>

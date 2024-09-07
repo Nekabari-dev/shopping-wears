@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="20x20">
+<link rel="icon" href="assets/images/product/logo.png" type="image/png" sizes="20x20">
 
 <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
 
@@ -24,9 +24,29 @@
 </head>
 <body>
 
+<style>
+        tr{
+            display: none;
+        }
+        td{
+            display:none;
+        }
+        button[name='search_btn'] {
+            padding: 6px 24px;
+            border:none;
+            background-color:black;
+            color:white;
+            border-radius:7px;
+            margin-top:10px;
+        }
+    </style>
+
+
+
 <?php
 
 include 'product-details_code.php';
+include 'search.php';
 
 if(isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -42,11 +62,11 @@ $GLOBALS['id'] = $id;
 <div class="mobil-sidebar d-sm-none">
 <ul class="mobil-sidebar-icons">
 <li class="category-icon"><a href="product-details.php?id=<?php echo $id; ?>#"><i class="flaticon-menu"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i></a></li>
+<li><a href="temp/admin/login.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i></a></li>
 <li><a href="product-details.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a></li>
 <li class="cart-icon">
 <a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-<div class="cart-count"><span>10</span></div>
+<div class="cart-count"><span><?php if(isset($added_to_cart)) echo $added_to_cart; ?></span></div>
 </li>
 </ul>
 </div>
@@ -60,188 +80,108 @@ $GLOBALS['id'] = $id;
 <i class="flaticon-arrow-pointing-to-left"></i>
 </div>
 </div>
+
+<?php include 'categ_sidebar.php'; ?>
+
 <div class="accordion" id="categoryExample">
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading1">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryOne" aria-expanded="false" aria-controls="categoryOne">
-<i class="flaticon-woman"></i> Woman Collection
+<i class="flaticon-woman"></i> Tops (Unisex)
 </button>
 </h2>
 <div id="categoryOne" class="accordion-collapse collapse" aria-labelledby="categoryHeading1" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php?id=<?php echo $id; ?>">Total Products</a> <span class="product-amount">(<?php if(isset($total_top)) echo $total_top; ?>)</span></li>
 </ul>
 </div>
 </div>
 </div>
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading2">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryTwo" aria-expanded="false" aria-controls="categoryTwo">
-<i class="flaticon-children"></i> Kid’s Collection
+<i class="flaticon-children"></i> Bottoms (Unisex)
 </button>
 </h2>
 <div id="categoryTwo" class="accordion-collapse collapse" aria-labelledby="categoryHeading2" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php?id=<?php echo $id; ?>">Total Products</a> <span class="product-amount">(<?php if(isset($total_bottom)) echo $total_bottom; ?>)</span></li>
 </ul>
 </div>
 </div>
 </div>
+
+
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading3">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryThree" aria-expanded="false" aria-controls="categoryThree">
-<i class="flaticon-cosmetics"></i> Health & Beauty
+<i class="flaticon-shoes"></i></i> Footwear (Unisex)
 </button>
 </h2>
 <div id="categoryThree" class="accordion-collapse collapse" aria-labelledby="categoryHeading3" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php?id=<?php echo $id; ?>">Total Products</a> <span class="product-amount">(<?php if(isset($total_footwears)) echo $total_footwears; ?>)</span></li>
 </ul>
 </div>
 </div>
 </div>
+
+
+
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading4">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryFour" aria-expanded="false" aria-controls="categoryFour">
-<i class="flaticon-man"></i> Mens’s Collection
+<i class="flaticon-man"></i> Men (Native outfits)
 </button>
 </h2>
 <div id="categoryFour" class="accordion-collapse collapse" aria-labelledby="categoryHeading4" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php?id=<?php echo $id; ?>">Total Products</a> <span class="product-amount">(<?php if(isset($total_native_wears)) echo $total_native_wears; ?>)</span></li>
 </ul>
 </div>
 </div>
 </div>
-<div class="accordion-item">
-<h2 class="accordion-header" id="categoryHeading5">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryFive" aria-expanded="false" aria-controls="categoryFive">
-<i class="flaticon-necklace"></i> Women’s Jewellerty
-</button>
-</h2>
-<div id="categoryFive" class="accordion-collapse collapse" aria-labelledby="categoryHeading5" data-bs-parent="#categoryExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<h2 class="accordion-header" id="categoryHeading6">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categorySix" aria-expanded="false" aria-controls="categorySix">
-<i class="flaticon-shoes"></i> Shoes Collection
-</button>
-</h2>
-<div id="categorySix" class="accordion-collapse collapse" aria-labelledby="categoryHeading6" data-bs-parent="#categoryExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<h2 class="accordion-header" id="categoryHeading7">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categorySeven" aria-expanded="false" aria-controls="categorySeven">
-<i class="flaticon-watch"></i> Men’s & Woman’s Watches
-</button>
-</h2>
-<div id="categorySeven" class="accordion-collapse collapse" aria-labelledby="categoryHeading7" data-bs-parent="#categoryExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<h2 class="accordion-header" id="categoryHeading8">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryEight" aria-expanded="false" aria-controls="categoryEight">
-<i class="flaticon-sports"></i> Seasonal Wear
-</button>
-</h2>
-<div id="categoryEight" class="accordion-collapse collapse" aria-labelledby="categoryHeading8" data-bs-parent="#categoryExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<h2 class="accordion-header" id="categoryHeading9">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryNine" aria-expanded="false" aria-controls="categoryNine">
-<i class="flaticon-diamond"></i> Daimond
-</button>
-</h2>
-<div id="categoryNine" class="accordion-collapse collapse" aria-labelledby="categoryHeading9" data-bs-parent="#categoryExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
+
+
+<?php 
+
+    include 'new_categ.php';
+
+?>
+
+
+
 </div>
 </div>
 </div>
 
 
 <div class="main-searchbar">
-<div class="searchbar-wrap">
-<div class="container">
-<form method="POST" class="main-searchbar-form">
-<h5>What are you lookking for?</h5>
-<div class="searchbar-input">
-<div class="input-wrap w-100 position-relative">
-<input name="search" required type="text" placeholder="Search Products, Category, Brands....">
-</div>
-<div class="search-close"><i class="flaticon-close"></i></div>
-</div>
-</form>
-</div>
-</div>
+    <div class="searchbar-wrap">
+        <div class="container">
+            <form method="POST" class="main-searchbar-form">
+                <h5>What are you looking for?</h5>
+                <div class="searchbar-input">
+                    <div class="input-wrap w-100 position-relative">
+                            <?php include 'search.php'; ?>
+                            <input required name="search" type="text" placeholder="Search Products, Categories...">
+                            <button name="search_btn">Search</button>
+                            <!-- search result -->
+                        </div>
+
+                        <div class="search-close"><i class="flaticon-close"></i></div>
+                    </div>
+            </form>
+        </div>
+    </div>
 </div>
 
 
@@ -279,14 +219,16 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="logo d-flex justify-content-between align-items-center h-100">
-<a href="index.php?id=<?php echo $id; ?>"><img src="assets/images/logo.png" alt="logo"></a>
+
+<img style="height:100%;width:60%;object-fit:contain;" src="assets/images/product/logo.png" alt="">
+
 <div class="mobile-menu d-flex ">
 <ul class="d-flex mobil-nav-icons align-items-center">
 <li class="search-icon global-top"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i></a></li>
+<li><a href="temp/admin/login.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
-<div class="has-count">12</div>
+<div class="has-count"><?php if(isset($added_to_cart)) echo $added_to_cart; ?></div>
 </li>
 </ul>
 <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
@@ -315,43 +257,19 @@ shipping. stay with EG </p>
 </ul>
 </li> -->
 <li><a href="about.php?id=<?php echo $id; ?>">About Us</a></li>
-<li class="has-child-menu">
-<a href="javascript:void(0)" class="active">Shop</a>
-<i class="fl flaticon-plus">+</i>
-<ul class="sub-menu">
+<!-- <li class="has-child-menu"> -->
+<!-- <a href="javascript:void(0)">Shop</a>
+<i class="fl flaticon-plus">+</i> -->
+<!-- <ul class="sub-menu"> -->
 <li><a href="product.php?id=<?php echo $id; ?>">Shop</a></li>
-<li><a href="product-sidebar.php?id=<?php echo $id; ?>">Shop Sidebar</a></li>
+<!-- <li><a href="product-sidebar.php?id=<?php echo $id; ?>">Shop Sidebar</a></li>
 <li><a href="product-details.php?id=<?php echo $id; ?>">Shop Details</a></li>
-</ul>
+</ul> -->
 </li>
-<li class="has-child-menu">
-<a href="javascript:void(0)">Pages</a>
-<i class="fl flaticon-plus">+</i>
-<ul class="sub-menu">
-<li><a href="cart.php?id=<?php echo $id; ?>">Cart</a></li>
-<li><a href="checkout.php?id=<?php echo $id; ?>">Checkout</a></li>
-<li><a href="login.php?id=<?php echo $id; ?>">Login</a></li>
-<li><a href="register.php?id=<?php echo $id; ?>">Register</a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>">Dashboard</a></li>
-<li><a href="profile.php?id=<?php echo $id; ?>">Profile</a></li>
-<li><a href="order.php?id=<?php echo $id; ?>">Orders</a></li>
-<li><a href="setting.php?id=<?php echo $id; ?>">Setting</a></li>
-<li><a href="comming-soon.php?id=<?php echo $id; ?>">Comming Soon</a></li>
-<li><a href="faq.php?id=<?php echo $id; ?>">FAQ</a></li>
-<!-- <li><a href="404.php?id=<?php echo $id; ?>">404</a></li> -->
-</ul>
-</li>
-<li class="has-child-menu">
-<a href="javascript:void(0)">Blog</a>
-<i class="fl flaticon-plus">+</i>
-<ul class="sub-menu">
-<li><a href="blog.php?id=<?php echo $id; ?>">Blog Grid</a></li>
-<li><a href="blog-sidebar.php?id=<?php echo $id; ?>">Blog Sidebar</a></li>
-<li><a href="blog-standard.php?id=<?php echo $id; ?>">Blog Standard</a></li>
-<li><a href="blog-details.php?id=<?php echo $id; ?>">Blog Details</a></li>
-</ul>
-</li>
+
+
 <li><a href="contact.php?id=<?php echo $id; ?>">Contact Us</a></li>
+
 </ul>
 <ul class="inner-social-icons d-xl-none d-flex flex-wrap">
 <li><a href="product-details.php?id=<?php echo $id; ?>#"><i class="flaticon-facebook-app-symbol"></i></a></li>
@@ -365,7 +283,7 @@ shipping. stay with EG </p>
 <div class="nav-right h-100 d-flex align-items-center justify-content-end">
 <ul class="d-flex nav-icons">
 <li class="search-icon"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i></a></li>
+<li><a href="temp/admin/login.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 
 
@@ -410,17 +328,17 @@ shipping. stay with EG </p>
 <div class="tab-content" id="v-pills-tabContent">
 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 <div class="pd-preview-img" style="height:370px;">
-<img style="height:100%; object-fit:cover;" src="uploads/<?php if(isset($img1)) echo $img1; ?>" alt>
+<img style="height:100%; object-fit:cover;" src="temp/admin/uploads/<?php if(isset($img1)) echo $img1; ?>" alt>
 </div>
 </div>
 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
 <div class="pd-preview-img" style="height:370px;">
-<img style="height:100%; object-fit:cover;" src="uploads/<?php if(isset($img2)) echo $img2; ?>" alt>
+<img style="height:100%; object-fit:cover;" src="temp/admin/uploads/<?php if(isset($img2)) echo $img2; ?>" alt>
 </div>
 </div>
 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 <div class="pd-preview-img" style="height:370px;">
-<img style="height:100%; object-fit:cover;" src="uploads/<?php if(isset($img3)) echo $img3; ?>" alt>
+<img style="height:100%; object-fit:cover;" src="temp/admin/uploads/<?php if(isset($img3)) echo $img3; ?>" alt>
 </div>
 </div>
 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
@@ -430,17 +348,17 @@ shipping. stay with EG </p>
 <div class="nav product-tab d-flex justify-content-between" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 <div class="product-variation active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home">
 <div class="pd-showcase-img">
-<img style="height:100px; object-fit:cover;" src="uploads/<?php if(isset($img1)) echo $img1; ?>" alt>
+<img style="height:100px; object-fit:cover;" src="temp/admin/uploads/<?php if(isset($img1)) echo $img1; ?>" alt>
 </div>
 </div>
 <div class="product-variation" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" role="tab" aria-controls="v-pills-profile">
 <div class="pd-showcase-img">
-<img style="height:100px; object-fit:cover;" src="uploads/<?php if(isset($img2)) echo $img2; ?>" alt>
+<img style="height:100px; object-fit:cover;" src="temp/admin/uploads/<?php if(isset($img2)) echo $img2; ?>" alt>
 </div>
 </div>
 <div class="product-variation" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" role="tab" aria-controls="v-pills-messages">
 <div class="pd-showcase-img">
-<img style="height:100px; object-fit:cover;" src="uploads/<?php if(isset($img3)) echo $img3; ?>" alt>
+<img style="height:100px; object-fit:cover;" src="temp/admin/uploads/<?php if(isset($img3)) echo $img3; ?>" alt>
 </div>
 </div>
 <div class="product-variation" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" role="tab" aria-controls="v-pills-settings">
@@ -452,24 +370,16 @@ shipping. stay with EG </p>
 </div>
 </div>
 
-
+<?php include 'styles.php'; ?>
 
 <div class="col-xxl-6 col-xl-6 col-lg-6">
 <div class="product-details-wrap">
 <div class="pd-top">
-<ul class="product-rating d-flex align-items-center">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star"></i></li>
-<li class="count-review">(<span>23</span> Review)</li>
-</ul>
 
 <h3 class="pd-title"><?php if(isset($product_name)) echo $product_name; ?></h3>
 
 <h5 class="pd-price"><?php if(isset($product_price)) echo '₦'.$product_price; ?></h5>
-<p class="pd-small-info"><strong><?php if(isset($product_name)) echo $product_name; ?> -</strong>
+<p class="pd-small-info" style="<?php echo $font_style; ?>"><strong><?php if(isset($product_name)) echo $product_name; ?> -</strong>
 <?php if(isset($product_det)) echo $product_det; ?>
 </p>
 </div>
@@ -519,8 +429,8 @@ shipping. stay with EG </p>
 <button name="order" type="submit" class="pd-add-cart">Buy Now</button>
 </form>
 </li>
-<li class="pd-type">Catagories: <span><?php if(isset($product_type)) echo $product_type; ?></span></li>
-<li class="pd-type">Availabile: <span><?php if(isset($quantity)) echo $quantity; ?></span> </li>
+<li class="pd-type" style="<?php echo $font_style; ?>">Catagories: <span><?php if(isset($product_type)) echo $product_type; ?></span></li>
+<li class="pd-type" style="<?php echo $font_style; ?>">Availabile: <span><?php if(isset($quantity)) echo $quantity; ?></span> </li>
 
 </ul>
 </div>
@@ -538,7 +448,7 @@ shipping. stay with EG </p>
 <div class="col-xxl-3 col-xl-3 mt-24">
 <div class="nav flex-column nav-pills discription-bar" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
 <button class="nav-link active" id="pd-discription3" data-bs-toggle="pill" data-bs-target="#pd-discription-pill3" role="tab" aria-controls="pd-discription-pill3">
-Discription
+Description
 </button>
 <button class="nav-link" id="pd-discription2" data-bs-toggle="pill" data-bs-target="#pd-discription-pill2" role="tab" aria-controls="pd-discription-pill2">Additional
 Information</button>
@@ -558,9 +468,8 @@ Information</button>
 <div class="additional-discription">
 <ul>
 <li>
-<h5 class="additition-name">Color</h5>
-<div class="additition-variant"><span>:</span>Red, Green, Blue, Yellow,
-pink, </div>
+<h5 class="additition-name">Product Name</h5>
+<div class="additition-variant"><span>:</span><?php if(isset($product_name)) echo $product_name; ?></div>
 </li>
 <li>
 <h5 class="additition-name">Availaible Sizes</h5>
@@ -661,14 +570,7 @@ it meditation austin.
 </div>
 <div class="col-lg-12">
 <div class="review-rating">
-<p>Your Rating</p>
-<ul class="d-flex">
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-<li><i class="bi bi-star-fill"></i></li>
-</ul>
+
 </div>
 <div class="submit-btn">
 <input type="submit" value="Post Comment">

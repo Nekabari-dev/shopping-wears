@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="20x20">
+<link rel="icon" href="assets/images/product/logo.png" type="image/png" sizes="20x20">
 
 <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
 
@@ -22,18 +22,38 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+
 <body>
+    <style>
+        tr{
+            display: none;
+        }
+        td{
+            display:none;
+        }
+        button[name='search_btn'] {
+            padding: 6px 24px;
+            border:none;
+            background-color:black;
+            color:white;
+            border-radius:7px;
+            margin-top:10px;
+        }
+    </style>
 
 <!-- include statemant -->
  <?php 
+//  session_start();
  include 'adding.php';
+ include 'search.php';
 
 if(isset($_GET['id'])) {
-    $id = $_GET['id'];
+    $id = $_GET['id']; 
     $GLOBALS['id'] = $id;
 } else {
-    // echo "ID not found in the URL";
+    $GLOBALS['id'] = "0";
 }
+
 
 
 
@@ -42,11 +62,11 @@ if(isset($_GET['id'])) {
 <div class="mobil-sidebar d-sm-none">
 <ul class="mobil-sidebar-icons">
 <li class="category-icon"><a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-menu"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i></a></li>
+<li><a href="temp/admin/login.php"><i class="flaticon-user"></i></a></li>
 <li><a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-heart"></i></a></li>
 <li class="cart-icon">
 <a href="cart.php?id=<?php echo $id; ?>"><i class="flaticon-shopping-cart"></i></a>
-<div class="cart-count"><span>10</span></div>
+<div class="cart-count"><span><?php if(isset($added_to_cart)) echo $added_to_cart; ?></span></div>
 </li>
 </ul>
 </div>
@@ -55,35 +75,25 @@ if(isset($_GET['id'])) {
 <div class="category-sidebar">
 <div class="category-sidebar-wrapper ">
 <div class="category-seidebar-top">
-
-
-
-
-
-<!-- categories start here   -->
 <h4>All category</h4>
 <div class="category-close">
 <i class="flaticon-arrow-pointing-to-left"></i>
 </div>
 </div>
 
-
+<?php include 'categ_sidebar.php'; ?>
 
 <div class="accordion" id="categoryExample">
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading1">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryOne" aria-expanded="false" aria-controls="categoryOne">
-<i class="flaticon-woman"></i> Women Collection
+<i class="flaticon-woman"></i> Tops (Unisex)
 </button>
 </h2>
 <div id="categoryOne" class="accordion-collapse collapse" aria-labelledby="categoryHeading1" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php?id=<?php echo $id; ?>">Total Products</a> <span class="product-amount">(<?php if(isset($total_top)) echo $total_top; ?>)</span></li>
 </ul>
 </div>
 </div>
@@ -93,17 +103,13 @@ if(isset($_GET['id'])) {
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading2">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryTwo" aria-expanded="false" aria-controls="categoryTwo">
-<i class="flaticon-children"></i> Men Collection
+<i class="flaticon-children"></i> Bottoms (Unisex)
 </button>
 </h2>
 <div id="categoryTwo" class="accordion-collapse collapse" aria-labelledby="categoryHeading2" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php?id=<?php echo $id; ?>">Total Products</a> <span class="product-amount">(<?php if(isset($total_bottom)) echo $total_bottom; ?>)</span></li>
 </ul>
 </div>
 </div>
@@ -115,17 +121,13 @@ if(isset($_GET['id'])) {
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading3">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryThree" aria-expanded="false" aria-controls="categoryThree">
-<i class="flaticon-cosmetics"></i> Kid’s Collection
+<i class="flaticon-shoes"></i></i> Footwear (Unisex)
 </button>
 </h2>
 <div id="categoryThree" class="accordion-collapse collapse" aria-labelledby="categoryHeading3" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php?id=<?php echo $id; ?>">Total Products</a> <span class="product-amount">(<?php if(isset($total_footwears)) echo $total_footwears; ?>)</span></li>
 </ul>
 </div>
 </div>
@@ -136,131 +138,24 @@ if(isset($_GET['id'])) {
 <div class="accordion-item">
 <h2 class="accordion-header" id="categoryHeading4">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryFour" aria-expanded="false" aria-controls="categoryFour">
-<i class="flaticon-man"></i> Mens’s Accessories
+<i class="flaticon-man"></i> Men (Native outfits)
 </button>
 </h2>
 <div id="categoryFour" class="accordion-collapse collapse" aria-labelledby="categoryHeading4" data-bs-parent="#categoryExample" style>
 <div class="accordion-body">
 <ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
+<li><a href="product.php?id=<?php echo $id; ?>">Total Products</a> <span class="product-amount">(<?php if(isset($total_native_wears)) echo $total_native_wears; ?>)</span></li>
 </ul>
 </div>
 </div>
 </div>
 
 
+<?php 
 
-<div class="accordion-item">
-<h2 class="accordion-header" id="categoryHeading5">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryFive" aria-expanded="false" aria-controls="categoryFive">
-<i class="flaticon-necklace"></i> Women’s Accessories
-</button>
-</h2>
-<div id="categoryFive" class="accordion-collapse collapse" aria-labelledby="categoryHeading5" data-bs-parent="#categoryExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
+    include 'new_categ.php';
 
-
-
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="categoryHeading6">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categorySix" aria-expanded="false" aria-controls="categorySix">
-<i class="flaticon-shoes"></i> Shoes Collection
-</button>
-</h2>
-<div id="categorySix" class="accordion-collapse collapse" aria-labelledby="categoryHeading6" data-bs-parent="#categoryExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
-
-
-
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="categoryHeading7">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categorySeven" aria-expanded="false" aria-controls="categorySeven">
-<i class="flaticon-watch"></i> Appliances
-</button>
-</h2>
-<div id="categorySeven" class="accordion-collapse collapse" aria-labelledby="categoryHeading7" data-bs-parent="#categoryExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
-
-
-
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="categoryHeading8">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryEight" aria-expanded="false" aria-controls="categoryEight">
-<i class="flaticon-sports"></i> Furnitures
-</button>
-</h2>
-<div id="categoryEight" class="accordion-collapse collapse" aria-labelledby="categoryHeading8" data-bs-parent="#categoryExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
-
-
-
-
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="categoryHeading9">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoryNine" aria-expanded="false" aria-controls="categoryNine">
-<i class="flaticon-diamond"></i> Bags
-</button>
-</h2>
-<div id="categoryNine" class="accordion-collapse collapse" aria-labelledby="categoryHeading9" data-bs-parent="#categoryExample" style>
-<div class="accordion-body">
-<ul class="sb-category-list">
-<li><a href="product.php?id=<?php echo $id; ?>">Man Casual Silk Shirt</a> <span class="product-amount">(10)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Man Orange Shorts</a> <span class="product-amount">(22)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">Party Dress</a> <span class="product-amount">(08)</span></li>
-<li><a href="product.php?id=<?php echo $id; ?>">T-Shirt</a> <span class="product-amount">(41)</span> </li>
-<li><a href="product.php?id=<?php echo $id; ?>">Ghost Mannequin Black Hoodie</a> <span class="product-amount">(15)</span></li>
-</ul>
-</div>
-</div>
-</div>
+?>
 
 
 
@@ -268,23 +163,32 @@ if(isset($_GET['id'])) {
 </div>
 </div>
 </div>
+
 
 
 <div class="main-searchbar">
-<div class="searchbar-wrap">
-<div class="container">
-<form method="POST" class="main-searchbar-form">
-<h5>What are you lookking for?</h5>
-<div class="searchbar-input">
-<div class="input-wrap w-100 position-relative">
-<input required name="search" type="text" placeholder="Search Products, Category, Brands....">
+    <div class="searchbar-wrap">
+        <div class="container">
+            <form method="POST" class="main-searchbar-form">
+                <h5>What are you looking for?</h5>
+                <div class="searchbar-input">
+                    <div class="input-wrap w-100 position-relative">
+                            <?php include 'search.php'; ?>
+                            <input required name="search" type="text" placeholder="Search Products, Categories...">
+                            <button name="search_btn">Search</button>
+                            <!-- search result -->
+                        </div>
+
+                        <div class="search-close"><i class="flaticon-close"></i></div>
+                    </div>
+            </form>
+        </div>
+    </div>
 </div>
-<div class="search-close"><i class="flaticon-close"></i></div>
-</div>
-</form>
-</div>
-</div>
-</div>
+
+
+
+
 
 
 <div class="cart-sidebar-wrappper">
@@ -324,14 +228,16 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="logo d-flex justify-content-between align-items-center h-100">
-<a href="index.php?id=<?php echo $id; ?>"><img src="assets/images/logo.png" alt="logo"></a>
+
+<img style="height:100%;width:60%;object-fit:contain;" src="assets/images/product/logo.png" alt="">
+
 <div class="mobile-menu d-flex ">
 <ul class="d-flex mobil-nav-icons align-items-center">
 <li class="search-icon global-top"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i></a></li>
+<li><a href="temp/admin/login.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
-<div class="has-count">12</div>
+<div class="has-count"><?php if(isset($added_to_cart)) echo $added_to_cart; ?></div>
 </li>
 </ul>
 <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
@@ -371,7 +277,7 @@ shipping. stay with EG </p>
 <div class="nav-right h-100 d-flex align-items-center justify-content-end">
 <ul class="d-flex nav-icons">
 <li class="search-icon"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
-<li><a href="dashboard.php?id=<?php echo $id; ?>"><i class="flaticon-user"></i></a></li>
+<li><a href="temp/admin/login.php"><i class="flaticon-user"></i></a></li>
 <li class="category-icon"><a href="javascript:void(0)"><i class="flaticon-menu"></i></a></li>
 
 <li class="cart-icon"><a href="javascript:void(0)"><i class="flaticon-shopping-cart"></i></a>
@@ -549,25 +455,15 @@ shipping. stay with EG </p>
 <div class="row">
 <div class="col-lg-12">
 <div class="section-title">
-<h2>NEW PRODUCTS</h2>
-<p>Exclusive products have just arrived. Check them out</p>
+<h2>NEW ARRIVALS</h2>
+<p>Elevate Your Style With Our Trendy Collection !</p>
 </div>
 </div>
 </div>
 <div class="row">
 <div class="col-lg-12">
 <div class="product-tab-buttons">
-<ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-<li class="nav-item" role="presentation">
-<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">New Trendy</button>
-</li>
-<li class="nav-item" role="presentation">
-<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">New Arrival</button>
-</li>
-<li class="nav-item" role="presentation">
-<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Best Seller</button>
-</li>
-</ul>
+
 </div>
 </div>
 
@@ -659,174 +555,6 @@ shipping. stay with EG </p>
 </div>
 
 
-<div class="blog-area-start mt-110">
-<div class="container">
-<div class="row">
-<div class="col-lg-12">
-<div class="section-title">
-<h2>LATEST NEWS !</h2>
-<p>Exclusive products have just arrived. Check them out</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-4 col-md-6 col-sm-6">
-<div class="blog-card">
-<div class="blog-thumb">
-<a href="blog-details.php?id=<?php echo $id; ?>"><img src="assets/images/blog/b-1.png" alt></a>
-<div class="blog-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-share"></i></a>
-</div>
-</div>
-<div class="blog-content">
-<div class="blog-top">
-<div class="blog-tags">
-<a href="index.php?id=<?php echo $id; ?>#">Fashion Style</a>
-</div>
-<div class="fav-icon"><i class="flaticon-heart"></i></div>
-</div>
-<h3 class="blog-title"><a href="blog-details.php?id=<?php echo $id; ?>">11 Outfit Trends we Spotted All over Street style</a></h3>
-<div class="blog-bottom">
-<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="index.php?id=<?php echo $id; ?>#">Johan Martin <span>-8th Jan 2021</span></a></div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 col-sm-6">
-<div class="blog-card">
-<div class="blog-thumb">
-<a href="blog-details.php?id=<?php echo $id; ?>"><img src="assets/images/blog/b-2.png" alt></a>
-<div class="blog-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-share"></i></a>
-</div>
-</div>
-<div class="blog-content">
-<div class="blog-top">
-<div class="blog-tags">
-<a href="index.php?id=<?php echo $id; ?>#">Life Style</a>
-</div>
-<div class="fav-icon"><i class="flaticon-heart"></i></div>
-</div>
-<h3 class="blog-title"><a href="blog-details.php?id=<?php echo $id; ?>">Finding a catchy fashion blog name isn’t exactly an.</a></h3>
-<div class="blog-bottom">
-<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="index.php?id=<?php echo $id; ?>#">Johan Martin <span>-8th Jan 2021</span></a></div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 col-sm-6">
-<div class="blog-card">
-<div class="blog-thumb">
-<a href="blog-details.php?id=<?php echo $id; ?>"><img src="assets/images/blog/b-3.png" alt></a>
-<div class="blog-actions">
-<a href="index.php?id=<?php echo $id; ?>#"><i class="flaticon-share"></i></a>
-</div>
-</div>
-<div class="blog-content">
-<div class="blog-top">
-<div class="blog-tags">
-<a href="index.php?id=<?php echo $id; ?>#">Fashion Diary</a>
-</div>
-<div class="fav-icon"><i class="flaticon-heart"></i></div>
-</div>
-<h3 class="blog-title"><a href="blog-details.php?id=<?php echo $id; ?>">Coming up with catchy blog name can be a challenge,</a></h3>
-<div class="blog-bottom">
-<div class="blog-writer-link"><i class="flaticon-user"></i> <a href="index.php?id=<?php echo $id; ?>#">Johan Martin <span>-8th Jan 2021</span></a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<div class="banner-grid mt-70">
-<div class="container">
-<div class="row">
-<div class="col-lg-12">
-<div class="section-title">
-<h2>TOP SALE THIS WEEK</h2>
-<p>Exclusive products have just arrived. Check them out</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-4 mt-24">
-<div class="single-banner-grid">
-<a href="product.php?id=<?php echo $id; ?>"><img src="assets/images/banner/ban-xxl.png" alt></a>
-<div class="banner-grid-overlay">
-<div class="banner-grid-content">
-<h4>Pink Collection Woman’s <br>Shoes 2021</h4>
-<div class="banner-grid-btn">
-<a href="product.php?id=<?php echo $id; ?>">View All</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-<div class="row h-50">
-<div class="col-lg-8 col-md-7 mt-24">
-<div class="single-banner-grid">
-<a href="product.php?id=<?php echo $id; ?>"><img src="assets/images/banner/ban-m.png" alt></a>
-<div class="banner-grid-overlay">
-<div class="banner-grid-content">
-<h4>Warmly Heart Feet Lovely<br> Watch 2021</h4>
-<div class="banner-grid-btn">
-<a href="product.php?id=<?php echo $id; ?>">View All</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-5 mt-24">
-<div class="single-banner-grid">
-<a href="product.php?id=<?php echo $id; ?>"><img src="assets/images/banner/ban-sm.png" alt></a>
-<div class="banner-grid-overlay2">
-<div class="banner-grid-content">
-<h4>Heart Lovely Diamond </h4>
-<div class="banner-grid-btn">
-<a href="product.php?id=<?php echo $id; ?>">View All</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row h-50">
-<div class="col-lg-4 col-md-5 mt-24">
-<div class="single-banner-grid">
-<a href="product.php?id=<?php echo $id; ?>"><img src="assets/images/banner/ban-sm2.png" alt></a>
-<div class="banner-grid-overlay2">
-<div class="banner-grid-content">
-<h4>Summer Urban Dress</h4>
-<div class="banner-grid-btn">
-<a href="product.php?id=<?php echo $id; ?>">View All</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-8 col-md-7 mt-24">
-<div class="single-banner-grid">
-<a href="product.php?id=<?php echo $id; ?>"><img src="assets/images/banner/ban-m2.png" alt></a>
-<div class="banner-grid-overlay">
-<div class="banner-grid-content">
-<h4>Men’s Casual <br>Summer Sale 2021</h4>
-<div class="banner-grid-btn">
-<a href="product.php?id=<?php echo $id; ?>">View All</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 
 <div class="footer-area mt-120">

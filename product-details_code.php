@@ -9,7 +9,7 @@ if(isset($_GET['id'])) {
     $new_id = implode('', $matches[0]); 
     $GLOBALS['new_id'] = $new_id;   
 } else {
-    // error message
+    $GLOBALS['new_id'] = "0";
 }
 
     $select_userid = "SELECT user_id FROM registration WHERE id = '$new_id' ";
@@ -100,8 +100,10 @@ function Add_to_cart($value_id, $access_id) {
         $size = $_POST['size'];
         $quantity = $_POST['quantity'];
 
-        $insert_into_cart = "INSERT INTO cart (user_id, color, cloth_size, quantity, prod_id, prod_name, prod_price, prod_img) 
-        VALUES ('$new_user_id', '$color', '$size', '$quantity', '$prod_id', '$cart_name', '$cart_price', '$cart_img')";
+        $total_price = $cart_price * $quantity;
+
+        $insert_into_cart = "INSERT INTO cart (user_id, color, cloth_size, quantity, prod_id, prod_name, main_price, prod_price, prod_img) 
+        VALUES ('$new_user_id', '$color', '$size', '$quantity', '$prod_id', '$cart_name', '$cart_price', '$total_price', '$cart_img')";
         $insert_into_cart = mysqli_query($conn, $insert_into_cart);
 
     }else{

@@ -17,8 +17,19 @@ function fetch_products($id) {
 
     global $conn;
 
-    $select_prod = "SELECT * FROM products ";
+    $select_prod = "SELECT * FROM products 
+    WHERE product_name IS NOT NULL AND product_name != '' 
+    AND aval_sizes IS NOT NULL AND aval_sizes != '' 
+    AND product_price IS NOT NULL AND product_price != '' 
+    AND product_type IS NOT NULL AND product_type != '' 
+    AND quantity IS NOT NULL AND quantity != '' 
+    AND image1 IS NOT NULL AND image1 != '' 
+    AND image2 IS NOT NULL AND image2 != '' 
+    AND image3 IS NOT NULL AND image3 != '' LIMIT 12 ";
+
     $select_prod = mysqli_query($conn, $select_prod);
+
+
 
 if (mysqli_num_rows($select_prod) > 0) {
 
@@ -44,7 +55,7 @@ if (mysqli_num_rows($select_prod) > 0) {
             <div class="product-card-m" id="clickableDiv">
             <div class="product-thumb" style='height:300px;'>
             <a href="product-details.php?id=<?php echo $id; ?>&prod_id=<?php echo $prod_id; ?>">
-            <img style="height:100%; width:100%; object-fit:cover;" src="uploads/<?php echo $img1; ?>" alt>
+            <img style="height:100%; width:100%; object-fit:cover;" src="temp/admin/uploads/<?php echo $img1; ?>" alt>
             </a>
             <div class="product-lavels">
             <span class="sale">sale</span>

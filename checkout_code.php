@@ -1,7 +1,7 @@
 <?php
 
 include_once 'conn.php';
-
+include 'styles.php';
 
 // get id from url
 if(isset($_GET['id'])) {
@@ -19,6 +19,7 @@ if(isset($_GET['id'])) {
 function check_out($cart_id) {
 
     global $conn;
+    global $fonts;
 
     $select_from_cart = "SELECT * FROM cart WHERE user_id = '$cart_id' ";
     $select_from_cart = mysqli_query($conn, $select_from_cart);
@@ -35,10 +36,10 @@ function check_out($cart_id) {
 
             <li class="single-product">
             <div class="product-img">
-            <img src="uploads/<?php echo $image; ?>" alt>
+            <img style="width:100px;height:80px;object-fit:cover;" src="temp/admin/uploads/<?php echo $image; ?>" alt>
             </div>
             <div class="product-info">
-            <h5 class="product-title"><a href="checkout.php?id=<?php echo $id; ?>#"><?php echo $prod_name; ?></a></h5>
+            <h5 class="product-title" style="<?php echo $fonts; ?>"><?php echo $prod_name; ?></h5>
             <div class="product-total">
             <div class="quantity">
             <div><?php echo $quantity; ?></div>
@@ -82,6 +83,13 @@ function calculate_details($sum_id) {
     $GLOBALS['sub_total'] = $sub_total;
 }
 calculate_details($new_id);
+
+
+
+
+
+
+
 
 
 

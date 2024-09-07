@@ -37,12 +37,14 @@ function register() {
         $select_id = mysqli_query($conn, $select_id);
         if (mysqli_num_rows($select_id) > 0) {
             $fetch_id = mysqli_fetch_assoc($select_id);
+            session_start();
             $id = $fetch_id['id'];
         }
         $sensitiveData = $id;
 		$encodedData = base64_encode($sensitiveData);
-
 		$url = urlencode($encodedData);
+        
+        $_SESSION['url'] = $url;
 		$redirectURL = "index.php?id=" . $url;
         header("Location:" . $redirectURL);
         exit();

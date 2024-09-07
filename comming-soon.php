@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="20x20">
+<link rel="icon" href="assets/images/product/logo.png" type="image/png" sizes="20x20">
 
 <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
 

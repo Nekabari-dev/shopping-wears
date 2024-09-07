@@ -1,7 +1,7 @@
 <?php 
 
 include_once 'conn.php';
-
+include 'styles.php';
 
 // get id from url
 if(isset($_GET['id'])) {
@@ -19,6 +19,7 @@ if(isset($_GET['id'])) {
 function sidebar_cart($user_cart_id) {
 
     global $conn;
+    global $font_style;
 
     $select_cart = "SELECT * FROM cart WHERE user_id = '$user_cart_id' ";
     $select_cart = mysqli_query($conn, $select_cart);
@@ -30,22 +31,19 @@ function sidebar_cart($user_cart_id) {
             $fetch_qty = $fetch_cart['quantity'];
             $user_id = $fetch_cart['id'];
             $GLOBALS['user_id'] = $user_id;
+            $x = "x";
 
             ?>
 
             <li class="single-cart-product">
             <div class="cart-product-info d-flex align-items-center">
-            <div class="product-img"><img src="uploads/<?php echo $fetch_img; ?>" alt class="img-fluid"></div>
+            <div class="product-img"><img src="temp/admin/uploads/<?php echo $fetch_img; ?>" alt class="img-fluid"></div>
             <div class="product-info">
-            <a href="product-details.php?id=<?php echo $id; ?>"><h5 class="product-title"><?php echo $fetch_name; ?></h5></a>
-            <ul class="product-rating d-flex">
-            <li><i class="bi bi-star-fill"></i></li>
-            <li><i class="bi bi-star-fill"></i></li>
-            <li><i class="bi bi-star-fill"></i></li>
-            <li><i class="bi bi-star-fill"></i></li>
-            <li><i class="bi bi-star"></i></li>
-            </ul>
-            <p class="product-price"><span class="p-price"><?php echo '₦'.$fetch_price; ?></span>
+            <h5 class="product-title"><?php echo $fetch_name; ?></h5>
+            
+            <p class="product-price">
+                <span class="p-price" style="<?php echo $font_style; ?>"><?php echo $fetch_qty . ' ' . $x . ' ' . '₦'.$fetch_price; ?>
+            </span>
             </p>
             </div>
             </div>
@@ -83,7 +81,7 @@ function sum_cart($sum_id) {
             $GLOBALS['total_sum'] = '₦'.$total_sum;
         }
     } else {
-
+        $GLOBALS['total_sum'] = "0";
     }
 }
 sum_cart($new_id);
